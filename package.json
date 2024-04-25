@@ -1,0 +1,52 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~3.1.3",
+    "expo": "~50.0.14",
+    "expo-constants": "^15.4.6",
+    "expo-status-bar": "~1.11.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.73.6",
+    "react-native-web": "~0.19.6",
+    "react-router-native": "^6.23.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-react": "^7.24.1",
+    "@babel/preset-typescript": "^7.24.1",
+    "@react-native/babel-preset": "^0.74.81",
+    "@tsconfig/react-native": "^3.0.5",
+    "@types/expo": "^33.0.1",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "~18.0.10",
+    "@types/react-native": "^0.73.0",
+    "@types/react-router-native": "^6.4.0",
+    "@types/react-test-renderer": "^18.0.7",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^9.1.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-universe": "^12.0.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.7.1",
+    "typescript-eslint-parser": "^22.0.0"
+  },
+  "private": true
+}
