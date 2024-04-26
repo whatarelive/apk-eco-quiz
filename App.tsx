@@ -15,7 +15,7 @@ export default function App() {
   
   const styles = StyleSheet.create({
     container: {
-      flex: 1,
+      flexGrow: 1,
       minWidth: ancho,
       minHeight: alto - Constants.statusBarHeight,
       marginTop : Constants.statusBarHeight,

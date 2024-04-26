@@ -8,7 +8,12 @@ export const HomeScreen = () => {
   return (
     <View style={{display: 'flex'}}>
         <Header/>
-        <Profile/>
+
+        <View style={{position: 'relative',flex: 1, justifyContent: 'center', alignItems: 'center', marginTop: 50}}>
+
+          <Profile/>
+        
+        </View>
 
     </View>
   )

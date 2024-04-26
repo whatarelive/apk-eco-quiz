@@ -17,7 +17,8 @@ export const Header = () => {
 const style = StyleSheet.create({
     container: {
         display: 'flex',
-        flexBasis: 'auto',
+        width: '100%',
+        height: '25%',
         position: 'relative',
         backgroundColor: '#0ca907',
         borderBottomStartRadius: 30,
