@@ -1,35 +1,38 @@
 import { View, Text, StyleSheet } from "react-native";
 
-
+// Componente para la barra de titulo de la pantalla del Home.
 export const Header = () => {
 
   return (
+    // Contenedor de la vista.
     <View style={ style.container }>
         
-        <Text 
-            style={ style.text }>
+        {/* Texto de la barra */}
+        <Text style={ style.text }>
             Quiz App
         </Text>
+
     </View>
   )
 }
 
 const style = StyleSheet.create({
     container: {
-        display: 'flex',
         width: '100%',
         height: '25%',
+        display: 'flex',
         position: 'relative',
+        alignItems: 'center',
+        marginBottom: 20, 
+        justifyContent: 'center',
         backgroundColor: '#0ca907',
         borderBottomStartRadius: 30,
         borderBottomEndRadius: 30, 
-        justifyContent: 'center',
-        alignItems: 'center'
       },
     text: {
-        color: '#e9ffe6',
         flexBasis: 'auto',
         marginVertical: 5,
+        color: '#e9ffe6',
         fontSize: 32,
         fontFamily: 'Roboto',
         fontWeight: '600'

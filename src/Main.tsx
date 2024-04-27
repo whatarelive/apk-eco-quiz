@@ -1,6 +1,7 @@
 import { NativeRouter, Route, Routes } from 'react-router-native';
 import { HomeScreen } from './pages/HomeScreen';
 import { QuizScreen } from './pages/QuizScreen';
+//import { SplashScreen } from './pages/SplashScreen';
 
 
 

@@ -1,43 +1,38 @@
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Image, StyleSheet, ImageURISource } from "react-native";
 import { useState } from 'react';
+import { ProfileScore } from "./ProfileScore";
 
 
 
-export const Profile = () => {
+export const Profile = (): JSX.Element => {
 
+    const urlAvatar: ImageURISource  = require('/Users/Whatare/Desktop/my-app/assets/logo.png');
+    
+    // TODO: falta por implementar la actualizacion del estado de la puntuacion.
     const [ record , setRecord ] = useState({score: 0, time: 0})
+
 
   return (
     <>
         <View style={ styles.container }>
-            <View style={{ width: '30%', flexDirection: 'column'}}>
-                <Text style={ styles.text_puntos }>Puntos</Text>
-                <Text style={ styles.text_score }>{ record.score }</Text>
-            </View>
             
-            <Image source={require('/Users/Whatare/Desktop/my-app/assets/logo.png')} style={ styles.avatar }></Image>
+            <ProfileScore 
+                record={ record.score } 
+                text="Puntos"/>
             
-            <View style={{ width: '30%', flexDirection: 'column'}}>
-                <Text style={ styles.text_tiempo }>Tiempo</Text>
-                <Text style={ styles.text_crono }>{ record.time }</Text>
-            </View>
+            <Image 
+                source={ urlAvatar } 
+                style={ styles.avatar }>
+            </Image>
+            
+            <ProfileScore 
+                record={ record.time } 
+                text="Tiempo"/>
         </View>
     
     </>
   )
 }
-
-const texts = StyleSheet.create({
-    text: {
-        flex: 1,
-        width: '100%',
-        height: '50%',
-        position: 'relative',
-        color: '#e9ffe6',
-        fontFamily: 'System',
-        fontWeight: 'bold'
-    }
-})
 
 const styles = StyleSheet.create({
     avatar: { 
@@ -49,38 +44,14 @@ const styles = StyleSheet.create({
         borderWidth: 5,
     },
     container: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        flexDirection: 'row',
         position: 'relative',
-        paddingHorizontal: 20,
+        alignItems: 'center',
+        flexDirection: 'row',
         width: '85%',
         height: '50%',
+        justifyContent: 'center',
+        paddingHorizontal: 20,
         borderRadius: 28,
         backgroundColor: '#1be510'
-    },
-    text_puntos: {
-        textAlign: 'center',
-        textAlignVertical: 'bottom',
-        ...texts.text,
-          fontSize: 14,
-    },
-    text_score: {
-        ...texts.text,
-        textAlign: 'center',
-        textAlignVertical: 'top',
-          fontSize: 16,
-    },
-    text_tiempo: {
-        ...texts.text,
-        textAlign: 'center',
-        textAlignVertical: 'bottom',
-          fontSize: 14,
-    },
-    text_crono: {
-        ...texts.text,
-        textAlign: 'center',
-        textAlignVertical: 'top',
-          fontSize: 16,
-    }    
+    } 
 }); 
