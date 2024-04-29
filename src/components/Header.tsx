@@ -19,11 +19,10 @@ export const Header = () => {
 const style = StyleSheet.create({
     container: {
         width: '100%',
-        height: '25%',
         display: 'flex',
+        flex: 1,
         position: 'relative',
-        alignItems: 'center',
-        marginBottom: 20, 
+        alignItems: 'center', 
         justifyContent: 'center',
         backgroundColor: '#0ca907',
         borderBottomStartRadius: 30,

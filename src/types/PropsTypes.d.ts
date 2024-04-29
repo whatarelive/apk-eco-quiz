@@ -3,3 +3,4 @@ export type ProfileScoreProps = {
     record: number,
     text: string,
 }
+

@@ -1,11 +1,13 @@
 {
     "categories" : [
         {   
-            "cambioClimatico" : {
+            "category" : {
+                "id": 1,
                 "name": "Cambio Climático",
                 "urlIcon": "/assets/",
                 "questions": [
                    {
+                    "id":1,
                     "pregunta": "¿Qué es el cambio climático?",
                     "correcta": "Alteración del clima atribuida a la actividad humana",
                     "respuestas": [
@@ -16,6 +18,7 @@
                     ]
                    },
                    {
+                    "id":2,
                     "pregunta": "¿Cuál es el principal gas de efecto invernadero producido por la actividad humana?",
                     "correcta": "Dióxido de carbono (CO2)",
                     "respuestas": [
@@ -26,6 +29,7 @@
                     ]
                    },
                    {
+                    "id":3,
                     "pregunta": "¿Qué consecuencias tiene el cambio climático en los ecosistemas?",
                     "correcta": "Pérdida de biodiversidad",
                     "respuestas": [
@@ -36,6 +40,7 @@
                     ]
                    },
                    {
+                    "id":4,
                     "pregunta": "¿Qué es la huella de carbono? ",
                     "correcta": "Medida del impacto de las actividades humanas",
                     "respuestas": [
@@ -46,6 +51,7 @@
                     ]
                    },
                    {
+                    "id":5,
                     "pregunta": "¿Cómo pueden los individuos reducir su impacto en el cambio climático?",
                     "correcta": "Reduciendo su consumo de energía y el uso fuentes renovables",
                     "respuestas": [
@@ -59,11 +65,13 @@
             }
         },
         {   
-            "biodiversidad" : {
+            "category" : {
+                "id": 2,
                 "name": "Conservación de la Biodiversidad",
                 "urlIcon": "/assets/",
                 "questions": [
                    {
+                    "id":1,
                     "pregunta": "¿Qué es la biodiversidad?",
                     "correcta": "Variedad de vida en todas sus formas y niveles de organización",
                     "respuestas": [
@@ -74,6 +82,7 @@
                     ]
                    },
                    {
+                    "id":2,
                     "pregunta": "¿Por qué es importante conservar la biodiversidad?",
                     "correcta": "Mantiene la resiliencia de los ecosistemas y provee recursos para la supervivencia humana",
                     "respuestas": [
@@ -84,6 +93,7 @@
                     ]
                    },
                    {
+                    "id":3,
                     "pregunta": "¿Cuál es la diferencia entre una especie en peligro de extinción y una especie vulnerable?",
                     "correcta": "Riesgo de extinción es inminente para las especies en peligro, mientras que las vulnerables están en riesgo alto",
                     "respuestas": [
@@ -94,6 +104,7 @@
                     ]
                    },
                    {
+                    "id":4,
                     "pregunta": "¿Qué acciones humanas amenazan la biodiversidad?",
                     "correcta": "Deforestación, contaminación, y sobreexplotación de especies",
                     "respuestas": [
@@ -104,6 +115,7 @@
                     ]
                    },
                    {
+                    "id":5,
                     "pregunta": "¿Qué es un corredor biológico?",
                     "correcta": "Área que permite el desplazamiento y la interacción de especies entre ecosistemas",
                     "respuestas": [
@@ -117,11 +129,13 @@
             }
         },
         {   
-            "energia" : {
+            "category" : {
+                "id": 3,
                 "name": "Energías Renovables",
                 "urlIcon": "/assets/",
                 "questions": [
                    {
+                    "id":1,
                     "pregunta": "¿Qué son las energías renovables?",
                     "correcta": "Fuentes de energía que se regeneran naturalmente y son inagotables",
                     "respuestas": [
@@ -132,6 +146,7 @@
                     ]
                    },
                    {
+                    "id":2,
                     "pregunta": "¿Cuáles son los tipos principales de energías renovables?",
                     "correcta": "Solar, eólica, hidroeléctrica, geotérmica y biomasa",
                     "respuestas": [
@@ -142,6 +157,7 @@
                     ]
                    },
                    {
+                    "id":3,
                     "pregunta": "¿Qué beneficios tienen las energías renovables sobre los combustibles fósiles?",
                     "correcta": "Son sostenibles y menos contaminantes",
                     "respuestas": [
@@ -152,6 +168,7 @@
                     ]
                    },
                    {
+                    "id":4,
                     "pregunta": "¿Qué es la energía solar fotovoltaica?",
                     "correcta": "Tecnología que convierte la luz solar directamente en electricidad",
                     "respuestas": [
@@ -161,6 +178,7 @@
                         "Sistema de iluminación natural"]
                    },
                    {
+                    "id":5,
                     "pregunta": "¿Cómo funciona una turbina eólica?",
                     "correcta": "Convierte la energía cinética del viento en electricidad",
                     "respuestas": [
@@ -174,11 +192,13 @@
             }
         },
         {   
-            "contaminacion" : {
+            "category" : {
+                "id": 4,
                 "name": "Contaminación y Resiclaje",
                 "urlIcon": "/assets/",
                 "questions": [
                    {
+                    "id":1,
                     "pregunta": "¿Qué es la contaminación del aire?",
                     "correcta": "Presencia de sustancias nocivas en la atmósfera que afectan la salud y el medio ambiente",
                     "respuestas": [
@@ -189,6 +209,7 @@
                     ]
                    },
                    {
+                    "id":2,
                     "pregunta": "¿Cuáles son los efectos de la contaminación del agua en la salud humana?",
                     "correcta": "Enfermedades y trastornos respiratorios, gastrointestinales y de la piel ",
                     "respuestas": [
@@ -199,6 +220,7 @@
                     ]
                    },
                    {
+                    "id":3,
                     "pregunta": "¿Qué es la gestión de residuos?",
                     "correcta": "Conjunto de actividades para manejar los residuos hasta su disposición final",
                     "respuestas": [
@@ -209,6 +231,7 @@
                     ]
                    },
                    {
+                    "id":4,
                     "pregunta": "¿Cómo se puede reducir la cantidad de residuos generados?",
                     "correcta": "Aplicando las 3R: Reducir, Reutilizar, Reciclar",
                     "respuestas": [
@@ -219,6 +242,7 @@
                     ]
                    },
                    {
+                    "id":5,
                     "pregunta": "¿Qué es el reciclaje y por qué es importante?",
                     "correcta": "Proceso de convertir desechos en nuevos productos para prevenir el desperdicio de materiales útiles",
                     "respuestas": [
@@ -232,11 +256,13 @@
             }
         },
         {   
-            "agua" : {
+            "category" : {
+                "id": 5,
                 "name": "Agua y Recursos Hídricos",
                 "urlIcon": "/assets/",
                 "questions": [
                    {
+                    "id":1,
                     "pregunta": "¿Por qué es importante conservar el agua?",
                     "correcta": "Es un recurso limitado esencial para la vida y los ecosistemas",
                     "respuestas": [
@@ -247,6 +273,7 @@
                     ]
                    },
                    {
+                    "id":2,
                     "pregunta": "¿Qué es la escasez de agua?",
                     "correcta": "Situación donde la demanda de agua supera la oferta disponible",
                     "respuestas": [
@@ -257,6 +284,7 @@
                     ]
                    },
                    {
+                    "id":3,
                     "pregunta": "¿Cómo afecta la agricultura a los recursos hídricos?",
                     "correcta": "Puede causar sobreexplotación y contaminación de fuentes de agua",
                     "respuestas": [
@@ -267,6 +295,7 @@
                     ]
                    },
                    {
+                    "id":4,
                     "pregunta": "¿Qué es la huella hídrica?",
                     "correcta": "Indicador del uso total de agua dulce de un individuo, comunidad o actividad",
                     "respuestas": [
@@ -277,6 +306,7 @@
                     ]
                    },
                    {
+                    "id":5,
                     "pregunta": "¿Qué medidas se pueden tomar para proteger las fuentes de agua dulce?",
                     "correcta": "Tratamiento de aguas residuales, y políticas de conservación",
                     "respuestas": [
