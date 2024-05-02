@@ -4,7 +4,7 @@
             "category" : {
                 "id": 1,
                 "name": "Cambio Climático",
-                "urlIcon": "/assets/",
+                "urlIcon": "cambio",
                 "questions": [
                    {
                     "id":1,
@@ -68,7 +68,7 @@
             "category" : {
                 "id": 2,
                 "name": "Conservación de la Biodiversidad",
-                "urlIcon": "/assets/",
+                "urlIcon": "biodiversidad",
                 "questions": [
                    {
                     "id":1,
@@ -132,7 +132,7 @@
             "category" : {
                 "id": 3,
                 "name": "Energías Renovables",
-                "urlIcon": "/assets/",
+                "urlIcon": "energia",
                 "questions": [
                    {
                     "id":1,
@@ -194,8 +194,8 @@
         {   
             "category" : {
                 "id": 4,
-                "name": "Contaminación y Resiclaje",
-                "urlIcon": "/assets/",
+                "name": "Contaminación",
+                "urlIcon": "reciclaje",
                 "questions": [
                    {
                     "id":1,
@@ -258,8 +258,8 @@
         {   
             "category" : {
                 "id": 5,
-                "name": "Agua y Recursos Hídricos",
-                "urlIcon": "/assets/",
+                "name": "Recursos Hídricos",
+                "urlIcon": "agua",
                 "questions": [
                    {
                     "id":1,

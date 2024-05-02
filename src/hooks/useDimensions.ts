@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Dimensions } from 'react-native';
 import Constants from "expo-constants";
 
@@ -20,9 +20,13 @@ export const useDimensions = () => {
         }
     }
 
+    useEffect(() => {
+        getDimensions();
+
+    }, [ Dimensions.get('window').width, Dimensions.get('window').height])
+
     return {
         ...dimensions,
         dimensions,
-        getDimensions
     }
 }

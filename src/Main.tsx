@@ -1,8 +1,5 @@
 import { NativeRouter, Route, Routes } from 'react-router-native';
-import { HomeScreen } from './screens/HomeScreen';
-import { QuizScreen } from './screens/QuizScreen';
-//import { SplashScreen } from './pages/SplashScreen';
-
+import { SplashScreen, HomeScreen, QuizScreen } from './screens/';
 
 
 export const Main = () => {
@@ -10,7 +7,8 @@ export const Main = () => {
     <>
         <NativeRouter>
             <Routes>
-                <Route path='/' element={ <HomeScreen/> }></Route>
+                <Route path='/' element={ <SplashScreen/> }></Route>
+                <Route path='/home' element={ <HomeScreen/> }></Route>
                 <Route path='/quiz' element={ <QuizScreen/> }></Route>
             </Routes>
         </NativeRouter>

@@ -3,9 +3,7 @@ module.exports = function(api) {
   return {
     presets: [
       ['babel-preset-expo'],
-      [ '@babel/preset-env', { targets: { esmodules: true } } ],
-      [ '@babel/preset-react', { runtime: 'automatic' } ],
-      '@babel/preset-typescript',
+      '@babel/preset-typescript'
    ],
   };
 };

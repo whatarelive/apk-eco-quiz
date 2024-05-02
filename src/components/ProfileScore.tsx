@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     subContainer: {
-        width: '30%',
+        width: '65%',
         flexDirection: 'column'
     },
 })

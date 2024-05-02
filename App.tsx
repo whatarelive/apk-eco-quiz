@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Constants from "expo-constants";
 import { useDimensions } from './src/hooks/useDimensions';
@@ -7,11 +6,7 @@ import { Main } from './src/Main';
 
 export default function App() {
 
-  const { ancho, alto, getDimensions } = useDimensions();
-
-  useEffect(() => {
-      getDimensions();
-  }, [])
+  const { ancho, alto } = useDimensions();
   
   return (
       <View style={{ minWidth: ancho, minHeight: alto, ...styles.container }}>

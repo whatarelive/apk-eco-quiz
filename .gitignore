@@ -3,6 +3,9 @@
 # dependencies
 node_modules/
 
+# JetBreains IDE
+.idea/
+
 # Expo
 dist/
 web-build/

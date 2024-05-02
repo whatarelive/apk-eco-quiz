@@ -1,16 +1,16 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { View, Text } from "react-native"
+import { useNavigate } from "react-router-native";
 
 
 export const SplashScreen = () => {
 
-  const first = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
-
     const timout = setTimeout(() => {
-
-    }, 1500)
+      navigate('/home', {replace: true});
+    }, 3000)
 
     return () => clearTimeout( timout );
   }, [])
