@@ -15,7 +15,7 @@ export const CategoryList = () => {
       </Text>
 
       <View 
-        style={ styles.separador }>
+        style={{ ...styles.separador, width: '70%' }}>
       </View>
 
       <FlatList 
@@ -25,7 +25,7 @@ export const CategoryList = () => {
         stickyHeaderHiddenOnScroll={ false } 
         ItemSeparatorComponent={() => (
           <View 
-            style={ styles.separador } >
+            style={{ ...styles.separador, width: '95%' }} >
           </View>
         )}
         renderItem={({item: {category}}: RenderList) => (        
@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
     alignContent: 'center',
   },
   separador: {
-    width: '95%',
     height: 2,
     justifyContent: 'center',
     alignSelf: 'center',

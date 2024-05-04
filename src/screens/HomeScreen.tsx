@@ -2,7 +2,7 @@ import { View, StyleSheet } from "react-native"
 import { Header } from "../components/Header";
 import { Profile } from "../components/Profile";
 import { CategoryList } from "../components/CategoryList";
-import { StyleSheetButton } from "../components/StyleSheetButton";
+import { CustomButton } from "../components/CustomButton";
 
 // TODO: falta por organizar y limpiar los estilos. 
 export const HomeScreen = () => {
@@ -18,12 +18,12 @@ export const HomeScreen = () => {
           <Profile/>
         </View>
         
-        <View style={{ ...styles.container, maxHeight: '50%', marginTop: 40}}>
+        <View style={{ ...styles.container, maxHeight: '55%', marginTop: 30 }}>
           <CategoryList />
         </View>
         
-        <View style={{ ...styles.container , backgroundColor: '#684', minHeight: '10%'}}>
-          <StyleSheetButton />
+        <View style={{ ...styles.container, minHeight: '5%'}}>
+          <CustomButton title={'Comenzar Juego'}/>
         </View>
         
     </View>

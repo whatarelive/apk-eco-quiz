@@ -13,9 +13,5 @@ export const primaryTheme = {
     fontSize: {
         body: 14,
         subHeading: 16,
-    },
-    fontWeights: {
-        noraml: "400",
-        bold: "800"
     }
 } 
