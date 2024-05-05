@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from "react-native";
 import { colors } from "../../util/themes/Theme";
 
 // Componente para la barra de titulo de la pantalla del Home.
-export const Header = () => {
+export const Header = (): JSX.Element => {
 
   return (
     // Contenedor de la vista.
@@ -25,7 +25,7 @@ const style = StyleSheet.create({
         position: 'relative',
         alignItems: 'center', 
         justifyContent: 'center',
-        backgroundColor: colors.acent,
+        backgroundColor: colors.primary,
         borderBottomStartRadius: 30,
         borderBottomEndRadius: 30, 
       },

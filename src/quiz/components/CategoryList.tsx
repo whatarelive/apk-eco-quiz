@@ -5,7 +5,7 @@ import { RenderList } from '../types/PropsTypes';
 import { colors } from '../../util/themes/Theme';
 
 
-export const CategoryList = () => {
+export const CategoryList = (): JSX.Element => {
 
   return (
     <>

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-native";
 import { colors, fontSize } from "../../util/themes/Theme";
 
 // TODO: falta la funcionalida de mandar al contexto la categoria aleatoria. 
-export const CustomButton = ({title}: {title : string}) => {
+export const CustomButton = ({title}: {title : string}): JSX.Element => {
 
   const navigate = useNavigate();
 

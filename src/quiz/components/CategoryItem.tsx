@@ -6,7 +6,7 @@ import { colors } from "../../util/themes/Theme";
 
 
 // TODO: Crear un contexto al cual enviar la categoria seleccionada.
-export const CategoryItem = ({ category }: { category: Category }) => {
+export const CategoryItem = ({ category }: { category: Category }): JSX.Element => {
 
   const navigate = useNavigate();
   const image = useImage( category.urlIcon );

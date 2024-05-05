@@ -1,17 +1,19 @@
-import { useEffect } from "react";
 import { View, Image, Text, StyleSheet, ImageURISource } from "react-native"
+import { memo, useEffect } from "react";
 import { useNavigate } from "react-router-native";
+import { ProgressBar } from "../components/ProgressBar";
 import { colors } from "../../util/themes/Theme";
 
+const image: ImageURISource = require('../../assets/images/screenlogo.png');
 
-export const SplashScreen = () => {
+export const SplashScreen = memo(() => {
 
   const navigate = useNavigate();
-  const image: ImageURISource = require('../../assets/images/screenlogo.png');
 
   useEffect(() => {
     const timout = setTimeout(() => {
       navigate('/home', {replace: true});
+
     }, 2000)
 
     return () => clearTimeout( timout );
@@ -23,10 +25,11 @@ export const SplashScreen = () => {
         <Image source={ image } style={ style.image }></Image>
         <Text style={ style.text }>Eco Quiz App</Text>
 
-        <View style={ style.charge }></View>
+        <ProgressBar />
     </View>
   )
-}
+})
+
 
 const style = StyleSheet.create({
   container: {
@@ -47,14 +50,5 @@ const style = StyleSheet.create({
     fontSize: 32,
     fontWeight: '500',
     color: colors.darkPrimary
-  },
-  charge: {
-    marginTop: 12, 
-    borderColor: colors.primary,
-    borderStyle: 'solid',
-    borderWidth: 5,
-    width: 40,
-    height: 40,
-    borderRadius: 60
   }
 })
