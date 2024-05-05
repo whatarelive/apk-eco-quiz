@@ -1,6 +1,6 @@
 import { View, Text, TouchableNativeFeedback } from "react-native"
 import { useNavigate } from 'react-router-native';
-import { primaryTheme } from "../../util/themes/Theme";
+import { colors } from "../../util/themes/Theme";
 
 export const QuizScreen = () => {
 
@@ -19,7 +19,7 @@ export const QuizScreen = () => {
             onPress={ handleTouch }
           >
             <View>
-              <Text style={{height: '100%' ,color: primaryTheme.colors.textPrimary, textAlign: 'center' }}>Volver Atras</Text>
+              <Text style={{height: '100%' ,color: colors.textPrimary, textAlign: 'center' }}>Volver Atras</Text>
             </View>
           </TouchableNativeFeedback>
         </View>

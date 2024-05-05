@@ -1,7 +1,8 @@
 import { StyleSheet, View } from 'react-native';
 import Constants from "expo-constants";
+import { NativeRouter } from 'react-router-native';
 import { useDimensions } from './src/util/hooks/useDimensions';
-import { Main } from './src/Main';
+import { AppRouter } from './src/router/AppRouter';
 
 
 export default function App() {
@@ -9,11 +10,11 @@ export default function App() {
   const { ancho, alto } = useDimensions();
   
   return (
+    <NativeRouter>
       <View style={{ minWidth: ancho, minHeight: alto, ...styles.container }}>
-
-        <Main/>
-      
+        <AppRouter />
       </View>
+    </NativeRouter>
   );
 }
 
