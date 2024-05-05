@@ -2,7 +2,7 @@ import { View, Image, Text, TouchableNativeFeedback, StyleSheet } from "react-na
 import { useNavigate } from "react-router-native";
 import { useImage } from "../hooks/useImage";
 import { Category } from "../types/HookTypes";
-import { primaryTheme } from "../themes/Theme";
+import { colors } from "../../util/themes/Theme";
 
 
 // TODO: Crear un contexto al cual enviar la categoria seleccionada.
@@ -62,6 +62,6 @@ const styles = StyleSheet.create({
     position: 'relative',
     fontSize: 26,
     fontWeight: '500',
-    color: primaryTheme.colors.darkPrimary
+    color: colors.darkPrimary
   }
 })

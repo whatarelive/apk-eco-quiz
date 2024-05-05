@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 import { View, Image, Text, StyleSheet, ImageURISource } from "react-native"
 import { useNavigate } from "react-router-native";
-import { primaryTheme } from "../themes/Theme";
+import { colors } from "../../util/themes/Theme";
 
 
 export const SplashScreen = () => {
 
   const navigate = useNavigate();
-  const image: ImageURISource = require('../../assets/screenlogo.png');
+  const image: ImageURISource = require('../../assets/images/screenlogo.png');
 
   useEffect(() => {
     const timout = setTimeout(() => {
@@ -46,11 +46,11 @@ const style = StyleSheet.create({
     position: 'relative',
     fontSize: 32,
     fontWeight: '500',
-    color: primaryTheme.colors.darkPrimary
+    color: colors.darkPrimary
   },
   charge: {
     marginTop: 12, 
-    borderColor: primaryTheme.colors.primary,
+    borderColor: colors.primary,
     borderStyle: 'solid',
     borderWidth: 5,
     width: 40,

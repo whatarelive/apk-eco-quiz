@@ -2,7 +2,7 @@ import { View, Image, StyleSheet } from "react-native";
 import { useState } from 'react';
 import { useImage } from "../hooks/useImage";
 import { ProfileScore } from "./ProfileScore";
-import { primaryTheme } from "../themes/Theme";
+import { colors } from "../../util/themes/Theme";
 
 
 
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         width: 140,
         height: 140,
         borderRadius: 100,
-        borderColor: primaryTheme.colors.background,
+        borderColor: colors.background,
         borderWidth: 5,
     },
     container: {
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         paddingHorizontal: 20,
         borderRadius: 28,
-        backgroundColor: primaryTheme.colors.primary
+        backgroundColor: colors.primary
     },
     separator: {
         width: 5,

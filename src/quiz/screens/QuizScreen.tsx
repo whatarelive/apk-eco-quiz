@@ -1,6 +1,6 @@
 import { View, Text, TouchableNativeFeedback } from "react-native"
 import { useNavigate } from 'react-router-native';
-import { primaryTheme } from "../themes/Theme";
+import { primaryTheme } from "../../util/themes/Theme";
 
 export const QuizScreen = () => {
 

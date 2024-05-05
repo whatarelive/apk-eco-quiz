@@ -1,6 +1,6 @@
 import { StyleSheet, View } from 'react-native';
 import Constants from "expo-constants";
-import { useDimensions } from './src/hooks/useDimensions';
+import { useDimensions } from './src/util/hooks/useDimensions';
 import { Main } from './src/Main';
 
 

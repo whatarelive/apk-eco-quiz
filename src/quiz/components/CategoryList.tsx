@@ -2,7 +2,7 @@ import { Text, FlatList, StyleSheet, View } from 'react-native';
 import { categories }  from "../../assets/data/Quiz.json";
 import { CategoryItem } from "./CategoryItem";
 import { RenderList } from '../types/PropsTypes';
-import { primaryTheme } from '../themes/Theme';
+import { colors } from '../../util/themes/Theme';
 
 
 export const CategoryList = () => {
@@ -48,11 +48,11 @@ const styles = StyleSheet.create({
     height: 2,
     justifyContent: 'center',
     alignSelf: 'center',
-    backgroundColor: primaryTheme.colors.darkPrimary
+    backgroundColor: colors.darkPrimary
   }, 
   text: {
     fontSize: 32,
     fontWeight: '700',
-    color: primaryTheme.colors.acent
+    color: colors.acent
   }
 });

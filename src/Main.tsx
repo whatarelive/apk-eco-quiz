@@ -1,5 +1,6 @@
 import { NativeRouter, Route, Routes } from 'react-router-native';
-import { SplashScreen, HomeScreen, QuizScreen } from './screens/';
+import { HomeScreen, QuizScreen } from './quiz';
+import { SplashScreen } from './auth';
 
 
 export const Main = () => {

@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet } from "react-native";
-import { primaryTheme } from "../themes/Theme";
+import { colors } from "../../util/themes/Theme";
 
 // Componente para la barra de titulo de la pantalla del Home.
 export const Header = () => {
@@ -25,7 +25,7 @@ const style = StyleSheet.create({
         position: 'relative',
         alignItems: 'center', 
         justifyContent: 'center',
-        backgroundColor: primaryTheme.colors.acent,
+        backgroundColor: colors.acent,
         borderBottomStartRadius: 30,
         borderBottomEndRadius: 30, 
       },
@@ -33,7 +33,7 @@ const style = StyleSheet.create({
         marginVertical: 5,
         fontSize: 32,
         fontWeight: '800',
-        fontFamily: primaryTheme.fonts.main,
-        color: primaryTheme.colors.textPrimary,
+        fontFamily: 'System',
+        color: colors.textPrimary,
     }
 })

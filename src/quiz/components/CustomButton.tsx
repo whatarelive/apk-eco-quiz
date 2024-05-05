@@ -1,6 +1,6 @@
 import { View, Text, TouchableNativeFeedback, StyleSheet } from "react-native";
 import { useNavigate } from "react-router-native";
-import { primaryTheme } from "../themes/Theme";
+import { colors, fontSize } from "../../util/themes/Theme";
 
 // TODO: falta la funcionalida de mandar al contexto la categoria aleatoria. 
 export const CustomButton = ({title}: {title : string}) => {
@@ -29,7 +29,7 @@ export const CustomButton = ({title}: {title : string}) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: primaryTheme.colors.primary,
+    backgroundColor: colors.primary,
     width: '80%',
     height: 50,
     borderRadius: 40,
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   text: {
     textAlign: 'center',
     fontWeight: '700',
-    color: primaryTheme.colors.textPrimary,
-    fontSize: primaryTheme.fontSize.subHeading
+    color: colors.textPrimary,
+    fontSize: fontSize.subHeading
   }
 });
