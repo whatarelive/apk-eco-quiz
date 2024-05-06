@@ -2,17 +2,17 @@ import { View, Image, Text, StyleSheet, ImageURISource } from "react-native"
 import { memo, useEffect } from "react";
 import { useNavigate } from "react-router-native";
 import { ProgressBar } from "../components/ProgressBar";
-import { colors } from "../../util/themes/Theme";
+import { colors, align } from "../../util";
 
-const image: ImageURISource = require('../../assets/images/screenlogo.png');
 
 export const SplashScreen = memo(() => {
-
+  
   const navigate = useNavigate();
+  const image: ImageURISource = require('../../assets/images/screenlogo.png');
 
   useEffect(() => {
     const timout = setTimeout(() => {
-      navigate('/home', {replace: true});
+      navigate('/home', { replace: true });
 
     }, 2000)
 
@@ -33,10 +33,7 @@ export const SplashScreen = memo(() => {
 
 const style = StyleSheet.create({
   container: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
-
+    ...align.relative
   },
   image: {
     marginTop: '45%',

@@ -1,6 +1,8 @@
 import { View, Text, StyleSheet } from "react-native";
 import { ProfileScoreProps } from "../types/PropsTypes";
 
+
+
 // Componente que contiene la puntuacion y tiempo del jugador.
 export const ProfileScore = ({record, text}: ProfileScoreProps): JSX.Element => {
 

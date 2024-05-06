@@ -1,5 +1,3 @@
-import { ImageURISource } from "react-native"
-
 export type Return = {
     data: Category[],
     isLoading: boolean,

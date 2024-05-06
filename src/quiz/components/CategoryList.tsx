@@ -2,13 +2,15 @@ import { Text, FlatList, StyleSheet, View } from 'react-native';
 import { categories }  from "../../assets/data/Quiz.json";
 import { CategoryItem } from "./CategoryItem";
 import { RenderList } from '../types/PropsTypes';
-import { colors } from '../../util/themes/Theme';
+import { colors, align } from '../../util';
+
 
 
 export const CategoryList = (): JSX.Element => {
 
   return (
-    <>
+    <View style={ styles.container }>
+      
       <Text 
         style={ styles.text }>
         Categorias de Juego
@@ -22,10 +24,9 @@ export const CategoryList = (): JSX.Element => {
         style={ styles.list } 
         data={ categories }
         showsVerticalScrollIndicator={ false }
-        stickyHeaderHiddenOnScroll={ false } 
         ItemSeparatorComponent={() => (
           <View 
-            style={{ ...styles.separador, width: '95%' }} >
+            style={ styles.separador } >
           </View>
         )}
         renderItem={({item: {category}}: RenderList) => (        
@@ -34,19 +35,25 @@ export const CategoryList = (): JSX.Element => {
             category={ category }>
           </CategoryItem> 
         )}/> 
-    </>
+
+    </View>
   )
 }
 
 const styles = StyleSheet.create({
+  container: {
+    maxHeight: '55%', 
+    marginTop: 30, 
+    marginBottom: '5%',
+    ...align.relative
+  },
   list: {
     width: '100%',
-    margin: 5,
     alignContent: 'center',
   },
   separador: {
+    width: '95%',
     height: 2,
-    justifyContent: 'center',
     alignSelf: 'center',
     backgroundColor: colors.darkPrimary
   }, 

@@ -2,7 +2,7 @@ import { View, Image, StyleSheet } from "react-native";
 import { useState } from 'react';
 import { useImage } from "../hooks/useImage";
 import { ProfileScore } from "./ProfileScore";
-import { colors } from "../../util/themes/Theme";
+import { colors, align } from "../../util";
 
 
 
@@ -15,7 +15,6 @@ export const Profile = (): JSX.Element => {
 
   return (
     <View style= { styles.container }>
-            
         <View style={ styles.subContainer }>
             
             <ProfileScore 
@@ -49,21 +48,20 @@ const styles = StyleSheet.create({
         borderWidth: 5,
     },
     container: {
-        display: 'flex',
+        minHeight: '12%',
+        marginBottom: '5%',
         flexDirection: 'column',
-        alignItems: 'center'
+        ...align.relative
     },
     subContainer: {
-        position: 'absolute',
-        alignItems: 'center',
         flexDirection: 'row',
         width: '85%',
         height: 70,
         top: 100,
-        justifyContent: 'center',
         paddingHorizontal: 20,
         borderRadius: 28,
-        backgroundColor: colors.primary
+        backgroundColor: colors.primary,
+        ...align.abosolute
     },
     separator: {
         width: 5,

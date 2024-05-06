@@ -2,7 +2,8 @@ import { View, Image, Text, TouchableNativeFeedback, StyleSheet } from "react-na
 import { useNavigate } from "react-router-native";
 import { useImage } from "../hooks/useImage";
 import { Category } from "../types/HookTypes";
-import { colors } from "../../util/themes/Theme";
+import { colors } from "../../util";
+
 
 
 // TODO: Crear un contexto al cual enviar la categoria seleccionada.
