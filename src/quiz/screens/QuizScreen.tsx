@@ -1,16 +1,31 @@
 import { View, Text, StyleSheet } from "react-native"
-import { useNavigate } from 'react-router-native';
+import { useNavigate, useParams } from 'react-router-native';
 import { StatusBar } from "../../util";
 import { CustomButton, QuizHeader, QuizInfo, QuizResponse } from '../components';
+import { getCategoryById } from "../helpers/getCategoryById";
+import { getQuestionById } from "../helpers/getQuestionById";
+import { useState } from "react";
 
 
 
 export const QuizScreen = () => {
 
-  const navigate = useNavigate()
+  const { categoryId, questionId } = useParams();
+  const navigate = useNavigate();
+
+  if ( !questionId ) {
+    throw new Error(`${questionId} is not valid ID for Question Array`);
+  }
+
+  const [ question , setQuestion ] = useState( +questionId );
+  
+  const category = getCategoryById( categoryId );
+  const questionA = getQuestionById( question, category );
+  
 
   const handleClick = () => {
-    navigate(`/quiz`, { replace: true });
+    if ( question === 5 ) navigate('/victory'); 
+    setQuestion( question + 1 );
   }
 
   return (
@@ -18,23 +33,20 @@ export const QuizScreen = () => {
       <StatusBar/>
 
       <View style={{ flexDirection: 'column'}}>
-        <QuizHeader />
-        <QuizInfo />      
-        <Text style={ styles.question }>{`Pregunta #1 : ${`¿Qué medidas se pueden tomar para proteger las fuentes de agua dulce?`}`}</Text>
+
+        <QuizHeader icon={ category.urlIcon } title={ category.name }/>
+        
+        <QuizInfo id={questionA.id}/>      
+        
+        <Text style={ styles.question }>{`Pregunta #${ questionA.id } : ${ questionA.pregunta }`}</Text>
 
         {/*  Quiz Reponses  */}
         <View style={ styles.response }>
-          {/*  Respuesta A  */}
-          <QuizResponse/>
-        
-          {/*  Respuesta B */}
-          <QuizResponse/>
-
-          {/*  Respuesta C */} 
-          <QuizResponse/>
-
-          {/*  Respuesta D  */}
-         <QuizResponse/>
+          {
+            questionA.respuestas.map( resp => (
+              <QuizResponse key={resp.id} resp={resp.value}></QuizResponse>
+            ))
+          }
         </View>
 
           {/*  Next Quiz Question */} 

@@ -9,7 +9,7 @@ export const HomeScreen = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/quiz/:category/:question', { replace: true } );
+    navigate(`/quiz/${1}/${1}`, { replace: true } );
   }
 
   return (

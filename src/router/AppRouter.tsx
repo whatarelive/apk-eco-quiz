@@ -11,7 +11,7 @@ export const AppRouter = () => {
     <Routes>
         <Route path="/" element={ <SplashScreen/> }/>
         <Route path="/home" element={ <HomeScreen/> }/>
-        <Route path="/quiz" element={ <QuizScreen/> }/>
+        <Route path="/quiz/:categoryId/:questionId" element={ <QuizScreen/> }/>
         <Route path="/victory" element={ <VictoryScreen/> }/>
     </Routes>
   )

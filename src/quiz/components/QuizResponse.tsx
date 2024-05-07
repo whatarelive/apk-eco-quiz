@@ -1,14 +1,14 @@
-import { Text, View, Image, TouchableNativeFeedback, StyleSheet, Alert } from "react-native";
-import { align, colors } from "../../util";
+import { Text, View, TouchableNativeFeedback, StyleSheet, Alert } from "react-native";
+import { align } from "../../util";
 
 
 
-export const QuizResponse = () => {
+export const QuizResponse = ({resp}: { resp: string }) => {
   return (
     <View style={ styles.container }>
         <TouchableNativeFeedback
             onPress={() => Alert.alert('Respuesta B')}>
-            <Text style={{}}>Respuesta B</Text>
+            <Text style={{}}>{resp}</Text>
         </TouchableNativeFeedback>
     </View>
   )

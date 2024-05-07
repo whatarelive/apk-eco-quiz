@@ -11,10 +11,22 @@
                     "pregunta": "¿Qué es el cambio climático?",
                     "correcta": "Alteración del clima atribuida a la actividad humana",
                     "respuestas": [
-                        "Alteración del clima atribuida a la actividad humana", 
-                        "Cambio estacional normal", 
-                        "Variación diaria de temperatura", 
-                        "Fenómeno meteorológico aislado"
+                        {
+                            "id": 1,
+                            "value":"Alteración del clima atribuida a la actividad humana"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Cambio estacional normal"
+                        }, 
+                        {
+                            "id": 3,
+                            "value": "Variación diaria de temperatura"
+                        }, 
+                        {
+                            "id": 4,
+                            "value":"Fenómeno meteorológico aislado"
+                        }
                     ]
                    },
                    {
@@ -22,10 +34,22 @@
                     "pregunta": "¿Cuál es el principal gas de efecto invernadero producido por la actividad humana?",
                     "correcta": "Dióxido de carbono (CO2)",
                     "respuestas": [
-                        "Dióxido de carbono (CO2)",
-                        "Ozono (O3)", 
-                        "Nitrógeno (N2)", 
-                        "Vapor de agua (H2O)"
+                        {
+                            "id": 1,
+                            "value":"Dióxido de carbono (CO2)"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Ozono (O3)"
+                        }, 
+                        {
+                            "id": 3,
+                            "value":"Nitrógeno (N2)"
+                        }, 
+                        {
+                            "id": 4,
+                            "value":"Vapor de agua (H2O)"
+                        }
                     ]
                    },
                    {
@@ -33,10 +57,22 @@
                     "pregunta": "¿Qué consecuencias tiene el cambio climático en los ecosistemas?",
                     "correcta": "Pérdida de biodiversidad",
                     "respuestas": [
-                        "Pérdida de biodiversidad",
-                        "Aumento de la diversidad de especies", 
-                        "Estabilidad climática mejorada", 
-                        "Crecimiento acelerado de la flora "
+                        {
+                            "id": 1,
+                            "value":"Pérdida de biodiversidad"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Aumento de la diversidad de especies" 
+                        },
+                        {
+                            "id": 3,
+                            "value":"Estabilidad climática mejorada"
+                        }, 
+                        {
+                            "id": 4,
+                            "value":"Crecimiento acelerado de la flora"
+                        }
                     ]
                    },
                    {
@@ -44,10 +80,22 @@
                     "pregunta": "¿Qué es la huella de carbono? ",
                     "correcta": "Medida del impacto de las actividades humanas",
                     "respuestas": [
-                        "Medida del impacto de las actividades humanas",
-                        "Huella ecológica general", 
-                        "Cantidad de carbono en la dieta", 
-                        "Medida de la eficiencia energética"
+                        {
+                            "id": 1,
+                            "value":"Medida del impacto de las actividades humanas"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Huella ecológica general" 
+                        },
+                        {
+                            "id": 3,
+                            "value":"Cantidad de carbono en la dieta" 
+                        },        
+                        {
+                            "id": 4,
+                            "value":"Medida de la eficiencia energética"
+                        }       
                     ]
                    },
                    {
@@ -55,10 +103,22 @@
                     "pregunta": "¿Cómo pueden los individuos reducir su impacto en el cambio climático?",
                     "correcta": "Reduciendo su consumo de energía y el uso fuentes renovables",
                     "respuestas": [
-                        "Reduciendo su consumo de energía y el uso fuentes renovables",
-                        "Plantando árboles exclusivamente", 
-                        "Usando únicamente vehículos eléctricos", 
-                        "Eliminando el uso de plásticos"
+                        {
+                            "id": 1,
+                            "value":"Reduciendo su consumo de energía y el uso fuentes renovables"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Plantando árboles exclusivamente"
+                        }, 
+                        {
+                            "id": 3,
+                            "value":"Usando únicamente vehículos eléctricos"
+                        }, 
+                        {
+                            "id": 4,
+                            "value":"Eliminando el uso de plásticos"
+                        }
                     ]
                    }
                 ]
@@ -75,10 +135,22 @@
                     "pregunta": "¿Qué es la biodiversidad?",
                     "correcta": "Variedad de vida en todas sus formas y niveles de organización",
                     "respuestas": [
-                        "Variedad de vida en todas sus formas y niveles de organización",
-                        "Número de animales en un ecosistema", 
-                        "Diversidad de paisajes naturales", 
-                        "Variedad de recursos minerales"
+                        {
+                            "id": 1,
+                            "value": "Variedad de vida en todas sus formas y niveles de organización"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Número de animales en un ecosistema"
+                        }, 
+                        {
+                            "id": 3,
+                            "value":"Diversidad de paisajes naturales"
+                        }, 
+                        {
+                            "id": 4,
+                            "value":"Variedad de recursos minerales"
+                        }
                     ]
                    },
                    {
@@ -86,10 +158,22 @@
                     "pregunta": "¿Por qué es importante conservar la biodiversidad?",
                     "correcta": "Mantiene la resiliencia de los ecosistemas y provee recursos para la supervivencia humana",
                     "respuestas": [
-                        "Mantiene la resiliencia de los ecosistemas y provee recursos para la supervivencia humana",
-                        "Solo por razones estéticas", 
-                        "Para incrementar la producción agrícola", 
-                        "Para mantener el turismo ecológico"
+                        {
+                            "id": 1,
+                            "value":"Mantiene la resiliencia de los ecosistemas y provee recursos para la supervivencia humana"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Solo por razones estéticas"
+                        }, 
+                        {
+                            "id": 3,
+                            "value":"Para incrementar la producción agrícola"
+                        }, 
+                        {
+                            "id": 4,
+                            "value":"Para mantener el turismo ecológico"
+                        }
                     ]
                    },
                    {
@@ -97,10 +181,22 @@
                     "pregunta": "¿Cuál es la diferencia entre una especie en peligro de extinción y una especie vulnerable?",
                     "correcta": "Riesgo de extinción es inminente para las especies en peligro, mientras que las vulnerables están en riesgo alto",
                     "respuestas": [
-                        "Riesgo de extinción es inminente para las especies en peligro, mientras que las vulnerables están en riesgo alto", 
-                        "No hay diferencia", 
-                        "Las especies vulnerables están ya extintas", 
-                        "Las especies en peligro son más numerosas" 
+                        {
+                            "id": 1,
+                            "value":"Riesgo de extinción es inminente para las especies en peligro, mientras que las vulnerables están en riesgo alto"
+                        }, 
+                        {
+                            "id": 2,
+                            "value":"No hay diferencia"
+                        }, 
+                        {
+                            "id": 3,
+                            "value":"Las especies vulnerables están ya extintas"
+                        }, 
+                        {
+                            "id": 4,
+                            "value":"Las especies en peligro son más numerosas" 
+                        }
                     ]
                    },
                    {
@@ -108,10 +204,22 @@
                     "pregunta": "¿Qué acciones humanas amenazan la biodiversidad?",
                     "correcta": "Deforestación, contaminación, y sobreexplotación de especies",
                     "respuestas": [
-                        "Deforestación, contaminación, y sobreexplotación de especies",
-                        "Conservación de áreas naturales", 
-                        "Investigación científica de ecosistemas", 
-                        "Educación ambiental"
+                        {
+                            "id": 1,
+                            "value":"Deforestación, contaminación, y sobreexplotación de especies"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Conservación de áreas naturales"
+                        }, 
+                        {
+                            "id": 3,
+                            "value":"Investigación científica de ecosistemas"
+                        }, 
+                        {
+                            "id": 4,
+                            "value":"Educación ambiental"
+                        }
                     ]
                    },
                    {
@@ -119,10 +227,22 @@
                     "pregunta": "¿Qué es un corredor biológico?",
                     "correcta": "Área que permite el desplazamiento y la interacción de especies entre ecosistemas",
                     "respuestas": [
-                        "Área que permite el desplazamiento y la interacción de especies entre ecosistemas",
-                        "Un tipo de zoológico",
-                        "Un parque urbano", 
-                        "Una reserva natural aislada" 
+                        {
+                            "id": 1,
+                            "value":"Área que permite el desplazamiento y la interacción de especies entre ecosistemas"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Un tipo de zoológico"
+                        },
+                        {
+                            "id": 3,
+                            "value":"Un parque urbano"
+                        }, 
+                        {
+                            "id": 4,
+                            "value":"Una reserva natural aislada" 
+                        }
                     ]
                    }
                 ]
@@ -139,10 +259,22 @@
                     "pregunta": "¿Qué son las energías renovables?",
                     "correcta": "Fuentes de energía que se regeneran naturalmente y son inagotables",
                     "respuestas": [
-                        "Fuentes de energía que se regeneran naturalmente y son inagotables",
-                        "Combustibles fósiles", 
-                        "Energía nuclear", 
-                        "Recursos minerales" 
+                        {
+                            "id": 1,
+                            "value":"Fuentes de energía que se regeneran naturalmente y son inagotables"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Combustibles fósiles"
+                        },
+                        {
+                            "id": 3,
+                            "value": "Energía nuclear"
+                        },
+                        {
+                            "id": 4,
+                            "value": "Recursos minerales" 
+                        }
                     ]
                    },
                    {
@@ -150,10 +282,22 @@
                     "pregunta": "¿Cuáles son los tipos principales de energías renovables?",
                     "correcta": "Solar, eólica, hidroeléctrica, geotérmica y biomasa",
                     "respuestas": [
-                        "Solar, eólica, hidroeléctrica, geotérmica y biomasa",
-                        "Petróleo, carbón, gas natural", 
-                        "Energía cinética, potencial y mecánica",
-                        "Electricidad, magnetismo y gravedad" 
+                        {
+                            "id": 1,
+                            "value":"Solar, eólica, hidroeléctrica, geotérmica y biomasa"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Petróleo, carbón, gas natural"
+                        },
+                        {
+                            "id": 3,
+                            "value":"Energía cinética, potencial y mecánica"
+                        },
+                        {
+                            "id": 4,
+                            "value":"Electricidad, magnetismo y gravedad" 
+                        }
                     ]
                    },
                    {
@@ -161,10 +305,22 @@
                     "pregunta": "¿Qué beneficios tienen las energías renovables sobre los combustibles fósiles?",
                     "correcta": "Son sostenibles y menos contaminantes",
                     "respuestas": [
-                        "Son sostenibles y menos contaminantes",
-                        "Son más baratas", 
-                        "Están más ampliamente disponibles",
-                        "Requieren menos tecnología"
+                        {
+                            "id": 1,
+                            "value":"Son sostenibles y menos contaminantes"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Son más baratas"
+                        },
+                        {
+                            "id": 3,
+                            "value":"Están más ampliamente disponibles"
+                        },
+                        {
+                            "id": 4,
+                            "value":"Requieren menos tecnología"
+                        }
                     ]
                    },
                    {
@@ -172,20 +328,45 @@
                     "pregunta": "¿Qué es la energía solar fotovoltaica?",
                     "correcta": "Tecnología que convierte la luz solar directamente en electricidad",
                     "respuestas": [
-                        "Tecnología que convierte la luz solar directamente en electricidad", 
-                        "Método de calentamiento de agua", 
-                        "Tipo de energía solar pasiva", 
-                        "Sistema de iluminación natural"]
+                        {
+                            "id": 1,
+                            "value":"Tecnología que convierte la luz solar directamente en electricidad"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Método de calentamiento de agua"
+                        },
+                        {
+                            "id": 3,
+                            "value":"Tipo de energía solar pasiva"
+                        },
+                        {
+                            "id": 4,
+                            "value":"Sistema de iluminación natural"
+                        }
+                    ]
                    },
                    {
                     "id":5,
                     "pregunta": "¿Cómo funciona una turbina eólica?",
                     "correcta": "Convierte la energía cinética del viento en electricidad",
                     "respuestas": [
-                        "Convierte la energía cinética del viento en electricidad", 
-                        "Utiliza vapor de agua para generar energía", 
-                        "Funciona con combustibles fósiles", 
-                        "Genera energía a través de la luz solar"
+                        {
+                            "id": 1,
+                            "value":"Convierte la energía cinética del viento en electricidad"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Utiliza vapor de agua para generar energía"
+                        },
+                        {
+                            "id": 3,
+                            "value":"Funciona con combustibles fósiles"
+                        },
+                        {
+                            "id": 4,
+                            "value":"Genera energía a través de la luz solar"
+                        }
                     ]
                    }
                 ]
@@ -202,10 +383,22 @@
                     "pregunta": "¿Qué es la contaminación del aire?",
                     "correcta": "Presencia de sustancias nocivas en la atmósfera que afectan la salud y el medio ambiente",
                     "respuestas": [
-                        "Presencia de sustancias nocivas en la atmósfera que afectan la salud y el medio ambiente", 
-                        "Humo visible en el cielo", 
-                        "Olor desagradable en zonas urbanas", 
-                        "Ruido de vehículos"
+                        {
+                            "id": 1,
+                            "value":"Presencia de sustancias nocivas en la atmósfera que afectan la salud y el medio ambiente" 
+                        },
+                        {
+                            "id": 2,
+                            "value":"Humo visible en el cielo"
+                        },
+                        {
+                            "id": 3,
+                            "value":"Olor desagradable en zonas urbanas" 
+                        },
+                        {
+                            "id": 4,
+                            "value":"Ruido de vehículos"
+                        }
                     ]
                    },
                    {
@@ -213,10 +406,22 @@
                     "pregunta": "¿Cuáles son los efectos de la contaminación del agua en la salud humana?",
                     "correcta": "Enfermedades y trastornos respiratorios, gastrointestinales y de la piel ",
                     "respuestas": [
-                        "Enfermedades y trastornos gastrointestinales y de la piel", 
-                        "Solo afecta la vida acuática", 
-                        "Causa problemas exclusivamente respiratorios",
-                        "Incrementa la resistencia a antibióticos"
+                        {
+                            "id": 1,
+                            "value":"Enfermedades y trastornos gastrointestinales y de la piel"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Solo afecta la vida acuática"
+                        },
+                        {
+                            "id": 3,
+                            "value":"Causa problemas exclusivamente respiratorios"
+                        },
+                        {
+                            "id": 4,
+                            "value":"Incrementa la resistencia a antibióticos"
+                        }
                     ]
                    },
                    {
@@ -224,10 +429,22 @@
                     "pregunta": "¿Qué es la gestión de residuos?",
                     "correcta": "Conjunto de actividades para manejar los residuos hasta su disposición final",
                     "respuestas": [
-                        "Conjunto de actividades para manejar los residuos hasta su disposición final", 
-                        "Limpieza de calles", 
-                        "Recolección de hojas en otoño", 
-                        "Mantenimiento de parques y jardines"
+                        {
+                            "id": 1,
+                            "value":"Conjunto de actividades para manejar los residuos hasta su disposición final"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Limpieza de calles"
+                        },
+                        {
+                            "id": 3,
+                            "value":"Recolección de hojas en otoño" 
+                        },
+                        {
+                            "id": 4,
+                            "value":"Mantenimiento de parques y jardines"
+                        }
                     ]
                    },
                    {
@@ -235,10 +452,22 @@
                     "pregunta": "¿Cómo se puede reducir la cantidad de residuos generados?",
                     "correcta": "Aplicando las 3R: Reducir, Reutilizar, Reciclar",
                     "respuestas": [
-                        "Aplicando las 3R: Reducir, Reutilizar, Reciclar", 
-                        "Comprando más productos", 
-                        "Usando más envases de un solo uso", 
-                        "Ignorando el problema"
+                        {
+                            "id": 1,
+                            "value":"Aplicando las 3R: Reducir, Reutilizar, Reciclar" 
+                        },
+                        {
+                            "id": 2,
+                            "value":"Comprando más productos" 
+                        },
+                        {
+                            "id": 3,
+                            "value":"Usando más envases de un solo uso" 
+                        },
+                        {
+                            "id": 4,
+                            "value":"Ignorando el problema"
+                        }
                     ]
                    },
                    {
@@ -246,10 +475,22 @@
                     "pregunta": "¿Qué es el reciclaje y por qué es importante?",
                     "correcta": "Proceso de convertir desechos en nuevos productos para prevenir el desperdicio de materiales útiles",
                     "respuestas": [
-                        "Proceso de convertir desechos en nuevos productos para prevenir el desperdicio de materiales útiles", 
-                        "Una moda pasajera", 
-                        "Solo una forma de limpieza", 
-                        "Un concepto sin impacto real"
+                        {
+                            "id": 1,
+                            "value":"Proceso de convertir desechos en nuevos productos para prevenir el desperdicio de materiales útiles" 
+                        },
+                        {
+                            "id": 2,
+                            "value":"Una moda pasajera"
+                        },
+                        {
+                            "id": 3,
+                            "value":"Solo una forma de limpieza" 
+                        },
+                        {
+                            "id": 4,
+                            "value":"Un concepto sin impacto real"
+                        }
                     ]
                    }
                 ]
@@ -266,10 +507,22 @@
                     "pregunta": "¿Por qué es importante conservar el agua?",
                     "correcta": "Es un recurso limitado esencial para la vida y los ecosistemas",
                     "respuestas": [
-                        "Es un recurso limitado esencial para la vida y los ecosistemas",
-                        "Porque es infinita", 
-                        "Para tener más agua para actividades recreativas", 
-                        "Solo para ahorrar dinero"
+                        {
+                            "id": 1,
+                            "value":"Es un recurso limitado esencial para la vida y los ecosistemas"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Porque es infinita"
+                        },
+                        {
+                            "id": 3,
+                            "value":"Para tener más agua para actividades recreativas" 
+                        },
+                        {
+                            "id": 4,
+                            "value":"Solo para ahorrar dinero"
+                        }
                     ]
                    },
                    {
@@ -277,10 +530,22 @@
                     "pregunta": "¿Qué es la escasez de agua?",
                     "correcta": "Situación donde la demanda de agua supera la oferta disponible",
                     "respuestas": [
-                        "Situación donde la demanda de agua supera la oferta disponible", 
-                        "Exceso de lluvia", 
-                        "Abundancia de agua en los océanos", 
-                        "Presencia de agua en la atmósfera"
+                        {
+                            "id": 1,
+                            "value":"Situación donde la demanda de agua supera la oferta disponible" 
+                        },
+                        {
+                            "id": 2,
+                            "value":"Exceso de lluvia"
+                        },
+                        {
+                            "id": 3,
+                            "value":"Abundancia de agua en los océanos" 
+                        },
+                        {
+                            "id": 4,
+                            "value":"Presencia de agua en la atmósfera"
+                        }
                     ]
                    },
                    {
@@ -288,10 +553,22 @@
                     "pregunta": "¿Cómo afecta la agricultura a los recursos hídricos?",
                     "correcta": "Puede causar sobreexplotación y contaminación de fuentes de agua",
                     "respuestas": [
-                        "Puede causar sobreexplotación y contaminación de fuentes de agua", 
-                        "Mejora la calidad del agua", 
-                        "No tiene ningún efecto", 
-                        "Aumenta la cantidad de agua dulce"
+                        {
+                            "id": 1,
+                            "value":"Puede causar sobreexplotación y contaminación de fuentes de agua"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Mejora la calidad del agua"
+                        },
+                        {
+                            "id": 3,
+                            "value":"No tiene ningún efecto"
+                        },
+                        {
+                            "id": 4,
+                            "value":"Aumenta la cantidad de agua dulce"
+                        }
                     ]
                    },
                    {
@@ -299,10 +576,22 @@
                     "pregunta": "¿Qué es la huella hídrica?",
                     "correcta": "Indicador del uso total de agua dulce de un individuo, comunidad o actividad",
                     "respuestas": [
-                        "Indicador del uso total de agua dulce de un individuo, comunidad o actividad", 
-                        "Cantidad de agua en una piscina", 
-                        "Volumen de agua en una botella",
-                        "Medida de lluvia anual"
+                        {
+                            "id": 1,
+                            "value":"Indicador del uso total de agua dulce de un individuo, comunidad o actividad"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Cantidad de agua en una piscina"
+                        },
+                        {
+                            "id": 3,
+                            "value":"Volumen de agua en una botella"
+                        },
+                        {
+                            "id": 4,
+                            "value":"Medida de lluvia anual"
+                        }
                     ]
                    },
                    {
@@ -310,10 +599,22 @@
                     "pregunta": "¿Qué medidas se pueden tomar para proteger las fuentes de agua dulce?",
                     "correcta": "Tratamiento de aguas residuales, y políticas de conservación",
                     "respuestas": [
-                        "Tratamiento de aguas residuales, y políticas de conservación",
-                        "Construcción de más presas", 
-                        "Uso intensivo de fertilizantes", 
-                        "Desviación de ríos"
+                        {
+                            "id": 1,
+                            "value":"Tratamiento de aguas residuales, y políticas de conservación"
+                        },
+                        {
+                            "id": 2,
+                            "value":"Construcción de más presas"
+                        },
+                        {
+                            "id": 3,
+                            "value":"Uso intensivo de fertilizantes"  
+                        },
+                        {
+                            "id": 4,
+                            "value":"Desviación de ríos"
+                        }
                     ]
                    }
                 ]

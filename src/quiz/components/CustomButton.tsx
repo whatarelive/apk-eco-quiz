@@ -9,7 +9,7 @@ export const CustomButton = ({title, handleClick }: {title : string, handleClick
   return (
     <View style={ styles.container }>
         <TouchableNativeFeedback
-          onPress={ () => handleClick }>
+          onPress={ () => handleClick() }>
             
             <Text 
               style={ styles.text }>

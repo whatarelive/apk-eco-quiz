@@ -1,13 +1,14 @@
 import { Text, View, Image, TouchableNativeFeedback, StyleSheet } from "react-native";
 import { colors } from "../../util";
 import { useNavigate } from "react-router-native";
+import { useImage } from "../hooks/useImage";
 
 
-export const QuizHeader = () => {
+export const QuizHeader = ({icon, title}: {icon: string, title: string}) => {
     
     const navigate = useNavigate();
-
-    const image = require('../../assets/images/Nueva carpeta/energia.png');
+    const image = useImage( icon );
+ 
     const flecha = require('../../assets/images/flecha-atras.png');
     
     const onClick = () => {
@@ -23,7 +24,7 @@ export const QuizHeader = () => {
 
             <Text
                 style={styles.text}>
-                {'Texto de Prueba'}
+                { title }
             </Text>
 
             <TouchableNativeFeedback

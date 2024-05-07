@@ -15,8 +15,13 @@ export interface Category {
 }
 
 export interface Question {
-    readonly id: string,
+    readonly id: number,
     readonly pregunta: string,
     readonly correcta: string,
-    readonly respuestas: String[]
+    readonly respuestas: Respuesta[]
+}
+
+export interface Respuesta {
+    id: number,
+    value: string
 }

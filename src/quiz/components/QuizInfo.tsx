@@ -3,7 +3,7 @@ import { align, colors } from "../../util";
 
 
 
-export const QuizInfo = () => {
+export const QuizInfo = ({id}: {id: number}) => {
 
   return (
     <View style={ styles.container }> 
@@ -11,7 +11,7 @@ export const QuizInfo = () => {
       <View style={ styles.subContainer }>
         <Text 
             style={ styles.text }>
-            {`Quiz: ${'#'}`}
+            {`Quiz: #${id}`}
         </Text>
         <Text 
             style={ styles.crono }>
