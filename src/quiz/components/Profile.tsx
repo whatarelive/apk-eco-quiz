@@ -10,7 +10,7 @@ export const Profile = (): JSX.Element => {
 
     // TODO: falta por implementar la actualizacion del estado de la puntuacion.
     const [ record , setRecord ] = useState({score: 0, time: 0})
-    const urlAvatar = useImage();
+    const urlAvatar = useImage('avatar1', 'avatarImage');
 
 
   return (

@@ -1,5 +1,5 @@
 import { Text, FlatList, StyleSheet, View } from 'react-native';
-import { categories }  from "../../assets/data/Quiz.json";
+import { categories }  from "../data/Quiz.json";
 import { CategoryItem } from "./CategoryItem";
 import { RenderList } from '../types/PropsTypes';
 import { colors, align } from '../../util';
@@ -7,6 +7,12 @@ import { colors, align } from '../../util';
 
 
 export const CategoryList = (): JSX.Element => {
+
+  const itemSeparator = () => <View style={ styles.separador }/>;
+
+  const renderItem = ({ item: {category} }: RenderList) => (
+      <CategoryItem key={ category.id } category={ category }/> 
+  );
 
   return (
     <View style={ styles.container }>
@@ -24,17 +30,8 @@ export const CategoryList = (): JSX.Element => {
         style={ styles.list } 
         data={ categories }
         showsVerticalScrollIndicator={ false }
-        ItemSeparatorComponent={() => (
-          <View 
-            style={ styles.separador } >
-          </View>
-        )}
-        renderItem={({item: {category}}: RenderList) => (        
-          <CategoryItem 
-            key={ category.id } 
-            category={ category }>
-          </CategoryItem> 
-        )}/> 
+        ItemSeparatorComponent={ itemSeparator }
+        renderItem={ renderItem }/> 
 
     </View>
   )

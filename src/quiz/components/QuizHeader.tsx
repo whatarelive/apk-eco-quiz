@@ -1,15 +1,16 @@
 import { Text, View, Image, TouchableNativeFeedback, StyleSheet } from "react-native";
-import { colors } from "../../util";
 import { useNavigate } from "react-router-native";
+import { colors } from "../../util";
 import { useImage } from "../hooks/useImage";
+import { QuizHeaderProps } from "../types";
 
 
-export const QuizHeader = ({icon, title}: {icon: string, title: string}) => {
+
+export const QuizHeader = ( { icon, title }: QuizHeaderProps ): JSX.Element => {
     
     const navigate = useNavigate();
-    const image = useImage( icon );
- 
-    const flecha = require('../../assets/images/flecha-atras.png');
+    const image = useImage( icon, 'categoryImage' );
+    const flecha = useImage('flecha', "uiImage");
     
     const onClick = () => {
         navigate('/home', { replace: true });

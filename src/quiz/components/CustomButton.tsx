@@ -1,10 +1,10 @@
 import { View, Text, TouchableNativeFeedback, StyleSheet } from "react-native";
 import { colors, fontSize } from "../../util";
+import { CustomButtonProps } from "../types";
 
 
 
-// TODO: falta la funcionalida de mandar al contexto la categoria aleatoria. 
-export const CustomButton = ({title, handleClick }: {title : string, handleClick: CallableFunction}): JSX.Element => {
+export const CustomButton = ( { title, handleClick }: CustomButtonProps ): JSX.Element => {
 
   return (
     <View style={ styles.container }>

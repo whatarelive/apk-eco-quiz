@@ -1,13 +1,13 @@
 import { Text, View, StyleSheet } from "react-native";
 import { align, colors } from "../../util";
+import { QuizInfoProps } from "../types";
 
 
 
-export const QuizInfo = ({id}: {id: number}) => {
+export const QuizInfo = ( { id }: QuizInfoProps ): JSX.Element => {
 
   return (
     <View style={ styles.container }> 
-      
       <View style={ styles.subContainer }>
         <Text 
             style={ styles.text }>
@@ -30,8 +30,7 @@ const styles = StyleSheet.create({
     container: {
         ...align.relative,
         paddingHorizontal: 10,
-        height: '10%',
-        //backgroundColor: '#562'
+        height: '10%'
     },
     subContainer: {
         width: '100%',

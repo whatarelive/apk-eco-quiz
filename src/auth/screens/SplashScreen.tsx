@@ -1,14 +1,15 @@
-import { View, Image, Text, StyleSheet, ImageURISource } from "react-native"
+import { View, Image, Text, StyleSheet } from "react-native"
 import { memo, useEffect } from "react";
 import { useNavigate } from "react-router-native";
 import { ProgressBar } from "../components/ProgressBar";
 import { colors, align } from "../../util";
+import { useImage } from "../../quiz/hooks/useImage";
 
 
 export const SplashScreen = memo(() => {
   
   const navigate = useNavigate();
-  const image: ImageURISource = require('../../assets/images/screenlogo.png');
+  const image = useImage('logo', 'uiImage');
 
   useEffect(() => {
     const timout = setTimeout(() => {

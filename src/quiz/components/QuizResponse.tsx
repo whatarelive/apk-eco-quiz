@@ -1,9 +1,10 @@
 import { Text, View, TouchableNativeFeedback, StyleSheet, Alert } from "react-native";
+import { QuizResponseProps } from "../types";
 import { align } from "../../util";
 
 
 
-export const QuizResponse = ({resp}: { resp: string }) => {
+export const QuizResponse = ( { resp }: QuizResponseProps ) => {
   return (
     <View style={ styles.container }>
         <TouchableNativeFeedback
@@ -20,5 +21,8 @@ const styles = StyleSheet.create({
         height: '20%',
         backgroundColor: '#785',
         margin: 10
+    },
+    text: {
+      
     }
 });

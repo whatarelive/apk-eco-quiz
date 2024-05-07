@@ -1,4 +1,4 @@
-import { categories } from "../../assets/data/Quiz.json";
+import { categories } from "../data/Quiz.json";
 
 
 export const getCategoryById = ( categoryId: string | undefined ) => {

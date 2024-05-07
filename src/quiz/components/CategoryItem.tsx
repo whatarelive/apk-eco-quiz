@@ -1,16 +1,15 @@
 import { View, Image, Text, TouchableNativeFeedback, StyleSheet } from "react-native";
 import { useNavigate } from "react-router-native";
 import { useImage } from "../hooks/useImage";
-import { Category } from "../types/HookTypes";
+import { CategoryItemProps } from "../types";
 import { colors } from "../../util";
 
 
 
-// TODO: Crear un contexto al cual enviar la categoria seleccionada.
-export const CategoryItem = ({ category }: { category: Category }): JSX.Element => {
+export const CategoryItem = ( { category }: CategoryItemProps ): JSX.Element => {
 
   const navigate = useNavigate();
-  const image = useImage( category.urlIcon );
+  const image = useImage( category.urlIcon, 'categoryImage' );
 
   const handleTouch = () => {
     navigate(`/quiz/${ category.id }/${1}`);

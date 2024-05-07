@@ -1,34 +1,24 @@
 import { useEffect, useState } from "react";
+import { getImageByPath } from "../helpers/getImageByPath";
+import { ImageURISource } from "react-native";
 
 
-export const useImage = ( imageUrl?: string ) => {
 
-    const [ state, setState ] = useState();
-    
-    const getImage = ( path?: string ) => {
+// Custom Hook encargado de controlar el flujo de carga de las imagenes.
+export const useImage = ( imageUrl: string, type: string ) => {
 
-        switch ( path ) {
-            case 'cambio':
-                return require('/Users/Whatare/Desktop/my-app/src/assets/images/cambio.jpg');
-            case 'biodiversidad':
-                return require('/Users/Whatare/Desktop/my-app/src/assets/images/biodiversidad.jpg');
-            case 'energia': 
-                return require('/Users/Whatare/Desktop/my-app/src/assets/images/energia.jpg');
-            case 'reciclaje':
-                return require('/Users/Whatare/Desktop/my-app/src/assets/images/reciclaje.jpg');
-            case 'agua':
-                return require('/Users/Whatare/Desktop/my-app/src/assets/images/agua.jpg');
-            default:
-                return require('/Users/Whatare/Desktop/my-app/src/assets/images/logo.png');
-        }
-    }
+    // Estado donde se guarda el objeto Image.
+    const [ state, setState ] = useState<ImageURISource>();
 
     useEffect(() => {
-        const image = getImage( imageUrl );
+        // Carga la imagen.
+        const image = getImageByPath( imageUrl, type );
         
+        // Se guarda la imagen en el estado.
         setState( image );
+        
+        // El useEffect se va a ejecutar cada vez que cambia su dependencia.
       }, [imageUrl]);
-
 
     return state;
 }
