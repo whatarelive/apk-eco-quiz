@@ -1,22 +1,15 @@
 import { View, Text, TouchableNativeFeedback, StyleSheet } from "react-native";
-import { useNavigate } from "react-router-native";
 import { colors, fontSize } from "../../util";
 
 
 
 // TODO: falta la funcionalida de mandar al contexto la categoria aleatoria. 
-export const CustomButton = ({title}: {title : string}): JSX.Element => {
-
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate('/quiz', { replace: true } );
-  }
+export const CustomButton = ({title, handleClick }: {title : string, handleClick: CallableFunction}): JSX.Element => {
 
   return (
     <View style={ styles.container }>
         <TouchableNativeFeedback
-          onPress={ handleClick }>
+          onPress={ () => handleClick }>
             
             <Text 
               style={ styles.text }>

@@ -4,3 +4,6 @@ export * from './CustomButton';
 export * from './Header';
 export * from './Profile';
 export * from './ProfileScore';
+export * from './QuizHeader';
+export * from './QuizInfo';
+export * from './QuizResponse';

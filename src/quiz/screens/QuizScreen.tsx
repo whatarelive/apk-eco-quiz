@@ -1,99 +1,69 @@
-import { View, Text, Image, StyleSheet, TouchableNativeFeedback, Alert } from "react-native"
+import { View, Text, StyleSheet } from "react-native"
 import { useNavigate } from 'react-router-native';
-import { StatusBar, colors } from "../../util";
-import { CustomButton } from '../components/CustomButton';
+import { StatusBar } from "../../util";
+import { CustomButton, QuizHeader, QuizInfo, QuizResponse } from '../components';
+
+
 
 export const QuizScreen = () => {
 
   const navigate = useNavigate()
 
-  const handleTouch = () => {
-    navigate('/home', { replace: true });
+  const handleClick = () => {
+    navigate(`/quiz`, { replace: true });
   }
 
   return (
     <>
       <StatusBar/>
 
-      <View style={{ display: 'flex', flexDirection: 'column' }}>
+      <View style={{ flexDirection: 'column'}}>
+        <QuizHeader />
+        <QuizInfo />      
+        <Text style={ styles.question }>{`Pregunta #1 : ${`¿Qué medidas se pueden tomar para proteger las fuentes de agua dulce?`}`}</Text>
 
-        {/* Header */}
-        <View>
-          <Image 
-              source={{uri: '/src/assets/images/Nueva carpeta/reciclaje.png'}}
-              style={{}}>
-          </Image>
-
-          <Text
-              style={{}}>
-            {'Texto de Prueba'}
-          </Text>
-
-
-          <TouchableNativeFeedback
-            onPress={() => Alert.alert('Hola')}
-            style={{}}
-            >
-            <Image
-                source={{uri: ''}}
-                style={{}}>
-            </Image>
-          </TouchableNativeFeedback>
-        </View>
-
-        {/* Quiz Info */}
-        <View style={{}}>
-          <Text style={{}}>{`Quiz: ${'#'}`}</Text>
-          <Text style={{}}>{'03:00 min'}</Text>
-          <View style={{}}></View>
-        </View>
-
-        {/* Quiz Question */}
-        <Text style={{}}>{"¿Qué medidas se pueden tomar para proteger las fuentes de agua dulce?"}</Text>
-
-        {/* Quiz Reponses */}
-        <View style={{}}>
-
-          {/* Respuesta A */}
-          <View style={{}}>
-            <TouchableNativeFeedback
-              onPress={() => Alert.alert('Respuesta A')}
-            >
-                <Text style={{}}>Respuesta A</Text>
-            </TouchableNativeFeedback>
-          </View>
+        {/*  Quiz Reponses  */}
+        <View style={ styles.response }>
+          {/*  Respuesta A  */}
+          <QuizResponse/>
         
-          {/* Respuesta B */}
-          <View style={{}}>
-            <TouchableNativeFeedback
-              onPress={() => Alert.alert('Respuesta B')}
-            >
-                <Text style={{}}>Respuesta B</Text>
-            </TouchableNativeFeedback>
-          </View>
+          {/*  Respuesta B */}
+          <QuizResponse/>
 
-          {/* Respuesta C */}
-          <View style={{}}>
-            <TouchableNativeFeedback
-              onPress={() => Alert.alert('Respuesta C')}
-            >
-                <Text style={{}}>Respuesta C</Text>
-            </TouchableNativeFeedback>
-          </View>
+          {/*  Respuesta C */} 
+          <QuizResponse/>
 
-          {/* Respuesta D */}
-          <View style={{}}>
-            <TouchableNativeFeedback
-              onPress={() => Alert.alert('Respuesta D')}
-            >
-                <Text style={{}}>Respuesta D</Text>
-            </TouchableNativeFeedback>
-          </View>
+          {/*  Respuesta D  */}
+         <QuizResponse/>
         </View>
 
-          {/* Next Quiz Question */}
-        <CustomButton title="Submit"/>
-      </View>
+          {/*  Next Quiz Question */} 
+        <CustomButton 
+          title="Submit" 
+          handleClick={ handleClick }
+        />
+      </View> 
     </>
   )
 }
+
+const styles = StyleSheet.create({
+  question: {
+    position: 'relative',
+    fontSize: 20,
+    width: '90%',
+    height: '10%',
+    alignSelf: 'center',
+    fontWeight: '600',
+    marginBottom: '5%',
+  },
+  response: {
+    flexDirection: 'column',
+    position: 'relative',
+    alignSelf: 'center',
+    justifyContent: 'center',
+    width: '95%',
+    height: '50%',
+    marginBottom: '15%',
+  }
+})

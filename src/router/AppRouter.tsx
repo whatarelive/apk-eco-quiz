@@ -2,6 +2,8 @@ import { Route, Routes } from "react-router-native";
 import { SplashScreen } from "../auth";
 import { HomeScreen, QuizScreen, VictoryScreen } from "../quiz";
 
+
+
 // Cofiguracion de las rutas de la APK.
 export const AppRouter = () => {
 

@@ -13,7 +13,7 @@ export const CategoryItem = ({ category }: { category: Category }): JSX.Element 
   const image = useImage( category.urlIcon );
 
   const handleTouch = () => {
-    navigate('/quiz', { replace: true });
+    navigate(`/quiz`);
   };
   
   return (
