@@ -26,6 +26,16 @@ export const QuizInfo = ( { id }: QuizInfoProps ): JSX.Element => {
   )
 }
 
+const global = StyleSheet.create({
+  text: {
+    flex: 1,
+    fontSize: 20,
+    fontWeight: '600',
+    paddingHorizontal: 20,
+    color: colors.primary
+  }
+})
+
 const styles = StyleSheet.create({
     container: {
         ...align.relative,
@@ -37,22 +47,16 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     text: {
-        flex: 1,
-        fontSize: 20,
-        fontWeight: '600',
         textAlign: 'left',
-        paddingHorizontal: 10,
+        ...global.text
     },
     crono: {
-        flex: 1,
-        fontSize: 20,
-        fontWeight: '600',
         textAlign: 'right',
-        paddingHorizontal: 10,
+        ...global.text
     },
     separador: {
         width: '90%',
         height: 3,
-        backgroundColor: colors.acent
+        backgroundColor: colors.lightPrimary
     }
 });

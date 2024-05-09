@@ -12,19 +12,19 @@
                     "correcta": "Alteración del clima atribuida a la actividad humana",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Alteración del clima atribuida a la actividad humana"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Cambio estacional normal"
                         }, 
                         {
-                            "id": 3,
+                            "id": "C",
                             "value": "Variación diaria de temperatura"
                         }, 
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Fenómeno meteorológico aislado"
                         }
                     ]
@@ -35,19 +35,19 @@
                     "correcta": "Dióxido de carbono (CO2)",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Dióxido de carbono (CO2)"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Ozono (O3)"
                         }, 
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Nitrógeno (N2)"
                         }, 
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Vapor de agua (H2O)"
                         }
                     ]
@@ -58,19 +58,19 @@
                     "correcta": "Pérdida de biodiversidad",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Pérdida de biodiversidad"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Aumento de la diversidad de especies" 
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Estabilidad climática mejorada"
                         }, 
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Crecimiento acelerado de la flora"
                         }
                     ]
@@ -81,19 +81,19 @@
                     "correcta": "Medida del impacto de las actividades humanas",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Medida del impacto de las actividades humanas"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Huella ecológica general" 
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Cantidad de carbono en la dieta" 
                         },        
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Medida de la eficiencia energética"
                         }       
                     ]
@@ -104,19 +104,19 @@
                     "correcta": "Reduciendo su consumo de energía y el uso fuentes renovables",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Reduciendo su consumo de energía y el uso fuentes renovables"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Plantando árboles exclusivamente"
                         }, 
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Usando únicamente vehículos eléctricos"
                         }, 
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Eliminando el uso de plásticos"
                         }
                     ]
@@ -136,19 +136,19 @@
                     "correcta": "Variedad de vida en todas sus formas y niveles de organización",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value": "Variedad de vida en todas sus formas y niveles de organización"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Número de animales en un ecosistema"
                         }, 
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Diversidad de paisajes naturales"
                         }, 
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Variedad de recursos minerales"
                         }
                     ]
@@ -159,19 +159,19 @@
                     "correcta": "Mantiene la resiliencia de los ecosistemas y provee recursos para la supervivencia humana",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Mantiene la resiliencia de los ecosistemas y provee recursos para la supervivencia humana"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Solo por razones estéticas"
                         }, 
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Para incrementar la producción agrícola"
                         }, 
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Para mantener el turismo ecológico"
                         }
                     ]
@@ -182,19 +182,19 @@
                     "correcta": "Riesgo de extinción es inminente para las especies en peligro, mientras que las vulnerables están en riesgo alto",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Riesgo de extinción es inminente para las especies en peligro, mientras que las vulnerables están en riesgo alto"
                         }, 
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"No hay diferencia"
                         }, 
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Las especies vulnerables están ya extintas"
                         }, 
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Las especies en peligro son más numerosas" 
                         }
                     ]
@@ -205,19 +205,19 @@
                     "correcta": "Deforestación, contaminación, y sobreexplotación de especies",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Deforestación, contaminación, y sobreexplotación de especies"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Conservación de áreas naturales"
                         }, 
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Investigación científica de ecosistemas"
                         }, 
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Educación ambiental"
                         }
                     ]
@@ -228,19 +228,19 @@
                     "correcta": "Área que permite el desplazamiento y la interacción de especies entre ecosistemas",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Área que permite el desplazamiento y la interacción de especies entre ecosistemas"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Un tipo de zoológico"
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Un parque urbano"
                         }, 
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Una reserva natural aislada" 
                         }
                     ]
@@ -260,19 +260,19 @@
                     "correcta": "Fuentes de energía que se regeneran naturalmente y son inagotables",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Fuentes de energía que se regeneran naturalmente y son inagotables"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Combustibles fósiles"
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value": "Energía nuclear"
                         },
                         {
-                            "id": 4,
+                            "id": "D",
                             "value": "Recursos minerales" 
                         }
                     ]
@@ -283,19 +283,19 @@
                     "correcta": "Solar, eólica, hidroeléctrica, geotérmica y biomasa",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Solar, eólica, hidroeléctrica, geotérmica y biomasa"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Petróleo, carbón, gas natural"
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Energía cinética, potencial y mecánica"
                         },
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Electricidad, magnetismo y gravedad" 
                         }
                     ]
@@ -306,19 +306,19 @@
                     "correcta": "Son sostenibles y menos contaminantes",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Son sostenibles y menos contaminantes"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Son más baratas"
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Están más ampliamente disponibles"
                         },
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Requieren menos tecnología"
                         }
                     ]
@@ -329,19 +329,19 @@
                     "correcta": "Tecnología que convierte la luz solar directamente en electricidad",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Tecnología que convierte la luz solar directamente en electricidad"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Método de calentamiento de agua"
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Tipo de energía solar pasiva"
                         },
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Sistema de iluminación natural"
                         }
                     ]
@@ -352,19 +352,19 @@
                     "correcta": "Convierte la energía cinética del viento en electricidad",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Convierte la energía cinética del viento en electricidad"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Utiliza vapor de agua para generar energía"
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Funciona con combustibles fósiles"
                         },
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Genera energía a través de la luz solar"
                         }
                     ]
@@ -384,19 +384,19 @@
                     "correcta": "Presencia de sustancias nocivas en la atmósfera que afectan la salud y el medio ambiente",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Presencia de sustancias nocivas en la atmósfera que afectan la salud y el medio ambiente" 
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Humo visible en el cielo"
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Olor desagradable en zonas urbanas" 
                         },
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Ruido de vehículos"
                         }
                     ]
@@ -407,19 +407,19 @@
                     "correcta": "Enfermedades y trastornos respiratorios, gastrointestinales y de la piel ",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Enfermedades y trastornos gastrointestinales y de la piel"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Solo afecta la vida acuática"
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Causa problemas exclusivamente respiratorios"
                         },
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Incrementa la resistencia a antibióticos"
                         }
                     ]
@@ -430,19 +430,19 @@
                     "correcta": "Conjunto de actividades para manejar los residuos hasta su disposición final",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Conjunto de actividades para manejar los residuos hasta su disposición final"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Limpieza de calles"
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Recolección de hojas en otoño" 
                         },
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Mantenimiento de parques y jardines"
                         }
                     ]
@@ -453,19 +453,19 @@
                     "correcta": "Aplicando las 3R: Reducir, Reutilizar, Reciclar",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Aplicando las 3R: Reducir, Reutilizar, Reciclar" 
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Comprando más productos" 
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Usando más envases de un solo uso" 
                         },
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Ignorando el problema"
                         }
                     ]
@@ -476,19 +476,19 @@
                     "correcta": "Proceso de convertir desechos en nuevos productos para prevenir el desperdicio de materiales útiles",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Proceso de convertir desechos en nuevos productos para prevenir el desperdicio de materiales útiles" 
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Una moda pasajera"
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Solo una forma de limpieza" 
                         },
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Un concepto sin impacto real"
                         }
                     ]
@@ -508,19 +508,19 @@
                     "correcta": "Es un recurso limitado esencial para la vida y los ecosistemas",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Es un recurso limitado esencial para la vida y los ecosistemas"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Porque es infinita"
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Para tener más agua para actividades recreativas" 
                         },
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Solo para ahorrar dinero"
                         }
                     ]
@@ -531,19 +531,19 @@
                     "correcta": "Situación donde la demanda de agua supera la oferta disponible",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Situación donde la demanda de agua supera la oferta disponible" 
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Exceso de lluvia"
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Abundancia de agua en los océanos" 
                         },
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Presencia de agua en la atmósfera"
                         }
                     ]
@@ -554,19 +554,19 @@
                     "correcta": "Puede causar sobreexplotación y contaminación de fuentes de agua",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Puede causar sobreexplotación y contaminación de fuentes de agua"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Mejora la calidad del agua"
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"No tiene ningún efecto"
                         },
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Aumenta la cantidad de agua dulce"
                         }
                     ]
@@ -577,19 +577,19 @@
                     "correcta": "Indicador del uso total de agua dulce de un individuo, comunidad o actividad",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Indicador del uso total de agua dulce de un individuo, comunidad o actividad"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Cantidad de agua en una piscina"
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Volumen de agua en una botella"
                         },
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Medida de lluvia anual"
                         }
                     ]
@@ -600,19 +600,19 @@
                     "correcta": "Tratamiento de aguas residuales, y políticas de conservación",
                     "respuestas": [
                         {
-                            "id": 1,
+                            "id": "A",
                             "value":"Tratamiento de aguas residuales, y políticas de conservación"
                         },
                         {
-                            "id": 2,
+                            "id": "B",
                             "value":"Construcción de más presas"
                         },
                         {
-                            "id": 3,
+                            "id": "C",
                             "value":"Uso intensivo de fertilizantes"  
                         },
                         {
-                            "id": 4,
+                            "id": "D",
                             "value":"Desviación de ríos"
                         }
                     ]

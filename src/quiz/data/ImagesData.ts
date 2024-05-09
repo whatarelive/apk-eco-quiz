@@ -33,7 +33,7 @@ export const iconImages = [
         path:  require('../../assets/icon/biodiversidad.png'),
     },
     {
-        name: "enenrgia",
+        name: "energia",
         path:  require('../../assets/icon/energia.png'),
     },
     {

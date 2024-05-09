@@ -1,4 +1,4 @@
-import { Category } from "./HookTypes"
+import { Category, Respuesta } from "./HookTypes"
 import { QuizInfo } from '../components/QuizInfo';
 
 
@@ -32,7 +32,7 @@ export type QuizInfoProps = {
 
 // PropsTypes de la funcion del Componente <QuizResponse/>
 export type QuizResponseProps = {
-    resp: string
+    resp: Respuesta
 }
 
 

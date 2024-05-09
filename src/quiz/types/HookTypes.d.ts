@@ -22,6 +22,6 @@ export interface Question {
 }
 
 export interface Respuesta {
-    id: number,
+    id: string,
     value: string
 }

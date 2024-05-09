@@ -9,7 +9,7 @@ import { QuizHeaderProps } from "../types";
 export const QuizHeader = ( { icon, title }: QuizHeaderProps ): JSX.Element => {
     
     const navigate = useNavigate();
-    const image = useImage( icon, 'categoryImage' );
+    const image = useImage( icon, 'iconImage' );
     const flecha = useImage('flecha', "uiImage");
     
     const onClick = () => {
@@ -42,7 +42,7 @@ export const QuizHeader = ( { icon, title }: QuizHeaderProps ): JSX.Element => {
 const styles = StyleSheet.create({
     container: {
         display: 'flex',
-        height: '8%',
+        height: '10%',
         marginBottom: '5%',
         flexDirection: 'row',
         backgroundColor: colors.primary,
@@ -50,17 +50,14 @@ const styles = StyleSheet.create({
     },
     text: {
         flex: 1,
-        fontSize: 22,
+        fontSize: 24,
         fontWeight: '500',
         color: colors.textPrimary,
     },
     image: {
-        borderRadius: 100,
-        borderWidth: 3,
-        borderColor: colors.textPrimary,
-        width: '12%',
-        height: '77%',
-        marginHorizontal: '5%',
+        maxWidth: '16%',
+        maxHeight: '77%',
+        marginHorizontal: '3%',
     },
     flecha: {
         width: 25,

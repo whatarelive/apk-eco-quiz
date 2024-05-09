@@ -8,7 +8,7 @@ import { useState } from "react";
 
 
 
-export const QuizScreen = () => {
+export const QuizScreen = (): JSX.Element => {
 
   const { categoryId, questionId } = useParams();
   const navigate = useNavigate();
@@ -32,19 +32,18 @@ export const QuizScreen = () => {
     <>
       <StatusBar/>
 
-      <View style={{ flexDirection: 'column'}}>
-
+      <View style={{ flexDirection: 'column' }}>
         <QuizHeader icon={ category.urlIcon } title={ category.name }/>
         
         <QuizInfo id={questionA.id}/>      
         
-        <Text style={ styles.question }>{`Pregunta #${ questionA.id } : ${ questionA.pregunta }`}</Text>
+        <Text style={ styles.question }>{`Pregunta #${ questionA.id }: ${ questionA.pregunta }`}</Text>
 
         {/*  Quiz Reponses  */}
         <View style={ styles.response }>
           {
             questionA.respuestas.map( resp => (
-              <QuizResponse key={resp.id} resp={resp.value}></QuizResponse>
+              <QuizResponse key={ resp.id } resp={ resp }></QuizResponse>
             ))
           }
         </View>
@@ -63,11 +62,13 @@ const styles = StyleSheet.create({
   question: {
     position: 'relative',
     fontSize: 20,
-    width: '90%',
-    height: '10%',
+    padding: 10,
+    width: 'auto',
+    minHeight: '10%',
     alignSelf: 'center',
+    textAlign: 'left',
+    justifyContent: 'center',
     fontWeight: '600',
-    marginBottom: '5%',
   },
   response: {
     flexDirection: 'column',
