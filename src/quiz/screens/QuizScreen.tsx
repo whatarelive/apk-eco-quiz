@@ -33,7 +33,7 @@ export const QuizScreen = (): JSX.Element => {
       <StatusBar/>
 
       <View style={{ flexDirection: 'column' }}>
-        <QuizHeader icon={ category.urlIcon } title={ category.name }/>
+        <QuizHeader title={ category.name }/>
         
         <QuizInfo id={questionA.id}/>      
         

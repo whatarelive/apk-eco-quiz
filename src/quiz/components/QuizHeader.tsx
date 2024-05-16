@@ -3,38 +3,37 @@ import { useNavigate } from "react-router-native";
 import { colors } from "../../util";
 import { useImage } from "../hooks/useImage";
 import { QuizHeaderProps } from "../types";
+import { NavThemeButton } from "./NavThemeButton";
 
 
 
-export const QuizHeader = ( { icon, title }: QuizHeaderProps ): JSX.Element => {
+export const QuizHeader = ( {title }: QuizHeaderProps ): JSX.Element => {
     
     const navigate = useNavigate();
-    const image = useImage( icon, 'iconImage' );
     const flecha = useImage('flecha', "uiImage");
     
-    const onClick = () => {
+    const onBackNavigate = () => {
         navigate('/home', { replace: true });
     }
 
     return (
         <View style={styles.container}>
-            <Image
-                source={image}
-                style={styles.image}>
-            </Image>
+
+            <TouchableNativeFeedback
+                onPress={ onBackNavigate }>
+                <Image
+                    source={flecha}
+                    style={styles.flecha}>
+                </Image>
+            </TouchableNativeFeedback>
 
             <Text
                 style={styles.text}>
                 { title }
             </Text>
 
-            <TouchableNativeFeedback
-                onPress={ onClick }>
-                <Image
-                    source={flecha}
-                    style={styles.flecha}>
-                </Image>
-            </TouchableNativeFeedback>
+            <NavThemeButton/>
+            
         </View>
     )
 }

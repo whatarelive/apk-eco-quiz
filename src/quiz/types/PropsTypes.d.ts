@@ -21,7 +21,6 @@ export type CustomButtonProps = {
 
 // PropsTypes de la funcion del Componente <QuizHeader/>
 export type QuizHeaderProps = {
-    icon: string,
     title: string 
 }
 
