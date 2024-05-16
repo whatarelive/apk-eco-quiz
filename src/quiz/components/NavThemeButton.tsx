@@ -1,28 +1,19 @@
 import { Image, TouchableNativeFeedback, StyleSheet } from "react-native";
 import { useImage } from "../hooks/useImage";
-import { useRef, useState } from "react";
+import { useIconChange } from "../hooks/useIconChange";
 
 
 
 export const NavThemeButton = () => {
 
-  // Se guarda la referencia del tema seleccionado.
-  const tema = useRef('black');
-
-  // Funcion que permite seleccionar el icono en funcion del tema.
-  const selectIcon = () => tema.current === 'ligth' ? 'luna' : 'sun';
-
-  // Estado para realizar el cambio de icono cuando se cambie el tema.
-  const [ icon, setIcon ] = useState( selectIcon );
+  const { icon, setIcon, selectIcon, selectionTheme } = useIconChange('luna', 'sun'); 
 
   // Hook para extraer la imagen del icono.
   const image = useImage( icon , 'uiIcon');
 
   // Funcion onclick que establece el nuevo tema.
   const onClick = () => {
-    // Se actualiza la refencia al nuevo tema seleccionado
-    tema.current = tema.current === 'ligth' ? 'black' : 'ligth';
-    // Se actualiza el estado.
+    selectionTheme();
     setIcon( selectIcon );
   }
 
