@@ -1,13 +1,18 @@
-import { View, Text, TouchableNativeFeedback } from "react-native"
-import { useNavigate } from "react-router-native"
+import { View } from "react-native"
+import { VictoryCard } from "../components";
+
 
 export const VictoryScreen = () => {
 
-  const navigate = useNavigate();
-
   return (
-    <View style={{margin: 100, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Hola Mundo</Text>
+    <View style={{display: 'flex', height: '100%', padding: '10%', alignContent: 'center', justifyContent: 'center' }}>
+      <VictoryCard/>
+    </View>
+  )
+}
+
+/**
+ * <Text>Hola Mundo</Text>
 
       <View style={{width: 200, height: 50, backgroundColor: '#a22'}}>
         <TouchableNativeFeedback
@@ -18,6 +23,4 @@ export const VictoryScreen = () => {
           </Text>
         </TouchableNativeFeedback>
       </View>
-    </View>
-  )
-}
+ */

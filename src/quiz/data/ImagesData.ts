@@ -63,5 +63,9 @@ export const uiImage = [
     {
         name: "flecha",
         path:  require('../../assets/flecha-atras.png')
+    },
+    {
+        name: "trofeo",
+        path: require('../../assets/trofeo.png')
     }
 ]
