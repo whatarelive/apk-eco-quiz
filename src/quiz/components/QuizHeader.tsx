@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         height: '8%',
         marginBottom: '5%',
         flexDirection: 'row',
-        backgroundColor: theme.brown_base,
+        backgroundColor: theme.brown_ligt,
         alignItems: 'center',
     },
     text: {

@@ -1,10 +1,9 @@
 import { View, Text, StyleSheet } from "react-native"
 import { useNavigate, useParams } from 'react-router-native';
-import { StatusBar } from "../../util";
-import { CustomButton, QuizHeader, QuizInfo, QuizResponse } from '../components';
-import { getCategoryById } from "../helpers/getCategoryById";
-import { getQuestionById } from "../helpers/getQuestionById";
 import { useState } from "react";
+import { StatusBar, theme } from "../../util";
+import { QuizHeader, QuizInfo, QuizListResponse } from '../components';
+import { getCategoryById, getQuestionById } from "../helpers";
 
 
 
@@ -32,51 +31,37 @@ export const QuizScreen = (): JSX.Element => {
     <>
       <StatusBar/>
 
-      <View style={{ flexDirection: 'column' }}>
+      <View style={ styles.container }>
         <QuizHeader title={ category.name }/>
         
-        <QuizInfo id={questionA.id}/>      
+        <QuizInfo id={ questionA.id } total={ 5 } />    
         
-        <Text style={ styles.question }>{`Pregunta #${ questionA.id }: ${ questionA.pregunta }`}</Text>
+        <Text style={ styles.question }>{ questionA.pregunta }</Text>
+          
+        <QuizListResponse respuestas={ questionA.respuestas } />
 
-        {/*  Quiz Reponses  */}
-        <View style={ styles.response }>
-          {
-            questionA.respuestas.map( resp => (
-              <QuizResponse key={ resp.id } resp={ resp }></QuizResponse>
-            ))
-          }
+        <View>
+
         </View>
-
-          {/*  Next Quiz Question */} 
-        <CustomButton 
-          title="Submit" 
-          handleClick={ handleClick }
-        />
       </View> 
     </>
   )
 }
 
 const styles = StyleSheet.create({
+  container: {
+    height: '100%',
+    width: '100%',
+    flexDirection: 'column',
+    backgroundColor: theme.brown_ligt
+  },
   question: {
-    position: 'relative',
-    fontSize: 20,
-    padding: 10,
-    width: 'auto',
-    minHeight: '10%',
+    marginHorizontal: 20,
+    marginBottom: '20%', 
     alignSelf: 'center',
     textAlign: 'left',
-    justifyContent: 'center',
+    fontSize: 21,
     fontWeight: '600',
-  },
-  response: {
-    flexDirection: 'column',
-    position: 'relative',
-    alignSelf: 'center',
-    justifyContent: 'center',
-    width: '95%',
-    height: '50%',
-    marginBottom: '15%',
+    color: theme.brown_veryDark
   }
 })

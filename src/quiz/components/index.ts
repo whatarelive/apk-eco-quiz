@@ -7,4 +7,5 @@ export * from './ProfileScore';
 export * from './QuizHeader';
 export * from './QuizInfo';
 export * from './QuizResponse';
+export * from './QuizListResponse';
 export * from './VictoryCard';

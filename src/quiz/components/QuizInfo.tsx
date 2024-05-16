@@ -1,62 +1,60 @@
-import { Text, View, StyleSheet } from "react-native";
-import { align, colors } from "../../util";
+import { View, Text, StyleSheet } from "react-native";
+import { useEffect, useState } from "react";
+import { theme } from "../../util";
 import { QuizInfoProps } from "../types";
 
 
 
-export const QuizInfo = ( { id }: QuizInfoProps ): JSX.Element => {
+export const QuizInfo = ({ id, } : QuizInfoProps ): JSX.Element => {
+
+  const [ porciento, setPorciento ] = useState( 0 );
+
+  useEffect(() => {
+    setPorciento( (id * 100) / 5 )
+
+  }, [ id ])
+  
 
   return (
     <View style={ styles.container }> 
-      <View style={ styles.subContainer }>
-        <Text 
-            style={ styles.text }>
-            {`Quiz: #${id}`}
-        </Text>
-        <Text 
-            style={ styles.crono }>
-            {'03:00 min'}
-        </Text>
+      <View style={ styles.barra }>
+        <View 
+          style={{ ...styles.progreso, width: `${porciento}%` }}>
+        </View>
       </View>
 
-      <View 
-        style={ styles.separador }>
+      <View style={ styles.text_container }>
+        <Text style={{ ...styles.text, color: theme.green_base }}>{ id }</Text>
+        <Text style={{ ...styles.text, color: theme.brown_clay }}>/5</Text>
       </View>
     </View>
   )
 }
 
-const global = StyleSheet.create({
-  text: {
-    flex: 1,
-    fontSize: 20,
-    fontWeight: '600',
-    paddingHorizontal: 20,
-    color: colors.primary
-  }
-})
 
 const styles = StyleSheet.create({
     container: {
-        ...align.relative,
-        paddingHorizontal: 10,
-        height: '10%'
+      paddingHorizontal: 22,
+      marginBottom: '2%',
+      maxHeight: '10%'
     },
-    subContainer: {
-        width: '100%',
-        flexDirection: 'row',
+    barra: {
+      width: '100%',
+      height: '20%',
+      borderRadius: 20,
+      backgroundColor: theme.brown_base,
+    },
+    progreso: {
+      flex: 1,
+      borderRadius: 20,
+      backgroundColor: theme.green_base
+    },
+    text_container: {
+      flexDirection: 'row',
+      marginLeft: 10,
     },
     text: {
-        textAlign: 'left',
-        ...global.text
-    },
-    crono: {
-        textAlign: 'right',
-        ...global.text
-    },
-    separador: {
-        width: '90%',
-        height: 3,
-        backgroundColor: colors.lightPrimary
+      fontSize: 16,
+      fontWeight: '500'
     }
 });

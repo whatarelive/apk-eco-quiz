@@ -13,6 +13,6 @@ const styles = StyleSheet.create({
     statusbar: {
         width: '100%',
         height: Constants.statusBarHeight,
-        backgroundColor: theme.brown_base
+        backgroundColor: theme.brown_ligt
     }
 });

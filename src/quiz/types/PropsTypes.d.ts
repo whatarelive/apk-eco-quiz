@@ -26,7 +26,8 @@ export type QuizHeaderProps = {
 
 // PropsTypes de la funcion del Componente <QuizInfo/>
 export type QuizInfoProps = {
-    id: number
+    id: number,
+    total: number
 }
 
 // PropsTypes de la funcion del Componente <QuizResponse/>
