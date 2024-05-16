@@ -34,6 +34,12 @@ export type QuizResponseProps = {
     resp: Respuesta
 }
 
+// PropsTypes de la funcion del Componente <NavButton/>
+export type NavButtonProps = {
+    type: string,
+    icon1: string,
+    icon2: string,
+}
 
 export type RenderList = {
     item: {

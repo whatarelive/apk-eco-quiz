@@ -1,66 +1,35 @@
-import { Text, View, Image, TouchableNativeFeedback, StyleSheet } from "react-native";
-import { useNavigate } from "react-router-native";
-import { colors } from "../../util";
-import { useImage } from "../hooks/useImage";
+import { Text, View, StyleSheet } from "react-native";
+import { theme } from "../../util";
 import { QuizHeaderProps } from "../types";
-import { NavThemeButton } from "./NavThemeButton";
+import { NavButton } from "./NavButton";
 
 
 
-export const QuizHeader = ( {title }: QuizHeaderProps ): JSX.Element => {
-    
-    const navigate = useNavigate();
-    const flecha = useImage('flecha', "uiImage");
-    
-    const onBackNavigate = () => {
-        navigate('/home', { replace: true });
-    }
+export const QuizHeader = ( { title }: QuizHeaderProps ): JSX.Element => {
 
     return (
         <View style={styles.container}>
+            <NavButton type={"back-arrow"} icon1={"flecha"} icon2={"flecha"}/>
 
-            <TouchableNativeFeedback
-                onPress={ onBackNavigate }>
-                <Image
-                    source={flecha}
-                    style={styles.flecha}>
-                </Image>
-            </TouchableNativeFeedback>
+            <Text style={styles.text}>{`${title} - Quiz`}</Text>
 
-            <Text
-                style={styles.text}>
-                { title }
-            </Text>
-
-            <NavThemeButton/>
-            
+            <NavButton type={"theme"} icon1={"luna"} icon2={"sun"}/>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
-        display: 'flex',
-        height: '10%',
+        height: '8%',
         marginBottom: '5%',
         flexDirection: 'row',
-        backgroundColor: colors.primary,
+        backgroundColor: theme.brown_base,
         alignItems: 'center',
     },
     text: {
         flex: 1,
-        fontSize: 24,
+        fontSize: 18,
         fontWeight: '500',
-        color: colors.textPrimary,
-    },
-    image: {
-        maxWidth: '16%',
-        maxHeight: '77%',
-        marginHorizontal: '3%',
-    },
-    flecha: {
-        width: 25,
-        height: 20,
-        marginHorizontal: '5%',
+        color: theme.black,
     }
 })
