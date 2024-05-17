@@ -18,8 +18,8 @@ export const QuizListResponse = ({ respuestas }: { respuestas: Respuesta[] }) =>
 
 const styles = StyleSheet.create({
   response: {
-    width: '97%',
-    borderRadius: 15,
+    width: '100%',
+    borderRadius: 20,
     alignSelf: 'center',
     paddingVertical: 20,
     marginHorizontal: 10,

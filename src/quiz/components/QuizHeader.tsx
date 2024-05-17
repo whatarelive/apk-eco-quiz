@@ -22,14 +22,17 @@ const styles = StyleSheet.create({
     container: {
         height: '8%',
         marginBottom: '5%',
-        flexDirection: 'row',
-        backgroundColor: theme.brown_ligt,
+        paddingHorizontal: 10,
         alignItems: 'center',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        backgroundColor: theme.brown_ligt,
     },
     text: {
         flex: 1,
-        fontSize: 18,
-        fontWeight: '500',
-        color: theme.black,
+        fontSize: 22,
+        textAlign: 'center',
+        fontWeight: '600',
+        color: theme.brown_veryDark,
     }
 })

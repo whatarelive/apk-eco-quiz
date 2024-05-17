@@ -1,4 +1,4 @@
-import { Image, TouchableNativeFeedback, StyleSheet } from "react-native";
+import { Image, TouchableNativeFeedback, StyleSheet, View } from "react-native";
 import { useIconChange, useImage } from '../hooks';
 import { useNavigate } from "react-router-native";
 import { NavButtonProps } from "../types";
@@ -28,22 +28,23 @@ export const NavButton = ( { type, icon1, icon2 }: NavButtonProps ) => {
   }
 
   return (
-    <>
+    <View style={ styles.icon }>
       <TouchableNativeFeedback
           onPress={ onClick }>
           <Image
               source={ image }
-              style={ styles.icon }>
+              style={{ width: 24, height: 24}}>
           </Image>
       </TouchableNativeFeedback>
-    </>
+    </View>
   )
 }
 
 const styles = StyleSheet.create({
   icon: {
-    maxWidth: '5%',
-    maxHeight: '30%',
-    marginHorizontal: '7%',
+    height: 48,
+    width: 48,
+    alignItems: 'center',
+    justifyContent: 'center',
   }
 })

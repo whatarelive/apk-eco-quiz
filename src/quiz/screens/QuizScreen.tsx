@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from "react-native"
 import { useNavigate, useParams } from 'react-router-native';
 import { useState } from "react";
 import { StatusBar, theme } from "../../util";
-import { QuizHeader, QuizInfo, QuizListResponse } from '../components';
+import { CustomButton, QuizHeader, QuizInfo, QuizListResponse } from '../components';
 import { getCategoryById, getQuestionById } from "../helpers";
 
 
@@ -40,9 +40,7 @@ export const QuizScreen = (): JSX.Element => {
           
         <QuizListResponse respuestas={ questionA.respuestas } />
 
-        <View>
-
-        </View>
+        <CustomButton title={"Hola"} handleClick={ handleClick } />
       </View> 
     </>
   )
