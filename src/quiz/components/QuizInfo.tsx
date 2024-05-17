@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     },
     barra: {
       width: '100%',
-      height: '20%',
+      height: 12,
       borderRadius: 20,
       backgroundColor: theme.brown_base,
     },
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
       marginLeft: 10,
     },
     text: {
-      fontSize: 16,
-      fontWeight: '500'
+      fontSize: 18,
+      fontWeight: '600'
     }
 });

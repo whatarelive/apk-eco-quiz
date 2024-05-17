@@ -56,24 +56,28 @@ export const avatarImages = [
 
 // Arreglo de Imagenes de necesarias en la UI.
 export const uiImage = [
-    {
-        name: "logo",
-        path:  require('../../assets/screenlogo.png')
-    },
-    {
-        name: "flecha",
-        path:  require('../../assets/flecha-atras.png')
-    },
-    {
-        name: 'luna',
-        path: require('../../assets/luna.png')
-    },
-    {
-        name: 'sun',
-        path: require('../../assets/icons8-sun-48.png')
-    },
-    {
-        name: "trofeo",
-        path: require('../../assets/trofeo.png')
-    }
-]
+  {
+    name: "logo",
+    path: require("../../assets/screenlogo.png"),
+  },
+  {
+    name: "flecha",
+    path: require("../../assets/flecha-atras.png"),
+  },
+  {
+    name: "luna",
+    path: require("../../assets/luna.png"),
+  },
+  {
+    name: "sun",
+    path: require("../../assets/icons8-sun-48.png"),
+  },
+  {
+    name: "trofeo",
+    path: require("../../assets/trofeo.png"),
+  },
+  {
+    name: "arrow_forward",
+    path: require("../../assets/arrow_forward.png"),
+  },
+];

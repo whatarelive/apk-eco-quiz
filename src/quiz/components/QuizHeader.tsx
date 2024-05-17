@@ -31,8 +31,9 @@ const styles = StyleSheet.create({
     text: {
         flex: 1,
         fontSize: 22,
+        fontFamily: 'Rubik',
         textAlign: 'center',
-        fontWeight: '600',
+        fontWeight: '700',
         color: theme.brown_veryDark,
     }
 })

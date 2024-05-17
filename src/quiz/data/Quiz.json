@@ -127,7 +127,7 @@
         {   
             "category" : {
                 "id": 2,
-                "name": "Conservación de la Biodiversidad",
+                "name": "Biodiversidad",
                 "urlIcon": "biodiversidad",
                 "questions": [
                    {
@@ -251,7 +251,7 @@
         {   
             "category" : {
                 "id": 3,
-                "name": "Energías Renovables",
+                "name": "Energía Renovable",
                 "urlIcon": "energia",
                 "questions": [
                    {
@@ -375,7 +375,7 @@
         {   
             "category" : {
                 "id": 4,
-                "name": "Contaminación",
+                "name": "Reciclaje",
                 "urlIcon": "reciclaje",
                 "questions": [
                    {

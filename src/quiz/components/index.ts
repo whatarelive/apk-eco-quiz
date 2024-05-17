@@ -8,4 +8,5 @@ export * from './QuizHeader';
 export * from './QuizInfo';
 export * from './QuizResponse';
 export * from './QuizListResponse';
+export * from './QuizNextButton';
 export * from './VictoryCard';

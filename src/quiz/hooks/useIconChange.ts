@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 export const useIconChange = ( icon1: string, icon2: string ) => {
   
     // Se guarda la referencia del tema seleccionado.
-    const tema = useRef("black");
+    const tema = useRef("ligth");
     
     // Funcion que permite seleccionar el icono en funcion del tema.
     const selectIcon = () => tema.current === "ligth" ? icon1 : icon2;
