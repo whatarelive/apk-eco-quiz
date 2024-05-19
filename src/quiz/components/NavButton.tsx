@@ -2,6 +2,8 @@ import { Image, TouchableNativeFeedback, StyleSheet, View } from "react-native";
 import { useIconChange, useImage } from '../hooks';
 import { useNavigate } from "react-router-native";
 import { NavButtonProps } from "../types";
+import { useContext } from "react";
+import { NextQuizContext } from "../context/NextQuizContext";
 
 
 
@@ -9,6 +11,8 @@ export const NavButton = ( { type, icon1, icon2 }: NavButtonProps ) => {
 
   // Hook para manejar la navegacion del tipo: 'back-arrow'. 
   const navigate = useNavigate();
+
+  const { setActive } = useContext( NextQuizContext );
 
   // Custom hook para manejar el cambio de tema y iconos.
   const { icon, setIcon, selectIcon, selectionTheme } = useIconChange( icon1, icon2 ); 
@@ -23,6 +27,14 @@ export const NavButton = ( { type, icon1, icon2 }: NavButtonProps ) => {
       setIcon( selectIcon );
     
     } else if( type === 'back-arrow' ) {
+      setActive({
+      type: '[Next] False enable',
+      paylod: {
+        enable: false,
+        blocked: false,
+        refId: '',
+      }
+      }); 
       navigate('/home', { replace: true });
     }
   }

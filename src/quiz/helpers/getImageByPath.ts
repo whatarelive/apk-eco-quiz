@@ -1,5 +1,5 @@
 import { ImageURISource } from "react-native";
-import { avatarImages, categoryImages, iconImages, uiImage } from "../data/ImagesData";
+import { avatarImages, categoryImages, iconImages, uiImage } from "../../util/data/ImagesData";
 
 type ImageResorce = {
     name: string,

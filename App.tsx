@@ -2,6 +2,7 @@ import { NativeRouter } from 'react-router-native';
 import { AppRouter } from './src/router/AppRouter';
 import { useFonts } from 'expo-font';
 import { customFonts } from './src/util/Fonts/AppFonts';
+import { NextQuizProvider } from './src/quiz/context/NextQuizProvider';
 
 
 export default function App() {
@@ -14,7 +15,9 @@ export default function App() {
 
   return (
     <NativeRouter>
-      <AppRouter/>
+      <NextQuizProvider>
+        <AppRouter/>
+      </NextQuizProvider>
     </NativeRouter>
   );
 }

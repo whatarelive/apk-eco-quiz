@@ -22,29 +22,6 @@ export const categoryImages = [
     }
 ]
 
-// Arreglo de Imagenes de iconos del QuizHeader. 
-export const iconImages = [
-    {
-        name: "cambio",
-        path:  require('../../assets/icon/cambio.png'),
-    },
-    {
-        name: "biodiversidad",
-        path:  require('../../assets/icon/biodiversidad.png'),
-    },
-    {
-        name: "energia",
-        path:  require('../../assets/icon/energia.png'),
-    },
-    {
-        name: "reciclaje",
-        path:  require('../../assets/icon/reciclaje.png'),
-    },
-    {
-        name: "agua",
-        path:  require('../../assets/icon/agua.png'),
-    }
-]
 
 // Arreglo de Imagenes de Avatares disponibles.
 export const avatarImages = [
@@ -79,5 +56,13 @@ export const uiImage = [
   {
     name: "arrow_forward",
     path: require("../../assets/arrow_forward.png"),
+  },
+  {
+    name: "crono",
+    path: require("../../assets/timer.png"),
+  },
+  {
+    name: 'redCrono',
+    path: require('../../assets/timerRed.png')
   },
 ];

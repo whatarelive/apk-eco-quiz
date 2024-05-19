@@ -1,3 +1,4 @@
+import React from "react";
 import { Category, Respuesta } from "./HookTypes"
 import { QuizInfo } from '../components/QuizInfo';
 
@@ -40,6 +41,19 @@ export type NavButtonProps = {
     type: string,
     icon1: string,
     icon2: string,
+}
+// PropsTypes de la funcion del Componente <QuizNextButton/>
+export type QuizNextButtonProps = {
+    icon1: string,
+    icon2: string,
+    question: number,
+    setQuestion: React.Dispatch<React.SetStateAction<number>>
+}
+
+// PropsTypes de la funcion del Componente <QuizNextButton/>
+export type QuizActionFooterProps = {
+    question: number,
+    setQuestion: React.Dispatch<React.SetStateAction<number>>
 }
 
 export type RenderList = {

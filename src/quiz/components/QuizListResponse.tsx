@@ -9,7 +9,7 @@ export const QuizListResponse = ({ respuestas }: { respuestas: Respuesta[] }) =>
   return (
     <View style={ styles.response }>
         {
-          respuestas.map( resp => <QuizResponse key={ resp.id } resp={ resp }/> )
+          respuestas.map( (resp, index) => <QuizResponse key={ index } resp={ resp }/> )
         }
     </View>
   )

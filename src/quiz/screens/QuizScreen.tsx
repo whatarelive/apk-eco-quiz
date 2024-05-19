@@ -1,31 +1,34 @@
 import { View, Text, StyleSheet } from "react-native"
-import { useNavigate, useParams } from 'react-router-native';
+import { useParams } from 'react-router-native';
 import { useState } from "react";
+import { shuffle } from "lodash";
 import { StatusBar, theme } from "../../util";
-import { QuizNextButton, QuizHeader, QuizInfo, QuizListResponse } from '../components';
+import { QuizHeader, QuizInfo, QuizListResponse } from '../components';
 import { getCategoryById, getQuestionById } from "../helpers";
+import Constants from 'expo-constants';
+import { QuizActionFooter } from "../components/QuizActionFooter";
 
 
 
 export const QuizScreen = (): JSX.Element => {
 
+  // useParams es una función de react-router-dom que devuelve los parámetros de la URL.
   const { categoryId, questionId } = useParams();
-  const navigate = useNavigate();
 
+  // Si no se proporciona un ID de pregunta, se lanza un error.
   if ( !questionId ) {
     throw new Error(`${questionId} is not valid ID for Question Array`);
   }
 
+  // Aquí se está inicializando el estado de 'question' con el valor de 'questionId'.
   const [ question , setQuestion ] = useState( +questionId );
   
+  // getCategoryById es una función que devuelve la categoría correspondiente al 'categoryId' proporcionado.
   const category = getCategoryById( categoryId );
+
+  // getQuestionById es una función que devuelve la pregunta correspondiente al 'question' y 'category' proporcionados.
   const questionA = getQuestionById( question, category );
   
-
-  const handleClick = () => {
-    if ( question === 5 ) navigate('/victory'); 
-    setQuestion( question + 1 );
-  }
 
   return (
     <>
@@ -36,14 +39,11 @@ export const QuizScreen = (): JSX.Element => {
         <QuizInfo id={ questionA.id } total={ 5 } />    
         <Text style={ styles.question }>{ questionA.pregunta }</Text>
           
-        <View style={{ flex: 1, marginBottom:36,  borderRadius: 20, backgroundColor: theme.brown_base, flexDirection: 'column', alignItems: 'center'}}>
-          <QuizListResponse respuestas={ questionA.respuestas } />
-
-          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around' }}>
-            <Text>3:45</Text>
-            <QuizNextButton icon1={"arrow_forward"} icon2={"arrow_forward"} onClick={ handleClick }/>
-          </View>
+        <View style={ styles.subContainer }>
+          <QuizListResponse respuestas={ shuffle( questionA.respuestas )} />
+          <QuizActionFooter question={ question } setQuestion={ setQuestion } />
         </View>
+
       </View> 
     </>
   )
@@ -56,6 +56,14 @@ const styles = StyleSheet.create({
     padding: 1,
     flexDirection: 'column',
     backgroundColor: theme.brown_ligt
+  },
+  subContainer: {
+    flex: 1, 
+    marginBottom: Constants.statusBarHeight,  
+    borderRadius: 20, 
+    backgroundColor: theme.brown_base, 
+    flexDirection: 'column', 
+    alignItems: 'center'
   },
   question: {
     marginHorizontal: 20,
