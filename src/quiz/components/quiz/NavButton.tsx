@@ -1,9 +1,9 @@
 import { Image, TouchableNativeFeedback, StyleSheet, View } from "react-native";
-import { useIconChange, useImage } from '../hooks';
+import { useIconChange, useImage } from '../../hooks';
 import { useNavigate } from "react-router-native";
-import { NavButtonProps } from "../types";
+import { NavButtonProps } from "../../types";
 import { useContext } from "react";
-import { NextQuizContext } from "../context/NextQuizContext";
+import { NextQuizContext } from "../../context/NextQuizContext";
 
 
 
