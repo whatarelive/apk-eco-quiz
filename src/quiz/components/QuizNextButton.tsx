@@ -20,12 +20,10 @@ export const QuizNextButton = ({ icon1, icon2, question, setQuestion }: QuizNext
 
   const handleClick = () => {
     setActive({
-      type: '[Next] False enable',
-      paylod: {
+      ...active,
         enable: false,
         blocked: false,
         refId: '',
-      }
     }); 
     
     if ( question === 5 ) navigate('/victory'); 

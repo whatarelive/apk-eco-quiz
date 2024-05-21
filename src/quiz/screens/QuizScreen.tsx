@@ -2,11 +2,10 @@ import { View, Text, StyleSheet } from "react-native"
 import { useParams } from 'react-router-native';
 import { useState } from "react";
 import { shuffle } from "lodash";
-import { StatusBar, theme } from "../../util";
-import { QuizHeader, QuizInfo, QuizListResponse } from '../components';
-import { getCategoryById, getQuestionById } from "../helpers";
 import Constants from 'expo-constants';
-import { QuizActionFooter } from "../components/QuizActionFooter";
+import { StatusBar, theme } from "../../util";
+import { QuizHeader, QuizInfo, QuizListResponse, QuizActionFooter } from '../components';
+import { getCategoryById, getQuestionById } from "../helpers";
 
 
 

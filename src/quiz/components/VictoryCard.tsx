@@ -1,109 +1,69 @@
-import { View, Image, Text, StyleSheet } from "react-native"
-import { CustomButton } from "./CustomButton";
-import { useNavigate } from "react-router-native";
-import { colors } from "../../util";
-import { useImage } from "../hooks/useImage";
+import { View, Text, StyleSheet } from "react-native"
+import { theme } from "../../util";
 
 
 
 export const VictoryCard = () => {
 
-    const trofeo = useImage('trofeo', 'uiImage');
-    const navigate = useNavigate();
-
-    const handleClick = () => {
-        navigate('/home');
-    }
-
   return (
-        <View style={ styles.container }> 
-            <Image source={ trofeo } style={ styles.img }/>
-            
-            <Text style={ styles.text }>Felicidades !!!</Text>
-            <Text style={ styles.text2 }>Quiz Completado</Text>
-
-            <Text style={ styles.text3 }>Estadisticas</Text>
-
-            <View style={{position: 'relative', width: '70%', marginBottom: 40}}>
-                <View style={ styles.scoreBox }>
-                    <Text style={ styles.text4 }>Puntuacion:</Text>
-                    <Text style={ styles.text5 }>{'1240'}</Text>
-                </View>
-                <View style={ styles.scoreBox }>
-                    <Text style={ styles.text4 }>Preguntas:</Text>
-                    <Text style={ styles.text5 }>{'10'}</Text>
-                </View>
-                <View style={ styles.scoreBox }>
-                    <Text style={ styles.text4 }>Correctas:</Text>
-                    <Text style={ styles.text5 }>{'8'}</Text>
-                </View>
-                <View style={ styles.scoreBox }>
-                    <Text style={ styles.text4 }>Tiempo:</Text>
-                    <Text style={ styles.text5 }>{'16:08'}</Text>
-                </View>
-            </View>
-
-
-            <CustomButton title="Volver" handleClick={ handleClick } />
+    <View style={{ flexDirection: 'column', width: '100%', flex: 2}}>
+        
+        <View style={{ width: '100%', alignItems: 'center', marginTop: '5%'}}>
+          <Text style={ styles.text_SubHeader }>
+            Puntuación
+          </Text>
+          <Text style={{ ...styles.text_Header, color: theme.brown_clay}} >
+            {1220}
+          </Text>
         </View>
+
+        <View style={{ flexDirection: 'row', marginTop: '10%' }}>
+      
+          <View style={{ flexDirection: 'column', flex: 1, alignItems: 'center'}}>
+            <Text style={ styles.text_SubHeader }>Aciertos</Text>
+            
+            <View style={{ flexDirection: 'row'}}>
+              <Text style={{ ...styles.text_Data, color: theme.green_base }}>
+                12
+              </Text>           
+              <Text style={ styles.text_Data }>
+                /20
+              </Text>
+            </View>
+          </View>
+      
+          <View style={{ flexDirection: 'column', flex: 1}}>
+            <Text style={ styles.text_SubHeader }>
+              Tiempo
+            </Text>
+            <Text style={ styles.text_Data }>
+              {'6:37'}
+            </Text>
+          </View>
+      
+        </View>
+      </View>
   )
 }
 
 
 const styles = StyleSheet.create({
-    container: {
-        width: '100%',
-        height: '75%',
-        alignItems: 'center',
-        paddingVertical: 60,
-        borderRadius: 50,
-        borderWidth: 1,
-        borderColor: colors.background,
-        shadowColor: colors.primary,
-        shadowOffset: {
-            width: 0,
-            height: 2
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.86,
-        elevation: 15
-    },
-    scoreBox: {
-        flexDirection: 'row',
-        margin: 3,
-        alignSelf: 'center',
-        justifyContent: 'flex-start'
-    },
-    img: { 
-        position: 'relative',
-        width: 130,
-        height: 130
-    },
-    text: {
-        position: 'relative',
-        marginTop: 10,
-        fontSize: 22,
-        fontWeight: '600',
-
-    },
-    text2: {
-        position: 'relative',
-        fontSize: 26,
-        fontWeight: '800',
-    },
-    text3: {
-        position: 'relative',
-        marginTop: 80,
-        fontSize: 22,
-        fontWeight: '700'
-    },
-    text4: {
-        fontSize: 18,
-        fontWeight: '400'
-    }, 
-    text5: {
-        marginLeft: 20,
-        fontSize: 18,
-        fontWeight: '400'
-    }
+  text_Header: {
+    textAlign: 'center', 
+    fontSize: 44, 
+    fontFamily: 'Rubik', 
+    fontWeight: '700', 
+  },
+  text_SubHeader: {
+    textAlign: 'center', 
+    fontSize: 24, 
+    fontWeight: '600', 
+    color: theme.black
+  },
+  text_Data: {
+    textAlign: 'center', 
+    fontSize: 32, 
+    fontFamily: 'Rubik', 
+    fontWeight: '800', 
+  }
 });

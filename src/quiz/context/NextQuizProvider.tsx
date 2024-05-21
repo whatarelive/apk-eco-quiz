@@ -1,18 +1,16 @@
-import { useReducer } from "react"
+import { useState } from "react"
 import { NextQuizContext } from "./NextQuizContext"
-import { NextQuizContextProps } from "../types";
-import { nextQuizReducer } from "./nextQuizReducer";
+import { ContextProviderProps } from "../types";
 
 
-const initialState = {
+
+export const NextQuizProvider = ({ children }: ContextProviderProps ) => {
+
+  const [ active, setActive ] = useState({
     enable: false,
     blocked: false,
-    refId: '',
-}
-
-export const NextQuizProvider = ({ children }: NextQuizContextProps ) => {
-
-  const [ active, setActive ] = useReducer( nextQuizReducer ,initialState );
+    refId: ''
+  });
 
   return (
     <NextQuizContext.Provider value={{ active, setActive }}>

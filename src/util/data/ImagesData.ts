@@ -51,7 +51,15 @@ export const uiImage = [
   },
   {
     name: "trofeo",
-    path: require("../../assets/trofeo.png"),
+    path: require("../../assets/imgCoup.png"),
+  },
+  {
+    name: 'exit',
+    path: require('../../assets/exit.png')
+  },
+  {
+    name: 'eyes',
+    path: require('../../assets/eyepen.png')
   },
   {
     name: "arrow_forward",

@@ -9,4 +9,6 @@ export * from './QuizInfo';
 export * from './QuizResponse';
 export * from './QuizListResponse';
 export * from './QuizNextButton';
+export * from "./QuizActionFooter";
 export * from './VictoryCard';
+export * from './VictoryButtons';

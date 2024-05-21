@@ -1,15 +1,17 @@
 import { View, Text, Image, StyleSheet } from "react-native"
 import { useImage } from "../hooks"
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { theme } from "../../util";
 import { useNavigate } from 'react-router-native';
+import { NextQuizContext } from "../context/NextQuizContext";
 
 
 
 export const QuizCrono = ({ restart, question, setQuestion }: { restart: number, question: number, setQuestion: React.Dispatch<React.SetStateAction<number>> }) => {
 
-    const [ icon, setIcon ] = useState('crono');
     const navigate = useNavigate();
+    const [ icon, setIcon ] = useState('crono');
+    const { active, setActive } = useContext( NextQuizContext );
     
     const image = useImage( icon, 'uiImage' );
 
@@ -23,6 +25,13 @@ export const QuizCrono = ({ restart, question, setQuestion }: { restart: number,
     useEffect(() => {
         const interval = setInterval(() => {
             if( time === 0 ) {
+                setActive({
+                  ...active,
+                  enable: false,
+                  blocked: false,
+                  refId: ''
+                })
+
                 if( question >= 5) navigate('/victory')    
                 setQuestion( question + 1 )
             }

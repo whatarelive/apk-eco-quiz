@@ -1,6 +1,5 @@
 import React from "react";
 import { Category, Respuesta } from "./HookTypes"
-import { QuizInfo } from '../components/QuizInfo';
 
 
 // PropsTypes de la funcion del Componente <ProfileScore/>
@@ -17,7 +16,10 @@ export type CategoryItemProps = {
 // PropsTypes de la funcion del Componente <CategoryItem/>
 export type CustomButtonProps = {
     title: string,
-    handleClick: CallableFunction
+    icon1: string,
+    icon2: string,
+    color: string,
+    handleClick: CallableFunction,
 }
 
 // PropsTypes de la funcion del Componente <QuizHeader/>

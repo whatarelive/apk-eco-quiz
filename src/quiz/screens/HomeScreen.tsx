@@ -1,17 +1,10 @@
-import { View } from "react-native"
-import { useNavigate } from "react-router-native";
-import { CategoryList, CustomButton, Profile, Header } from "../components";
+import { View } from "react-native";
+import { CategoryList, Profile, Header } from "../components";
 import { StatusBar } from "../../util";
 
 
 export const HomeScreen = () => {
   
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate(`/quiz/${1}/${1}`, { replace: true } );
-  }
-
   return (
     <>
       <StatusBar/>
@@ -20,7 +13,6 @@ export const HomeScreen = () => {
         <Header/>
         <Profile/>
         <CategoryList />
-        <CustomButton title={'Comenzar Juego'} handleClick={ handleClick }/>
       </View>
     </>
   )

@@ -1,42 +1,57 @@
-import { View, Text, TouchableNativeFeedback, StyleSheet } from "react-native";
-import { colors, fontSize } from "../../util";
+import { View, Text,Image, TouchableNativeFeedback, StyleSheet } from "react-native";
+import { theme } from "../../util";
 import { CustomButtonProps } from "../types";
+import { useIconChange, useImage } from "../hooks";
 
 
 
-export const CustomButton = ( { title, handleClick }: CustomButtonProps ): JSX.Element => {
+export const CustomButton = ( { title, icon1, icon2, color, handleClick }: CustomButtonProps ) => {
+
+  const { icon } = useIconChange( icon1, icon2 );
+  const image = useImage( icon , 'uiImage');
 
   return (
-    <View style={ styles.container }>
-        <TouchableNativeFeedback
-          onPress={ () => handleClick() }>
-            
-            <Text 
-              style={ styles.text }>
-              { title }
-            </Text>
+    <TouchableNativeFeedback
+      onPress={ () => handleClick() }>  
+        <View style={{ ...styles.container, backgroundColor: color }}>
+          
+          <Image 
+            source={ image } 
+            style={ styles.img }
+          />   
+          
+          <Text 
+            style={ styles.text }>
+            { title }
+          </Text>
         
-        </TouchableNativeFeedback>
-    </View>
+        </View>
+    </TouchableNativeFeedback>
   )
 }
 
 
 const styles = StyleSheet.create({
   container: {
-    width: '80%',
-    height: 50,
-    position: 'relative',
-    marginBottom: '5%',
+    flex: 1,
+    height: '45%',
+    padding: '2%',
+    margin: '3%',
+    paddingHorizontal: '7%',
     borderRadius: 40,
-    alignSelf: 'center',
+    flexDirection: 'row',
+    alignContent: 'center',
     justifyContent: 'center',
-    backgroundColor: colors.primary,
+  },
+  img:{
+    alignSelf: 'center',
   },
   text: {
-    textAlign: 'center',
+    flex: 1,
+    fontSize: 22,
     fontWeight: '700',
-    color: colors.textPrimary,
-    fontSize: fontSize.subHeading
+    textAlignVertical: 'center',
+    textAlign: 'center',
+    color: theme.white
   }
 });
