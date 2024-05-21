@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet } from "react-native";
-import { colors, align } from "../../util";
+import { colors, align } from "../../../util";
 
 
 

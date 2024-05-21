@@ -1,7 +1,7 @@
 import { Text, View, TouchableNativeFeedback, StyleSheet } from "react-native";
-import { QuizResponseProps } from "../types";
-import { theme } from "../../util";
-import { NextQuizContext } from "../context/NextQuizContext";
+import { QuizResponseProps } from "../../types";
+import { theme } from "../../../util";
+import { NextQuizContext } from "../../context/NextQuizContext";
 import { useContext } from 'react';
 
 

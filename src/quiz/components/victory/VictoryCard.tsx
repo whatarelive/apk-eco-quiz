@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet } from "react-native"
-import { theme } from "../../util";
+import { theme } from "../../../util";
 
 
 

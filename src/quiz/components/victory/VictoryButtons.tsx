@@ -1,6 +1,6 @@
 import { View, StyleSheet } from "react-native"
-import { CustomButton } from "./CustomButton"
-import { theme } from "../../util"
+import { CustomButton } from "../CustomButton"
+import { theme } from "../../../util"
 import { useNavigate } from "react-router-native"
 
 

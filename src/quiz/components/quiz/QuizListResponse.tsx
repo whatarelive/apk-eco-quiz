@@ -1,5 +1,5 @@
 import { View, StyleSheet } from "react-native"
-import { Respuesta } from "../types"
+import { Respuesta } from "../../types"
 import { QuizResponse } from "./QuizResponse"
 
 

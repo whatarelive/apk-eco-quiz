@@ -1,8 +1,8 @@
 import { View, Image, Text, TouchableNativeFeedback, StyleSheet } from "react-native";
 import { useNavigate } from "react-router-native";
-import { useImage } from "../hooks/useImage";
-import { CategoryItemProps } from "../types";
-import { colors } from "../../util";
+import { useImage } from "../../hooks/useImage";
+import { CategoryItemProps } from "../../types";
+import { colors } from "../../../util";
 
 
 

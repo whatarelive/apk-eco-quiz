@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet } from "react-native";
-import { ProfileScoreProps } from "../types/PropsTypes";
+import { ProfileScoreProps } from "../../types/PropsTypes";
 
 
 

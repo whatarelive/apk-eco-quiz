@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet } from "react-native";
 import { useEffect, useState } from "react";
-import { theme } from "../../util";
-import { QuizInfoProps } from "../types";
+import { theme } from "../../../util";
+import { QuizInfoProps } from "../../types";
 
 
 

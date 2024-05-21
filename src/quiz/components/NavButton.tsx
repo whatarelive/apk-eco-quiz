@@ -12,7 +12,7 @@ export const NavButton = ( { type, icon1, icon2 }: NavButtonProps ) => {
   // Hook para manejar la navegacion del tipo: 'back-arrow'. 
   const navigate = useNavigate();
 
-  const { setActive } = useContext( NextQuizContext );
+  const { active, setActive } = useContext( NextQuizContext );
 
   // Custom hook para manejar el cambio de tema y iconos.
   const { icon, setIcon, selectIcon, selectionTheme } = useIconChange( icon1, icon2 ); 
@@ -28,12 +28,10 @@ export const NavButton = ( { type, icon1, icon2 }: NavButtonProps ) => {
     
     } else if( type === 'back-arrow' ) {
       setActive({
-      type: '[Next] False enable',
-      paylod: {
+        ...active,
         enable: false,
         blocked: false,
         refId: '',
-      }
       }); 
       navigate('/home', { replace: true });
     }

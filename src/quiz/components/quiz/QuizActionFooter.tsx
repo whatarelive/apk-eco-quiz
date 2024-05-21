@@ -1,6 +1,6 @@
 import { View, StyleSheet } from "react-native"
 import { QuizNextButton } from "./QuizNextButton"
-import { QuizActionFooterProps } from "../types"
+import { QuizActionFooterProps } from "../../types"
 import { QuizCrono } from "./QuizCrono"
 import { useEffect, useState } from 'react';
 

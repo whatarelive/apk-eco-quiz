@@ -1,7 +1,7 @@
 import { Text, View, StyleSheet } from "react-native";
-import { theme } from "../../util";
-import { QuizHeaderProps } from "../types";
-import { NavButton } from "./NavButton";
+import { theme } from "../../../util";
+import { QuizHeaderProps } from "../../types";
+import { NavButton } from "../NavButton";
 
 
 

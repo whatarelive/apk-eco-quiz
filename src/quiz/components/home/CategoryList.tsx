@@ -1,8 +1,8 @@
 import { Text, FlatList, StyleSheet, View } from 'react-native';
-import { categories }  from "../data/Quiz.json";
+import { categories }  from "../../data/Quiz.json";
 import { CategoryItem } from "./CategoryItem";
-import { RenderList } from '../types/PropsTypes';
-import { colors, align } from '../../util';
+import { RenderList } from '../../types/PropsTypes';
+import { colors, align } from '../../../util';
 
 
 

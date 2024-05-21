@@ -1,9 +1,9 @@
 import { View, Text, Image, StyleSheet } from "react-native"
-import { useImage } from "../hooks"
+import { useImage } from "../../hooks"
 import React, { useContext, useEffect, useState } from "react";
-import { theme } from "../../util";
+import { theme } from "../../../util";
 import { useNavigate } from 'react-router-native';
-import { NextQuizContext } from "../context/NextQuizContext";
+import { NextQuizContext } from "../../context/NextQuizContext";
 
 
 

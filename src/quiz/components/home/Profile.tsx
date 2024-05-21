@@ -1,8 +1,8 @@
 import { View, Image, StyleSheet } from "react-native";
 import { useState } from 'react';
-import { useImage } from "../hooks/useImage";
+import { useImage } from "../../hooks/useImage";
 import { ProfileScore } from "./ProfileScore";
-import { colors, align } from "../../util";
+import { colors, align } from "../../../util";
 
 
 
