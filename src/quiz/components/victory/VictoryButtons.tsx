@@ -2,14 +2,18 @@ import { View, StyleSheet } from "react-native"
 import { CustomButton } from "../CustomButton"
 import { theme } from "../../../util"
 import { useNavigate } from "react-router-native"
+import { useContext } from "react"
+import { ScoreContext } from "../../context/ScoreContext"
 
 
 
 export const VictoryButtons = () => {
 
     const navigate = useNavigate();
+    const { reset } = useContext( ScoreContext );
 
     const handleClick = () => {
+        reset();
         navigate('/home');
     }
 

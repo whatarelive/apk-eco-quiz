@@ -5,12 +5,15 @@ import { theme } from "../../../util";
 import { QuizNextButtonProps } from "../../types";
 import { useContext } from 'react';
 import { NextQuizContext } from "../../context/NextQuizContext";
+import { ScoreContext } from "../../context/ScoreContext";
 
 
 
-export const QuizNextButton = ({ icon1, icon2, question, setQuestion }: QuizNextButtonProps ): JSX.Element => {
+
+export const QuizNextButton = ({ icon1, icon2, category, questionA, question, setQuestion }: QuizNextButtonProps ): JSX.Element => {
 
   const navigate = useNavigate();
+  const { counter, response, setResponse } = useContext( ScoreContext );
   const { active, setActive } = useContext( NextQuizContext );
 
   const { icon } = useIconChange( icon1, icon2 );
@@ -18,17 +21,32 @@ export const QuizNextButton = ({ icon1, icon2, question, setQuestion }: QuizNext
 
   const enableAction = ( !active.enable ) ? theme.brown_ligt : theme.brown_veryDark;
 
-  const handleClick = () => {
+
+  const handleClick = async() => {
+    setResponse({
+      ...response,
+      categoryID: category.id.toString(),
+      responseID: questionA.id,
+      respID: active.refId
+    })
+
+    console.log( counter );
+    
     setActive({
       ...active,
         enable: false,
         blocked: false,
         refId: '',
-    }); 
+    });
+
+    console.log( counter );
+    console.log('--------');
     
-    if ( question === 5 ) navigate('/victory'); 
     
+    if ( question === 5 ) navigate(`/victory/${counter}`); 
+
     setQuestion( question + 1 );
+
   }
 
   return (

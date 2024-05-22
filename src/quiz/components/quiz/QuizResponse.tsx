@@ -5,7 +5,6 @@ import { NextQuizContext } from "../../context/NextQuizContext";
 import { useContext } from 'react';
 
 
-
 // Recibe un objeto de propiedades que contiene una respuesta (resp).
 export const QuizResponse = ( { resp }: QuizResponseProps ) => {
 
@@ -15,7 +14,6 @@ export const QuizResponse = ( { resp }: QuizResponseProps ) => {
   // Esta es una función que maneja el evento de clic.
   // Actualiza el estado activo dependiendo de si está bloqueado o no.
   const handleClick = ( id: string ) => {
-
     // Si el estado activo está bloqueado, actualizamos el refId en el estado activo.
     if( active.blocked === true ) {
           setActive({
@@ -26,11 +24,11 @@ export const QuizResponse = ( { resp }: QuizResponseProps ) => {
 
     // Independientemente de si el estado activo está bloqueado o no, actualizamos el estado activo.
     else setActive({
-      ...active,
-      enable: true,
-      blocked: true,
-      refId: id,
-    });
+        ...active,
+        enable: true,
+        blocked: true,
+        refId: id,
+      });
   }
 
   // Esta es una función que devuelve un objeto de estilo dependiendo del estado activo y del id de la respuesta.

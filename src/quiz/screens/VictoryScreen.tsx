@@ -10,7 +10,6 @@ export const VictoryScreen = () => {
    // Utilizamos un hook personalizado llamado useImage para obtener una imagen.
   // En este caso, estamos obteniendo la imagen del 'trofeo' del 'uiIcon'.
   const image = useImage('trofeo', 'uiIcon');
-
   
   return (
     // Este es el contenedor principal de la pantalla de victoria.

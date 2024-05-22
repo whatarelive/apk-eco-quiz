@@ -1,5 +1,5 @@
 import React from "react";
-import { Category, Respuesta } from "./HookTypes"
+import { Category, Question, Respuesta } from "./HookTypes"
 
 
 // PropsTypes de la funcion del Componente <ProfileScore/>
@@ -46,14 +46,18 @@ export type NavButtonProps = {
 }
 // PropsTypes de la funcion del Componente <QuizNextButton/>
 export type QuizNextButtonProps = {
-    icon1: string,
-    icon2: string,
-    question: number,
-    setQuestion: React.Dispatch<React.SetStateAction<number>>
-}
+  icon1: string;
+  icon2: string;
+  category: Category;
+  questionA: Question;
+  question: number;
+  setQuestion: React.Dispatch<React.SetStateAction<number>>;
+};
 
 // PropsTypes de la funcion del Componente <QuizNextButton/>
 export type QuizActionFooterProps = {
+    category: Category,
+    questionA: Question,
     question: number,
     setQuestion: React.Dispatch<React.SetStateAction<number>>
 }

@@ -1,11 +1,12 @@
 import { View, Text, StyleSheet } from "react-native"
 import { useParams } from 'react-router-native';
-import { useState } from "react";
+import { useState, useEffect, useContext } from 'react';
 import { shuffle } from "lodash";
 import Constants from 'expo-constants';
 import { StatusBar, theme } from "../../util";
 import { QuizHeader, QuizInfo, QuizListResponse, QuizActionFooter } from '../components';
 import { getCategoryById, getQuestionById } from "../helpers";
+import { ScoreContext } from "../context/ScoreContext";
 
 
 
@@ -18,16 +19,16 @@ export const QuizScreen = (): JSX.Element => {
   if ( !questionId ) {
     throw new Error(`${questionId} is not valid ID for Question Array`);
   }
-
+  
   // Aquí se está inicializando el estado de 'question' con el valor de 'questionId'.
   const [ question , setQuestion ] = useState( +questionId );
   
   // getCategoryById es una función que devuelve la categoría correspondiente al 'categoryId' proporcionado.
   const category = getCategoryById( categoryId );
-
+  
   // getQuestionById es una función que devuelve la pregunta correspondiente al 'question' y 'category' proporcionados.
   const questionA = getQuestionById( question, category );
-  
+
 
   return (
     <>
@@ -40,7 +41,7 @@ export const QuizScreen = (): JSX.Element => {
           
         <View style={ styles.subContainer }>
           <QuizListResponse respuestas={ shuffle( questionA.respuestas )} />
-          <QuizActionFooter question={ question } setQuestion={ setQuestion } />
+          <QuizActionFooter category={ category } questionA={ questionA } question={ question } setQuestion={ setQuestion } />
         </View>
 
       </View> 

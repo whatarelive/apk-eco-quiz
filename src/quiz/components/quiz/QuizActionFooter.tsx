@@ -7,9 +7,9 @@ import { useEffect, useState } from 'react';
 
 
 
-export const QuizActionFooter = ({ question, setQuestion }: QuizActionFooterProps) => {
+export const QuizActionFooter = ({ category, questionA, question, setQuestion }: QuizActionFooterProps) => {
 
-  const [restart, setRestart] = useState(0)
+  const [restart, setRestart] = useState(0);
 
   useEffect(() => {
     setRestart( restart + 1 )
@@ -23,6 +23,8 @@ export const QuizActionFooter = ({ question, setQuestion }: QuizActionFooterProp
       <QuizNextButton 
         icon1={"arrow_forward"} 
         icon2={"arrow_forward"}
+        category={ category}
+        questionA={ questionA }
         question={ question } 
         setQuestion={ setQuestion } 
       />

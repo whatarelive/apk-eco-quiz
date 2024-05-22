@@ -1,9 +1,12 @@
 import { View, Text, StyleSheet } from "react-native"
 import { theme } from "../../../util";
+import { useParams } from "react-router-native";
 
 
 
 export const VictoryCard = () => {
+
+    const { score } = useParams();
 
   return (
     <View style={{ flexDirection: 'column', width: '100%', flex: 2}}>
@@ -13,7 +16,7 @@ export const VictoryCard = () => {
             Puntuación
           </Text>
           <Text style={{ ...styles.text_Header, color: theme.brown_clay}} >
-            {1220}
+            { score }
           </Text>
         </View>
 

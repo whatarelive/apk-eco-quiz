@@ -3,6 +3,8 @@ import { AppRouter } from './src/router/AppRouter';
 import { useFonts } from 'expo-font';
 import { customFonts } from './src/util/Fonts/AppFonts';
 import { NextQuizProvider } from './src/quiz/context/NextQuizProvider';
+import { UserProvider } from './src/quiz/context/UserProvider';
+import { ScoreProvider } from './src/quiz/context/ScoreProvider';
 
 
 export default function App() {
@@ -15,9 +17,13 @@ export default function App() {
 
   return (
     <NativeRouter>
-      <NextQuizProvider>
-        <AppRouter/>
-      </NextQuizProvider>
+      <UserProvider>
+        <NextQuizProvider>  
+          <ScoreProvider>
+            <AppRouter/>
+          </ScoreProvider>
+        </NextQuizProvider>
+      </UserProvider>
     </NativeRouter>
   );
 }
