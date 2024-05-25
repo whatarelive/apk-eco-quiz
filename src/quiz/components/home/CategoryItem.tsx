@@ -1,8 +1,7 @@
 import { View, Image, Text, TouchableNativeFeedback, StyleSheet } from "react-native";
 import { useNavigate } from "react-router-native";
-import { useImage } from "../../../util";
+import { theme, useImage } from "../../../util";
 import { CategoryItemProps } from "../../types";
-import { colors } from "../../../util";
 
 
 
@@ -30,6 +29,10 @@ export const CategoryItem = ( { category }: CategoryItemProps ): JSX.Element => 
             style={ styles.text }>
             { category.name }
           </Text>
+
+          <Text style={ styles.text2 }>
+            20 Preguntas
+          </Text>
         </View>
         
       </TouchableNativeFeedback>
@@ -39,29 +42,40 @@ export const CategoryItem = ( { category }: CategoryItemProps ): JSX.Element => 
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#F9F9F9',
+    backgroundColor: theme.brown_ligt,
     borderRadius: 16,
-    margin: 10,
+    borderWidth: 5,
+    borderColor: theme.brown_ligt,
+    marginHorizontal: 15,
+    marginVertical: 30,
   },
   sub_container: {
-    display: 'flex',
-    position: 'relative',
-    flexDirection: 'row',
-    padding: 5
+    flex: 1,
+    width: 270,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    padding: 10
   },
   image: {
-    width: 100,
-    height: 120,
+    width: 140,
+    height: 160,
     borderRadius: 10,
-    position: 'relative'  
+    marginBottom: '5%',  
   },
   text: {
-    flex: 1,
+    fontSize: 28,
+    fontWeight: '700',
+    marginBottom: '25%',
+    fontFamily: 'Rubik',
     textAlign: 'center',
-    textAlignVertical: 'center',
-    position: 'relative',
-    fontSize: 26,
-    fontWeight: '500',
-    color: colors.darkPrimary
+    color: theme.brown_dark
+  },
+  text2: {
+    fontSize: 20,
+    fontWeight: '700',
+    fontFamily: 'Rubik',
+    textAlign: 'center',
+    color: theme.brown_lightDark  
   }
 })

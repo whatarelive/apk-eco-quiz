@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet } from "react-native";
 import { ProfileScoreProps } from "../../types/PropsTypes";
+import { theme } from "../../../util";
 
 
 
@@ -11,18 +12,12 @@ export const ProfileScore = ({record, text}: ProfileScoreProps): JSX.Element => 
         <View style={ styles.subContainer }>
 
             {/* Texto superior de la vista */}
-            <Text style={{ 
-                    ...styles.text, 
-                    textAlignVertical: 'bottom', 
-                    fontSize: 14 }}>
+            <Text style={ styles.text }>
                 { text }
             </Text>
             
             {/* Texto inferior de la vista */}
-            <Text style={{ 
-                    ...styles.text, 
-                    textAlignVertical: 'top', 
-                    fontSize: 16 }}>
+            <Text style={ styles.text2 }>
                 { record }
             </Text>
 
@@ -34,17 +29,22 @@ export const ProfileScore = ({record, text}: ProfileScoreProps): JSX.Element => 
 // Estilos del componente 
 const styles = StyleSheet.create({
     text: {
-        flex: 1,
-        position: 'relative',
-        textAlign: 'center',
-        width: '100%',
-        height: '50%',
-        color: '#e9ffe6',
-        fontFamily: 'System',
-        fontWeight: 'bold'
+        fontSize: 20,
+        fontFamily: 'Rubik',
+        fontWeight: '700',
+        color: theme.brown_veryDark,
+        textAlignVertical: 'bottom'
+    },
+    text2: {
+        fontSize: 48,
+        fontFamily: 'Rubik',
+        fontWeight: '900',
+        color: theme.white,
+        textAlignVertical: 'top'    
     },
     subContainer: {
-        width: '65%',
+        flex: 1,
+        marginLeft: '10%',
         flexDirection: 'column'
     },
 })
