@@ -12,7 +12,7 @@ export const QuizCrono = ({ restart, category, questionA, question, setQuestion 
 
     const navigate = useNavigate();
     const [ icon, setIcon ] = useState('crono');
-    const { active, setActive } = useContext( NextQuizContext );
+    const { active, status, setActive } = useContext( NextQuizContext );
     const { score, responseTime, decrementScore, updateResponseTime } = useContext( ScoreContext );
     
     const image = useImage( icon, 'uiImage' );
@@ -29,6 +29,8 @@ export const QuizCrono = ({ restart, category, questionA, question, setQuestion 
 
     useEffect(() => {
       const interval = setInterval(() => {
+        if ( status ) return;
+
         if( times === 0 ) {
           setActive({
                   ...active,

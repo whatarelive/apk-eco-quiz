@@ -54,12 +54,12 @@ export const uiImage = [
     path: require("../../assets/imgCoup.png"),
   },
   {
-    name: 'exit',
-    path: require('../../assets/exit.png')
+    name: "exit",
+    path: require("../../assets/exit.png"),
   },
   {
-    name: 'eyes',
-    path: require('../../assets/eyepen.png')
+    name: "eyes",
+    path: require("../../assets/eyepen.png"),
   },
   {
     name: "arrow_forward",
@@ -70,11 +70,26 @@ export const uiImage = [
     path: require("../../assets/timer.png"),
   },
   {
-    name: 'redCrono',
-    path: require('../../assets/timerRed.png')
+    name: "redCrono",
+    path: require("../../assets/timerRed.png"),
   },
   {
-    name: 'check',
-    path: require('../../assets/check.png')
+    name: "greenCrono",
+    path: require("../../assets/timerGreen.png")
   },
+  {
+    name: "check",
+    path: require("../../assets/check.png"),
+  },
+  {
+    name: "check_circle",
+    path: require("../../assets/check_circle_outline.png"),
+  },
+  {
+    name: "error_circle",
+    path: require("../../assets/error_outline.png"),
+  },
+  {
+    name: ''
+  }
 ];

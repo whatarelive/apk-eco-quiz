@@ -13,7 +13,7 @@ export const QuizNextButton = ({ icon1, icon2, question, setQuestion }: QuizNext
 
   const navigate = useNavigate();
   const { score, responseTime } = useContext( ScoreContext );
-  const { active, setActive } = useContext( NextQuizContext );
+  const { active, setStatus, setActive } = useContext( NextQuizContext );
 
   const { icon } = useIconChange( icon1, icon2 );
   const image = useImage( icon, 'uiImage' );
@@ -28,6 +28,8 @@ export const QuizNextButton = ({ icon1, icon2, question, setQuestion }: QuizNext
         blocked: false,
         refId: '',
     });
+
+    setStatus( false );
 
     console.log('--------');
     

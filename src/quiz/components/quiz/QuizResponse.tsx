@@ -1,9 +1,28 @@
-import { Text, View, TouchableNativeFeedback, StyleSheet } from "react-native";
+import { Text, View, Image, TouchableNativeFeedback, StyleSheet } from "react-native";
 import { QuizResponseProps } from "../../types";
-import { theme } from "../../../util";
+import { theme, useImage } from "../../../util";
 import { NextQuizContext } from "../../context";
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect } from 'react';
+import { useStyle } from "../../hooks/useStyle";
 
+
+const RefButton = () => {
+
+  const image = useImage('eyes', 'uiImage');
+
+  return (
+    <View style={{ width: 140, height: 20, margin: 5 }}>
+      <TouchableNativeFeedback
+        onPress={() => {}}
+      >
+        <View style={{ flexDirection: 'row' }}>
+          <Image style={{ width: 16, height: 18 }} source={ image }/>
+          <Text style={{ fontSize: 14, fontFamily: 'Rubik' , marginStart: 10, fontWeight: '900'}}>Ver Explicacion</Text>
+        </View>
+      </TouchableNativeFeedback>
+    </View>
+  )
+}
 
 
 // Recibe un objeto de propiedades que contiene una respuesta (resp).
@@ -11,7 +30,10 @@ export const QuizResponse = ( { resp, correct }: QuizResponseProps ) => {
 
   // Utilizamos el hook useContext para obtener el estado y la función de actualización del contexto NextQuizContext.
   const { active, status, setActive } = useContext( NextQuizContext );
-  const [ color, setColor ] = useState('');
+
+  const condicion = active.blocked && status && resp.value === correct && resp.id !== active.refId;
+
+  const { selectStyle, setColor, image } = useStyle( resp, condicion );
   
   // Esta es una función que maneja el evento de clic.
   // Actualiza el estado activo dependiendo de si está bloqueado o no.
@@ -32,29 +54,6 @@ export const QuizResponse = ( { resp, correct }: QuizResponseProps ) => {
         refId: id,
       });
     }
-    
-    // Esta es una función que devuelve un objeto de estilo dependiendo del estado activo y del id de la respuesta.
-    const beforeStyle = {
-      backgroundColor: (resp.id !== active.refId ? theme.brown_clay : ( active.enable ? theme.green_base: theme.brown_clay )),
-      borderColor: (resp.id !== active.refId ? theme.brown_lightDark : ( active.enable ? theme.green_dark: theme.brown_lightDark ))
-    }
-    
-    const responseStyle = {
-      backgroundColor: theme.salmon_light,
-      borderColor: theme.salmon_dark
-    }
-    
-    const correctRespStyle = {
-      backgroundColor: theme.green_base,
-      borderColor: theme.green_dark
-    }
-    
-    const conditionalStyle = (color !== 'red') ? beforeStyle : responseStyle
-    
-    const selectStyle = ( active.blocked && status && resp.value === correct && resp.id !== active.refId ) 
-    ? correctRespStyle 
-    : conditionalStyle; 
-    
 
     useEffect(() => {
       if ( active.refId === resp.id && resp.value !== correct ) {
@@ -71,14 +70,23 @@ export const QuizResponse = ( { resp, correct }: QuizResponseProps ) => {
     <TouchableNativeFeedback
       onPress={()=> !status && handleClick( resp.id ) }>
         
-        {/* Este es un contenedor con un estilo que se determina llamando a la función beforeStyle. */}
         <View style={{ ...styles.container, ...selectStyle }}>
+          {/* Este es un contenedor con un estilo que se determina llamando a la función beforeStyle. */}
+          <View style={{ flex: 1, flexDirection: 'column' }}>
         
-          {/* Este es el texto que muestra el valor de la respuesta. */}
-          <Text style={ styles.text }>{ resp.value }</Text>
+            {/* Este es el texto que muestra el valor de la respuesta. */}
+            <Text style={ styles.text }>{ resp.value }</Text>
+
+            {
+              status && condicion ? <RefButton/> : <></>
+            }
+          </View>
+
+          <View style={{ margin: 10}}>
+            <Image source={ image }/>
+          </View>
         
         </View>
-
     </TouchableNativeFeedback>
   )
 }
@@ -86,11 +94,9 @@ export const QuizResponse = ( { resp, correct }: QuizResponseProps ) => {
 // Estilos del componente
 const styles = StyleSheet.create({
     container: {
-      display: 'flex',
       minHeight: 95,
-      maxHeight: 95,
+      maxHeight: 110,
       flexDirection: 'row',
-      justifyContent: 'center',
       alignItems: 'center',
       marginHorizontal: 24,
       marginVertical: 12, 
@@ -100,7 +106,6 @@ const styles = StyleSheet.create({
       borderColor: theme.brown_lightDark,
     },
     text: {
-      flex: 1,
       display: 'flex',
       fontSize: 18,
       fontFamily: 'Rubik',
