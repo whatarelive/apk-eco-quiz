@@ -1,22 +1,18 @@
-import { Text, FlatList, StyleSheet, View } from 'react-native';
+import { Text, StyleSheet, View, ScrollView } from 'react-native';
 import { categories }  from "../../data/Quiz.json";
 import { CategoryItem } from "./CategoryItem";
-import { RenderList } from '../../types/PropsTypes';
-import { colors, align } from '../../../util';
+import { colors, align, theme } from '../../../util';
 
 
 
 export const CategoryList = (): JSX.Element => {
 
-  const itemSeparator = () => <View style={ styles.separador }/>;
-
-  const renderItem = ({ item: {category} }: RenderList) => (
-      <CategoryItem key={ category.id } category={ category }/> 
-  );
+  const renderList = () => categories.map(({ category }) => (
+    <CategoryItem key={ category.id } category={ category }/> 
+  ))
 
   return (
     <View style={ styles.container }>
-      
       <Text 
         style={ styles.text }>
         Categorias de Juego
@@ -26,13 +22,13 @@ export const CategoryList = (): JSX.Element => {
         style={{ ...styles.separador, width: '70%' }}>
       </View>
 
-      <FlatList 
-        style={ styles.list } 
-        data={ categories }
-        showsVerticalScrollIndicator={ false }
-        ItemSeparatorComponent={ itemSeparator }
-        renderItem={ renderItem }/> 
-
+      <ScrollView
+        style={ styles.list }
+        horizontal={ true }>
+        {
+          renderList()
+        }
+      </ScrollView>
     </View>
   )
 }
@@ -46,6 +42,7 @@ const styles = StyleSheet.create({
   },
   list: {
     width: '100%',
+    backgroundColor: theme.brown_base,
     alignContent: 'center',
   },
   separador: {

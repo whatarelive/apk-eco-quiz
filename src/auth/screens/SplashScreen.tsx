@@ -3,10 +3,10 @@ import { memo, useEffect } from "react";
 import { useNavigate } from "react-router-native";
 import { ProgressBar } from "../components/ProgressBar";
 import { colors, align } from "../../util";
-import { useImage } from "../../quiz/hooks/useImage";
+import { useImage } from "../../util";
 
 
-export const SplashScreen = memo(() => {
+export const SplashScreen = memo((): JSX.Element => {
   
   const navigate = useNavigate();
   const image = useImage('logo', 'uiImage');

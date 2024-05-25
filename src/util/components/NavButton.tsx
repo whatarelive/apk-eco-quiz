@@ -1,17 +1,19 @@
 import { Image, TouchableNativeFeedback, StyleSheet, View } from "react-native";
-import { useIconChange, useImage } from '../../hooks';
-import { useNavigate } from "react-router-native";
-import { NavButtonProps } from "../../types";
 import { useContext } from "react";
-import { NextQuizContext } from "../../context/NextQuizContext";
+import { useNavigate } from "react-router-native";
+import { useIconChange, useImage } from '../hooks';
+import { NavButtonProps } from "../interfaces/Props";
+import { NextQuizContext } from "../../quiz/context/NextQuizContext";
 
 
 
-export const NavButton = ( { type, icon1, icon2 }: NavButtonProps ) => {
+
+export const NavButton = ( { type, icon1, icon2 }: NavButtonProps ): JSX.Element => {
 
   // Hook para manejar la navegacion del tipo: 'back-arrow'. 
   const navigate = useNavigate();
 
+  // Acceso al contexto para manejar las acciones del compponente.
   const { active, setActive } = useContext( NextQuizContext );
 
   // Custom hook para manejar el cambio de tema y iconos.

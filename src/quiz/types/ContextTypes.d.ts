@@ -3,12 +3,12 @@ import { Question } from "./HookTypes";
 
 
 /** Types for Return Values of Context Functions */
-export type NexQuizContext = {
+export interface NexQuizContext {
     active: State,
     setActive: React.Dispatch<React.SetStateAction<State>>
 }
 
-export type ScoresContext = {
+export interface ScoresContext {
   score: React.MutableRefObject<number>;
   incrementScore: CallableFunction;
   decrementScore: CallableFunction;
@@ -21,24 +21,24 @@ export type ScoresContext = {
 
 /** Types for Props of Context Functions */
 
-export type ContextProviderProps = {
+export interface ContextProviderProps {
     children: JSX.Element[] | JSX.Element
 }
 
 /** Types for Props of Reducer Context */
-type State = {
+interface State {
     enable: boolean,
     blocked: boolean,
     refId: string
 };
 
-type Response = {
+interface Response {
   categoryID: string;
   responseID: number;
   respID: string;
 }
 
-type Action = {
+interface Action {
   type: string;
   paylod: State;
 };

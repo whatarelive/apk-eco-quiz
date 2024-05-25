@@ -3,8 +3,8 @@ import { useParams } from 'react-router-native';
 import { useState } from 'react';
 import { shuffle } from "lodash";
 import Constants from 'expo-constants';
-import { StatusBar, theme } from "../../util";
-import { QuizHeader, QuizInfo, QuizListResponse, QuizActionFooter } from '../components';
+import { Header, StatusBar, theme } from "../../util";
+import { QuizInfo, QuizListResponse, QuizActionFooter } from '../components';
 import { getCategoryById, getQuestionById } from "../helpers";
 
 
@@ -34,7 +34,7 @@ export const QuizScreen = (): JSX.Element => {
       <StatusBar/>
 
       <View style={ styles.container }>
-        <QuizHeader title={ category.name }/>
+        <Header title={ category.name }/>
         <QuizInfo id={ questionA.id } total={ 5 } />    
         <Text style={ styles.question }>{ questionA.pregunta }</Text>
           

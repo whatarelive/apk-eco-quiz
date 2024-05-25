@@ -1,2 +1,2 @@
-export * from './useIconChange';
-export * from './useImage';
+export * from '../../util/hooks/useIconChange';
+export * from '../../util/hooks/useImage';

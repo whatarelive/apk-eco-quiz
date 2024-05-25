@@ -1,6 +1,6 @@
 import { View } from "react-native";
-import { CategoryList, Profile, Header } from "../components";
-import { StatusBar } from "../../util";
+import { CategoryList, Profile } from "../components";
+import { Header, StatusBar } from "../../util";
 
 
 export const HomeScreen = () => {
@@ -10,7 +10,7 @@ export const HomeScreen = () => {
       <StatusBar/>
 
       <View style={{ flexDirection: 'column' }}>  
-        <Header/>
+        <Header title={"Quiz App"}></Header>
         <Profile/>
         <CategoryList />
       </View>

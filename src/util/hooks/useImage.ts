@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getImageByPath } from "../helpers/getImageByPath";
+import { getImageByPath } from "../../quiz/helpers/getImageByPath";
 import { ImageURISource } from "react-native";
 
 
