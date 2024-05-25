@@ -10,10 +10,11 @@ import { ScoreContext } from "../../context/ScoreContext"
 export const VictoryButtons = () => {
 
     const navigate = useNavigate();
-    const { reset } = useContext( ScoreContext );
+    const { resetTime, reset, } = useContext( ScoreContext );
 
     const handleClick = () => {
-        reset();
+        reset(); 
+        resetTime();
         navigate('/home');
     }
 

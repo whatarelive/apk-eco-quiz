@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const useCounter = ( initialvalue = 0 ) => {
+export const useCounter = ( initialvalue: number ) => {
 
     // Estado del contador del CustomHook
     const [ counter, setCounter ] = useState( initialvalue );

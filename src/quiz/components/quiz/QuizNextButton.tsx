@@ -6,6 +6,7 @@ import { QuizNextButtonProps } from "../../types";
 import { useContext } from 'react';
 import { NextQuizContext } from "../../context/NextQuizContext";
 import { ScoreContext } from "../../context/ScoreContext";
+import { getResponseStatus } from "../../helpers/getResponseStatus";
 
 
 
@@ -13,7 +14,7 @@ import { ScoreContext } from "../../context/ScoreContext";
 export const QuizNextButton = ({ icon1, icon2, category, questionA, question, setQuestion }: QuizNextButtonProps ): JSX.Element => {
 
   const navigate = useNavigate();
-  const { counter, response, setResponse } = useContext( ScoreContext );
+  const { score, incrementScore, decrementScore, responseTime,} = useContext( ScoreContext );
   const { active, setActive } = useContext( NextQuizContext );
 
   const { icon } = useIconChange( icon1, icon2 );
@@ -22,16 +23,19 @@ export const QuizNextButton = ({ icon1, icon2, category, questionA, question, se
   const enableAction = ( !active.enable ) ? theme.brown_ligt : theme.brown_veryDark;
 
 
-  const handleClick = async() => {
-    setResponse({
-      ...response,
-      categoryID: category.id.toString(),
-      responseID: questionA.id,
-      respID: active.refId
-    })
+  const handleClick = () => {
+    const status = getResponseStatus( category.id.toString(), questionA.id, active.refId );
+      
+      if ( status ) {
+        incrementScore( 60 );
+      } else if( !status ) {
+        decrementScore( 80 );
+      }
 
-    console.log( counter );
+    console.log(`Score: ${ score.current   }`);
+    console.log(`Tiempo: ${ responseTime.current }`);
     
+
     setActive({
       ...active,
         enable: false,
@@ -39,11 +43,10 @@ export const QuizNextButton = ({ icon1, icon2, category, questionA, question, se
         refId: '',
     });
 
-    console.log( counter );
     console.log('--------');
     
     
-    if ( question === 5 ) navigate(`/victory/${counter}`); 
+    if ( question === 5 ) navigate(`/victory/${score.current}/${responseTime.current}`); 
 
     setQuestion( question + 1 );
 

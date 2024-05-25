@@ -6,7 +6,7 @@ import { useParams } from "react-router-native";
 
 export const VictoryCard = () => {
 
-    const { score } = useParams();
+    const { score, responseTime } = useParams();
 
   return (
     <View style={{ flexDirection: 'column', width: '100%', flex: 2}}>
@@ -40,7 +40,7 @@ export const VictoryCard = () => {
               Tiempo
             </Text>
             <Text style={ styles.text_Data }>
-              {'6:37'}
+              {responseTime}
             </Text>
           </View>
       

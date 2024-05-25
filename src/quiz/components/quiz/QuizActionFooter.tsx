@@ -18,7 +18,11 @@ export const QuizActionFooter = ({ category, questionA, question, setQuestion }:
 
   return (
     <View style={ styles.container }>
-      <QuizCrono restart={ restart } question={ question } setQuestion={ setQuestion }/>
+      <QuizCrono restart={ restart }
+        category={ category}
+        questionA={ questionA } 
+        question={ question } 
+        setQuestion={ setQuestion }/>
 
       <QuizNextButton 
         icon1={"arrow_forward"} 

@@ -1,12 +1,11 @@
 import { View, Text, StyleSheet } from "react-native"
 import { useParams } from 'react-router-native';
-import { useState, useEffect, useContext } from 'react';
+import { useState } from 'react';
 import { shuffle } from "lodash";
 import Constants from 'expo-constants';
 import { StatusBar, theme } from "../../util";
 import { QuizHeader, QuizInfo, QuizListResponse, QuizActionFooter } from '../components';
 import { getCategoryById, getQuestionById } from "../helpers";
-import { ScoreContext } from "../context/ScoreContext";
 
 
 

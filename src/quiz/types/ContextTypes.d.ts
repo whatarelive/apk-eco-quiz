@@ -9,10 +9,13 @@ export type NexQuizContext = {
 }
 
 export type ScoresContext = {
-  counter: number,
-  reset: CallableFunction,
-  response: Response,
-  setResponse: React.Dispatch<React.SetStateAction<Response>>
+  score: React.MutableRefObject<number>;
+  incrementScore: CallableFunction;
+  decrementScore: CallableFunction;
+  reset: CallableFunction;
+  responseTime: React.MutableRefObject<number>;
+  updateResponseTime: CallableFunction;
+  resetTime: CallableFunction;
 };
 
 
