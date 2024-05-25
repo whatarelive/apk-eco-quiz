@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { NextQuizContext } from "./NextQuizContext"
-import { ContextProviderProps } from "../types";
+import { ContextProviderProps } from "../../types";
 
 
 

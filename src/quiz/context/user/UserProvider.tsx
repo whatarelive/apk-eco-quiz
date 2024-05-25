@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ContextProviderProps } from '../types/ContextTypes';
+import { ContextProviderProps } from '../../types';
 import { UserContext } from './UserContext';
 
 

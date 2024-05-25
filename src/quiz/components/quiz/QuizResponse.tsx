@@ -1,7 +1,7 @@
 import { Text, View, TouchableNativeFeedback, StyleSheet } from "react-native";
 import { QuizResponseProps } from "../../types";
 import { theme } from "../../../util";
-import { NextQuizContext } from "../../context/NextQuizContext";
+import { NextQuizContext } from "../../context";
 import { useContext } from 'react';
 
 
@@ -39,20 +39,26 @@ export const QuizResponse = ( { resp }: QuizResponseProps ) => {
     }
   }
 
+
   return (
     // Este es un componente TouchableNativeFeedback que maneja el evento de presión.
     // Cuando se presiona, se llama a la función handleClick con el id de la respuesta.
     <TouchableNativeFeedback
       onPress={()=> handleClick( resp.id ) }>
+        
         {/* Este es un contenedor con un estilo que se determina llamando a la función beforeStyle. */}
         <View style={{ ...styles.container, ...beforeStyle() }}>
+        
           {/* Este es el texto que muestra el valor de la respuesta. */}
           <Text style={ styles.text }>{ resp.value }</Text>
+        
         </View>
+
     </TouchableNativeFeedback>
   )
 }
 
+// Estilos del componente
 const styles = StyleSheet.create({
     container: {
       display: 'flex',

@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { ContextProviderProps } from "../types"
+import { ContextProviderProps } from "../../types"
 import { ScoreContext } from "./ScoreContext"
 
 

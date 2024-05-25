@@ -14,13 +14,8 @@ export const QuizScreen = (): JSX.Element => {
   // useParams es una función de react-router-dom que devuelve los parámetros de la URL.
   const { categoryId, questionId } = useParams();
 
-  // Si no se proporciona un ID de pregunta, se lanza un error.
-  if ( !questionId ) {
-    throw new Error(`${questionId} is not valid ID for Question Array`);
-  }
-  
   // Aquí se está inicializando el estado de 'question' con el valor de 'questionId'.
-  const [ question , setQuestion ] = useState( +questionId );
+  const [ question , setQuestion ] = useState( +questionId! );
   
   // getCategoryById es una función que devuelve la categoría correspondiente al 'categoryId' proporcionado.
   const category = getCategoryById( categoryId );
@@ -34,12 +29,15 @@ export const QuizScreen = (): JSX.Element => {
       <StatusBar/>
 
       <View style={ styles.container }>
+        
         <Header title={ category.name }/>
+        
         <QuizInfo id={ questionA.id } total={ 5 } />    
+        
         <Text style={ styles.question }>{ questionA.pregunta }</Text>
           
         <View style={ styles.subContainer }>
-          <QuizListResponse respuestas={ shuffle( questionA.respuestas )} />
+          <QuizListResponse respuestas={ shuffle( questionA.respuestas ) } />
           <QuizActionFooter category={ category } questionA={ questionA } question={ question } setQuestion={ setQuestion } />
         </View>
 

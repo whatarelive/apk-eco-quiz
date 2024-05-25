@@ -1,11 +1,10 @@
 import { View, Image, StyleSheet, TouchableNativeFeedback } from "react-native";
 import { useNavigate } from "react-router-native";
+import { useContext } from 'react';
 import { useIconChange, useImage } from "../../hooks";
 import { theme } from "../../../util";
 import { QuizNextButtonProps } from "../../types";
-import { useContext } from 'react';
-import { NextQuizContext } from "../../context/NextQuizContext";
-import { ScoreContext } from "../../context/ScoreContext";
+import { NextQuizContext, ScoreContext } from "../../context";
 import { getResponseStatus } from "../../helpers/getResponseStatus";
 
 

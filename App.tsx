@@ -2,9 +2,7 @@ import { NativeRouter } from 'react-router-native';
 import { AppRouter } from './src/router/AppRouter';
 import { useFonts } from 'expo-font';
 import { customFonts } from './src/util/Fonts/AppFonts';
-import { NextQuizProvider } from './src/quiz/context/NextQuizProvider';
-import { UserProvider } from './src/quiz/context/UserProvider';
-import { ScoreProvider } from './src/quiz/context/ScoreProvider';
+import { UserProvider, ScoreProvider, NextQuizProvider } from './src/quiz/context';
 
 
 export default function App() {

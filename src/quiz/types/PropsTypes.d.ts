@@ -33,6 +33,11 @@ export interface QuizResponseProps {
     resp: Respuesta
 }
 
+// PropsTypes de la funcion del Componente <QuizListResponse/>
+export interface QuizResponseListProps {
+    respuestas: Respuesta[]
+}
+
 // PropsTypes de la funcion del Componente <QuizNextButton/>
 export interface QuizNextButtonProps {
   icon1: string;

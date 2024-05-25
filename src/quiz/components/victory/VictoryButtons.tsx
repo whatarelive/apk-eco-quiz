@@ -3,7 +3,7 @@ import { CustomButton } from "../CustomButton"
 import { theme } from "../../../util"
 import { useNavigate } from "react-router-native"
 import { useContext } from "react"
-import { ScoreContext } from "../../context/ScoreContext"
+import { ScoreContext } from "../../context"
 
 
 

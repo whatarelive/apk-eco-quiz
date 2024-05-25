@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-native";
 import { useIconChange, useImage } from '../hooks';
 import { NavButtonProps } from "../interfaces/Props";
-import { NextQuizContext } from "../../quiz/context/NextQuizContext";
+import { NextQuizContext } from "../../quiz/context";
 
 
 

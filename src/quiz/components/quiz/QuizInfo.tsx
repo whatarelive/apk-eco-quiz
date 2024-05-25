@@ -6,7 +6,7 @@ import { QuizInfoProps } from "../../types";
 
 
 // Recibe un objeto de propiedades que contiene un id.
-export const QuizInfo = ({ id, } : QuizInfoProps ): JSX.Element => {
+export const QuizInfo = ({ id } : QuizInfoProps ): JSX.Element => {
   
   // Se declara un estado llamado porciento con un valor inicial de 0.
   const [ porciento, setPorciento ] = useState( 0 );

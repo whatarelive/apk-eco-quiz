@@ -3,8 +3,7 @@ import { useImage } from "../../hooks"
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { theme } from "../../../util";
 import { useNavigate } from 'react-router-native';
-import { NextQuizContext } from "../../context/NextQuizContext";
-import { ScoreContext } from "../../context/ScoreContext";
+import { NextQuizContext, ScoreContext } from "../../context";
 import { Category, Question } from "../../types";
 
 
