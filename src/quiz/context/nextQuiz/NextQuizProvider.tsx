@@ -12,8 +12,10 @@ export const NextQuizProvider = ({ children }: ContextProviderProps ) => {
     refId: ''
   });
 
+  const [ status, setStatus ] = useState( false );
+
   return (
-    <NextQuizContext.Provider value={{ active, setActive }}>
+    <NextQuizContext.Provider value={{ active, status, setActive, setStatus }}>
         { children }
     </NextQuizContext.Provider>
   )

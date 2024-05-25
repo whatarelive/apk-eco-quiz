@@ -73,4 +73,8 @@ export const uiImage = [
     name: 'redCrono',
     path: require('../../assets/timerRed.png')
   },
+  {
+    name: 'check',
+    path: require('../../assets/check.png')
+  },
 ];

@@ -4,8 +4,10 @@ import { Question } from "./HookTypes";
 
 /** Types for Return Values of Context Functions */
 export interface NexQuizContext {
-    active: State,
-    setActive: React.Dispatch<React.SetStateAction<State>>
+  active: State;
+  setActive: React.Dispatch<React.SetStateAction<State>>;
+  status: boolean;
+  setStatus: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export interface ScoresContext {

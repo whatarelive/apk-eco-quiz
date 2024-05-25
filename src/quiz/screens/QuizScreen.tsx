@@ -37,7 +37,7 @@ export const QuizScreen = (): JSX.Element => {
         <Text style={ styles.question }>{ questionA.pregunta }</Text>
           
         <View style={ styles.subContainer }>
-          <QuizListResponse respuestas={ shuffle( questionA.respuestas ) } />
+          <QuizListResponse respuestas={ shuffle( questionA.respuestas ) } correct={ questionA.correcta } />
           <QuizActionFooter category={ category } questionA={ questionA } question={ question } setQuestion={ setQuestion } />
         </View>
 

@@ -2,17 +2,21 @@ import { View, StyleSheet } from "react-native"
 import { QuizNextButton } from "./QuizNextButton"
 import { QuizActionFooterProps } from "../../types"
 import { QuizCrono } from "./QuizCrono"
-import { useEffect, useState } from 'react';
+import {  useContext, useEffect, useState } from 'react';
+import { QuizCheckButton } from "./QuizCheckButton";
+import { NextQuizContext } from "../../context";
 
 
 
 
 export const QuizActionFooter = ({ category, questionA, question, setQuestion }: QuizActionFooterProps) => {
 
-  const [restart, setRestart] = useState(0);
+  const [ restart, setRestart ] = useState(0);
+  const { status, setStatus }  = useContext( NextQuizContext );
 
   useEffect(() => {
     setRestart( restart + 1 )
+    setStatus( false );
   }, [ question ])
   
 
@@ -24,14 +28,11 @@ export const QuizActionFooter = ({ category, questionA, question, setQuestion }:
         question={ question } 
         setQuestion={ setQuestion }/>
 
-      <QuizNextButton 
-        icon1={"arrow_forward"} 
-        icon2={"arrow_forward"}
-        category={ category}
-        questionA={ questionA }
-        question={ question } 
-        setQuestion={ setQuestion } 
-      />
+      {
+        !status 
+        ? <QuizCheckButton icon1={"check"} icon2={"check"} category={ category } questionA={ questionA } question={ question } setQuestion={ setQuestion } />
+        : <QuizNextButton icon1={"arrow_forward"} icon2={"arrow_forward"} category={ category} questionA={ questionA } question={ question } setQuestion={ setQuestion } />
+      }
     </View>
   )
 }

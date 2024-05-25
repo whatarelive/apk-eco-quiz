@@ -30,12 +30,14 @@ export interface QuizInfoProps {
 
 // PropsTypes de la funcion del Componente <QuizResponse/>
 export interface QuizResponseProps {
-    resp: Respuesta
+    resp: Respuesta,
+    correct: string
 }
 
 // PropsTypes de la funcion del Componente <QuizListResponse/>
 export interface QuizResponseListProps {
-    respuestas: Respuesta[]
+    respuestas: Respuesta[],
+    correct: string,
 }
 
 // PropsTypes de la funcion del Componente <QuizNextButton/>
