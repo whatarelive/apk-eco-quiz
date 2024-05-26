@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-native";
 import { useContext } from 'react';
 import { theme, useImage } from "../../../util";
 import { QuizNextButtonProps } from "../../types";
-import { NextQuizContext, ScoreContext } from "../../context";
+import { NextQuizContext } from "../../context";
 
 
 
@@ -11,15 +11,11 @@ import { NextQuizContext, ScoreContext } from "../../context";
 export const QuizNextButton = ({ question, setQuestion }: QuizNextButtonProps ): JSX.Element => {
 
   const navigate = useNavigate();
-  const { score, responseTime } = useContext( ScoreContext );
   const { active, setStatus, setActive } = useContext( NextQuizContext );
 
   const image = useImage( 'arrow_forward', 'uiImage' );
 
   const handleClick = () => {
-    console.log(`Score: ${ score.current }`);
-    console.log(`Tiempo: ${ responseTime.current }`);  
-
     setActive({
       ...active,
         enable: false,
@@ -28,10 +24,8 @@ export const QuizNextButton = ({ question, setQuestion }: QuizNextButtonProps ):
     });
 
     setStatus( false );
-
-    console.log('--------');
-    
-    if ( question === 5 ) navigate(`/victory/${score.current}/${responseTime.current}`); 
+  
+    if ( question === 5 ) navigate(`/victory`); 
 
     setQuestion( question + 1 );
   }

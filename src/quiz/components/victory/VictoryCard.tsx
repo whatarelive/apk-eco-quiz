@@ -1,12 +1,26 @@
 import { View, Text, StyleSheet } from "react-native"
 import { theme } from "../../../util";
-import { useParams } from "react-router-native";
+import { useContext, useEffect } from "react";
+import { ScoreContext } from "../../context";
+import { useRef } from 'react';
 
 
 
 export const VictoryCard = () => {
 
-    const { score, responseTime } = useParams();
+  const { score, responseTime, aciertos } = useContext( ScoreContext );
+  const refTime = useRef('');
+
+  useEffect(() => {
+    if ( responseTime.current > 60 ) {
+      refTime.current = `${Math.fround(responseTime.current / 60)} min`    
+    
+    } else {
+      refTime.current = `${responseTime.current} s`;
+    }
+
+  }, [])
+  
 
   return (
     <View style={{ flexDirection: 'column', width: '100%', flex: 2}}>
@@ -16,7 +30,7 @@ export const VictoryCard = () => {
             Puntuación
           </Text>
           <Text style={{ ...styles.text_Header, color: theme.brown_clay}} >
-            { score }
+            { score.current }
           </Text>
         </View>
 
@@ -27,7 +41,7 @@ export const VictoryCard = () => {
             
             <View style={{ flexDirection: 'row'}}>
               <Text style={{ ...styles.text_Data, color: theme.green_base }}>
-                12
+                { aciertos.current }
               </Text>           
               <Text style={ styles.text_Data }>
                 /20
@@ -40,7 +54,7 @@ export const VictoryCard = () => {
               Tiempo
             </Text>
             <Text style={ styles.text_Data }>
-              {responseTime}
+              {refTime.current}
             </Text>
           </View>
       

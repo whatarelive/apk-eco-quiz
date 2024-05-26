@@ -12,7 +12,7 @@ export const AppRouter = () => {
         <Route path="/" element={ <SplashScreen/> }/>
         <Route path="/home" element={ <HomeScreen/> }/>
         <Route path="/quiz/:categoryId/:questionId" element={ <QuizScreen/> }/>
-        <Route path="/victory/:score/:responseTime" element={ <VictoryScreen/> }/>
+        <Route path="/victory" element={ <VictoryScreen/> }/>
     </Routes>
   )
 }

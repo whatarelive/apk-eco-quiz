@@ -17,9 +17,14 @@ export interface ScoresContext {
   incrementScore: CallableFunction;
   decrementScore: CallableFunction;
   reset: CallableFunction;
+
   responseTime: React.MutableRefObject<number>;
   updateResponseTime: CallableFunction;
   resetTime: CallableFunction;
+
+  aciertos: React.MutableRefObject<number>;
+  updateAciertos: CallableFunction;
+  resetAciertos: CallableFunction;
 };
 
 

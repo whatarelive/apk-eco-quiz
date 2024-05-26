@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
     paddingLeft: 30,
     flexDirection: 'row', 
     alignItems: 'center', 
-    justifyContent: 'space-between', 
+    justifyContent: 'space-between',
+    marginBottom: '10%' 
   }
 });

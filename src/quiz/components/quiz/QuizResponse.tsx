@@ -80,12 +80,11 @@ export const QuizResponse = ( { resp, correct }: QuizResponseProps ): JSX.Elemen
 // Estilos del componente
 const styles = StyleSheet.create({
     container: {
-      minHeight: 95,
-      maxHeight: 110,
+      height: '18%',
       flexDirection: 'row',
       alignItems: 'center',
       marginHorizontal: 24,
-      marginVertical: 12, 
+      marginVertical: '3%', 
       paddingHorizontal: 10,
       borderRadius: 16,
       borderWidth: 4,

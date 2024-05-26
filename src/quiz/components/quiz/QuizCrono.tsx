@@ -1,5 +1,5 @@
 import { View, Text, Image, StyleSheet } from "react-native"
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { theme, useImage } from "../../../util";
 import { useNavigate } from 'react-router-native';
 import { NextQuizContext, ScoreContext } from "../../context";
@@ -12,49 +12,52 @@ export const QuizCrono = ({ restart, question, setQuestion }: QuizCronoProps ): 
     const navigate = useNavigate();
     const [ icon, setIcon ] = useState('crono');
     const { active, status, setActive } = useContext( NextQuizContext );
-    const { score, responseTime, decrementScore, updateResponseTime } = useContext( ScoreContext );
+    const { decrementScore, updateResponseTime } = useContext( ScoreContext );
     
     const image = useImage( icon, 'uiImage' );
 
     const [ times, setTime ] = useState( 60 );
-    const time = useRef( 0 );
 
     useEffect(() =>{
-      updateResponseTime( time.current );
-      
       setIcon('crono')
       setTime( 60 );
     }, [ restart ])
-
+    
+    useEffect(() => {
+      if ( status ) { 
+        updateResponseTime( 61 - times );
+      }
+    }, [ status ])
+    
+    
     useEffect(() => {
       const interval = setInterval(() => {
         if ( status ) return;
 
         if( times === 0 ) {
           setActive({
-                  ...active,
-                  enable: false,
-                  blocked: false,
-                  refId: ''
-                })
+            ...active,
+            enable: false,
+            blocked: false,
+            refId: ''
+          })
                 
-                decrementScore( 20 )
+          updateResponseTime( 60 );
+          decrementScore( 20 )
                 
-                if( question >= 5) navigate(`/victory/${ score.current }/${ responseTime.current }`)    
-                  setQuestion( question + 1 )
-              }
+          if( question >= 5) navigate(`/victory`)    
+          setQuestion( question + 1 )
+        }
               
-              setTime( times - 1 );
+        setTime( times - 1 );
               
-              if ( times === 16 ) {
-                setIcon('redCrono');
-              }
-          }, 1000);
-          
-          
-          return () => clearInterval( interval );
-          
-    }, [ times ])
+        if ( times === 16 ) setIcon('redCrono');
+      
+      }, 1000);
+            
+      return () => clearInterval( interval );
+            
+    }, [ times ]);
     
     return (
       <View style={ styles.textContainer }>

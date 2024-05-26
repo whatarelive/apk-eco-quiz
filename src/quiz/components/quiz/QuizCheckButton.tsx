@@ -10,7 +10,7 @@ import { getResponseStatus } from "../../helpers/getResponseStatus";
 
 export const QuizCheckButton = ({ category, questionA }: QuizCheckButtonProps ): JSX.Element => {
 
-    const { incrementScore, decrementScore } = useContext( ScoreContext );
+    const { incrementScore, decrementScore, updateAciertos } = useContext( ScoreContext );
     const { active, setStatus } = useContext( NextQuizContext );
 
     const image = useImage( 'check', 'uiImage' );
@@ -22,6 +22,8 @@ export const QuizCheckButton = ({ category, questionA }: QuizCheckButtonProps ):
       
         if ( status ) {
             incrementScore( 60 );
+            updateAciertos( 1 );
+            
         } else if( !status ) {
             decrementScore( 80 );
         }

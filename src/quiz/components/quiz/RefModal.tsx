@@ -10,48 +10,54 @@ export const RefModal = ({ description }: { description: string }) => {
    const { setViewModal } = useContext( NextQuizContext );
 
   return (
-    <View style={{position: 'absolute', width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center'}}>
-        <View style={{width: '100%', height: '100%', opacity: 0.7, backgroundColor: theme.black}}></View>
-        <View style={ styles.container }>
-            
-            <Text style={ styles.text }>{ description }</Text>
-
+    <View style={ styles.container }>
+        <View style={ styles.background }></View>
+        <View style={ styles.modal }>
+            <Text style={{ ...styles.text, color: theme.green_veryDark }}>{ description }</Text>
             <View style={ styles.button }>
                 <TouchableNativeFeedback
                     onPress={() => setViewModal( false )}>
-        
                     <Text style={{ ...styles.text, color: theme.white }}>Cerrar</Text>                
-        
                 </TouchableNativeFeedback>
             </View>
-        
         </View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-    container:{
+    container: {
+        position: 'absolute', 
+        width: '100%', 
+        height: '100%', 
+        alignItems: 'center', 
+        justifyContent: 'center', 
+    },
+    background: {
+        width: '100%', 
+        height: '100%', 
+        backgroundColor: theme.black,
+        opacity: 0.8, 
+    },
+    modal:{
+        position: 'absolute', 
         width: '80%', 
         height: '40%', 
-        position: 'absolute',
-        alignSelf: 'center',
-        padding: '10%',
+        padding: '10%', 
+        alignItems: 'center', 
         justifyContent: 'space-between',
-        alignItems: 'center',
-        backgroundColor: theme.green_light,
-        borderWidth: 5,
-        borderRadius: 20,
+        borderWidth: 4, 
+        borderRadius: 16, 
         borderColor: theme.green_base,
-        opacity: 100
+        backgroundColor: theme.green_light,
     },
     text: {
         textAlign: 'center',
-        fontSize: 18,
-        fontFamily: 'Rubik'
+        fontSize: 20, 
+        fontFamily: 'Rubik',
     },
     button: {
-        width: '60%',
+        width: '60%', 
         height: '15%',
         justifyContent: 'center',
         borderRadius: 20,

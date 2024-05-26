@@ -5,10 +5,9 @@ import { ScoreContext } from "./ScoreContext"
 
 export const ScoreProvider = ({ children }: ContextProviderProps ) => {
 
-  //const [ score, setScore ] = useState(0);
   const score = useRef(0);
   const responseTime = useRef(0);
-  // const [ responseTime, setResponseTime ] = useState(0);
+  const aciertos = useRef(0);
 
   const incrementScore = ( value: number ) => {
     const revScore = score.current;
@@ -24,14 +23,24 @@ export const ScoreProvider = ({ children }: ContextProviderProps ) => {
 
   const updateResponseTime = ( time: number ) => {
     const revResponsiveTime = responseTime.current;
-    responseTime.current =  revResponsiveTime + time;
+    responseTime.current =  time + revResponsiveTime;
   };
 
   const resetTime = () => responseTime.current = 0;
 
+  const updateAciertos = ( acierto: number ) => {
+    const revAciertos = aciertos.current;
+    aciertos.current = revAciertos + acierto;
+  }
+
+  const resetAciertos = () => aciertos.current = 0;
 
   return (
-    <ScoreContext.Provider value={{ score, incrementScore, decrementScore, reset, responseTime, updateResponseTime, resetTime }}>
+    <ScoreContext.Provider value={{ 
+        score, incrementScore, decrementScore, reset, 
+        responseTime, updateResponseTime, resetTime, 
+        aciertos, updateAciertos, resetAciertos }}
+      >
       { children }
     </ScoreContext.Provider>
   )
