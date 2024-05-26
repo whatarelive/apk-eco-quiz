@@ -9,7 +9,7 @@ import { theme } from "../../../util";
 export const Profile = (): JSX.Element => {
 
     const [ record , setRecord ] = useState({score: 0, time: 0})
-    const urlAvatar = useImage('avatar1', 'avatarImage');
+    const urlAvatar = useImage('avatar', 'uiImage');
 
 
   return (
@@ -26,14 +26,15 @@ export const Profile = (): JSX.Element => {
 
 const styles = StyleSheet.create({
     avatar: { 
-        width: 100,
-        height: 100,
+        width: '25%',
+        height: '100%',
     },
     container: {
         width: '90%',
+        height: '15%',
         alignSelf: 'center',
         alignItems: 'center',
-        padding: 25,
+        padding: '5%',
         flexDirection: 'row',
         justifyContent: 'center',
         borderRadius: 16,

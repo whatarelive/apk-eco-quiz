@@ -17,6 +17,7 @@ export const CategoryItem = ( { category }: CategoryItemProps ): JSX.Element => 
   return (
     <View style={ styles.container }>
       <TouchableNativeFeedback
+        background={TouchableNativeFeedback.Ripple(theme.brown_base, false)}
         onPress={ handleTouch }>
 
         <View style={ styles.sub_container }>
@@ -44,8 +45,8 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: theme.brown_ligt,
     borderRadius: 16,
-    borderWidth: 5,
-    borderColor: theme.brown_ligt,
+    borderWidth: 4,
+    borderColor: '#ffd8b5',
     marginHorizontal: 15,
     marginVertical: 30,
   },
@@ -58,24 +59,23 @@ const styles = StyleSheet.create({
     padding: 10
   },
   image: {
-    width: 140,
-    height: 160,
-    borderRadius: 10,
+    width: '58%',
+    height: '40%',
     marginBottom: '5%',  
   },
   text: {
-    fontSize: 28,
+    fontSize: 24,
     fontWeight: '700',
     marginBottom: '25%',
     fontFamily: 'Rubik',
     textAlign: 'center',
-    color: theme.brown_dark
+    color: '#8a4b39'
   },
   text2: {
     fontSize: 20,
     fontWeight: '700',
     fontFamily: 'Rubik',
     textAlign: 'center',
-    color: theme.brown_lightDark  
+    color: '#cd8f7d'
   }
 })

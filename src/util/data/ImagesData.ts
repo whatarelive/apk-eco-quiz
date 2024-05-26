@@ -2,34 +2,26 @@
 export const categoryImages = [ 
     {
         name: "cambio",
-        path:  require('../../assets/cambio.jpg')
+        path:  require('../../assets/cambio.png')
     },
     {
         name: "biodiversidad",
-        path:  require('../../assets/biodiversidad.jpg'),
+        path:  require('../../assets/biodiversidad.png'),
     },
     {
         name: "energia",
-        path:  require('../../assets/energia.jpg'),
+        path:  require('../../assets/energia.png'),
     },
     {
         name: "reciclaje",
-        path:  require('../../assets/reciclaje.jpg'),
+        path:  require('../../assets/reciclaje.png'),
     },
     {   
         name: "agua",
-        path:  require('../../assets/agua.jpg'),
+        path:  require('../../assets/agua.png'),
     }
 ]
 
-
-// Arreglo de Imagenes de Avatares disponibles.
-export const avatarImages = [
-    {
-        name: 'avatar1',
-        path: require('../../assets/logo.png'),
-    }
-]
 
 // Arreglo de Imagenes de necesarias en la UI.
 export const uiImage = [
@@ -52,6 +44,10 @@ export const uiImage = [
   {
     name: "trofeo",
     path: require("../../assets/imgCoup.png"),
+  },
+  {
+    name: "avatar",
+    path: require('../../assets/imgCoup2.png')
   },
   {
     name: "exit",
@@ -86,6 +82,7 @@ export const uiImage = [
     path: require("../../assets/error_outline.png"),
   },
   {
-    name: ''
+    name: '',
+    path: undefined,
   }
 ];

@@ -2,7 +2,7 @@ import { View, Image, Text, StyleSheet } from "react-native"
 import { memo, useEffect } from "react";
 import { useNavigate } from "react-router-native";
 import { ProgressBar } from "../components/ProgressBar";
-import { colors, align } from "../../util";
+import { align, theme } from "../../util";
 import { useImage } from "../../util";
 
 
@@ -47,6 +47,6 @@ const style = StyleSheet.create({
     position: 'relative',
     fontSize: 32,
     fontWeight: '500',
-    color: colors.darkPrimary
+    color: theme.green_base
   }
 })

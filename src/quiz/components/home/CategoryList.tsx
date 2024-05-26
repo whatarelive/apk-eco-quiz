@@ -1,7 +1,7 @@
 import { View, ScrollView, StyleSheet } from 'react-native';
 import { categories }  from "../../data/Quiz.json";
 import { CategoryItem } from "./CategoryItem";
-import { align, theme } from '../../../util';
+import { theme } from '../../../util';
 
 
 
@@ -14,6 +14,8 @@ export const CategoryList = (): JSX.Element => {
   return (
     <View style={ styles.container }>
       <ScrollView
+        bounces={ false }
+        overScrollMode='never'
         style={ styles.list }
         horizontal={ true }>
         {
@@ -25,12 +27,11 @@ export const CategoryList = (): JSX.Element => {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 2, 
-    marginTop: '5%', 
-    ...align.relative
+  container: { 
+    flex: 2,
   },
   list: {
+    flex:1,
     width: '100%',
     backgroundColor: theme.brown_base,
     alignContent: 'center',

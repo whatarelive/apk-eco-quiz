@@ -1,6 +1,6 @@
 import { memo, useEffect, useRef } from "react"
 import { Animated, View ,StyleSheet} from "react-native"
-import { colors } from "../../util";
+import { theme } from "../../util";
 
 
 export const ProgressBar = memo((): JSX.Element => {
@@ -43,7 +43,7 @@ export const ProgressBar = memo((): JSX.Element => {
         height: '100%',
         width: '25%',
         borderRadius: 16,
-        backgroundColor: colors.primary,
+        backgroundColor: theme.green_light,
         transform: [{ translateX: position }],
       },
       container: {
@@ -51,7 +51,7 @@ export const ProgressBar = memo((): JSX.Element => {
         height: 5,
         marginVertical: 25,
         borderRadius: 16,
-        backgroundColor: colors.acent,
+        backgroundColor: theme.green_base,
       }
     });
 

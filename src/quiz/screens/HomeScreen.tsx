@@ -9,7 +9,7 @@ export const HomeScreen = () => {
     <>
       <StatusBar/>
 
-      <View style={{flex:1, backgroundColor: theme.brown_ligt}}>  
+      <View style={{height: '96%', backgroundColor: theme.brown_ligt}}>  
         <Header title={"Quiz App"} />
         <Profile/>
 
@@ -19,6 +19,7 @@ export const HomeScreen = () => {
 
         <CategoryList />
       </View>
+
     </>
   )
 }

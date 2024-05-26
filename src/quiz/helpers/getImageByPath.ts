@@ -1,5 +1,5 @@
 import { ImageURISource } from "react-native";
-import { avatarImages, categoryImages, iconImages, uiImage } from "../../util/data/ImagesData";
+import { categoryImages, uiImage } from "../../util/data/ImagesData";
 
 type ImageResorce = {
     name: string,
@@ -20,10 +20,6 @@ export const getImageByPath = ( name: string, type: string ) => {
     switch ( type ) {
         case 'categoryImage':
             return filtado( categoryImages, name );
-        case 'avatarImage':
-            return filtado( avatarImages, name );
-        case 'iconImage': 
-            return filtado( iconImages, name );
         default:
             return filtado( uiImage, name );
     }
