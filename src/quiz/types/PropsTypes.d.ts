@@ -30,14 +30,16 @@ export interface QuizInfoProps {
 
 // PropsTypes de la funcion del Componente <QuizResponse/>
 export interface QuizResponseProps {
-    resp: Respuesta,
-    correct: string
+  resp: Respuesta;
+  correct: string;
+  setViewModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 // PropsTypes de la funcion del Componente <QuizListResponse/>
 export interface QuizResponseListProps {
-    respuestas: Respuesta[],
-    correct: string,
+  respuestas: Respuesta[];
+  correct: string;
+  setViewModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 // PropsTypes de la funcion del Componente <QuizNextButton/>
@@ -52,10 +54,10 @@ export interface QuizNextButtonProps {
 
 // PropsTypes de la funcion del Componente <QuizNextButton/>
 export interface QuizActionFooterProps {
-    category: Category,
-    questionA: Question,
-    question: number,
-    setQuestion: React.Dispatch<React.SetStateAction<number>>
+  category: Category;
+  questionA: Question;
+  question: number;
+  setQuestion: React.Dispatch<React.SetStateAction<number>>;
 }
 
 export interface RenderList {

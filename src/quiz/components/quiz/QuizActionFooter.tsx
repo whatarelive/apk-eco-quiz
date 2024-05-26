@@ -22,11 +22,11 @@ export const QuizActionFooter = ({ category, questionA, question, setQuestion }:
 
   return (
     <View style={ styles.container }>
-      <QuizCrono restart={ restart }
-        category={ category}
-        questionA={ questionA } 
+      <QuizCrono 
+        restart={ restart }
         question={ question } 
-        setQuestion={ setQuestion }/>
+        setQuestion={ setQuestion }
+      />
 
       {
         !status 

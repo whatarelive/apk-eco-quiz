@@ -4,11 +4,10 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import { theme } from "../../../util";
 import { useNavigate } from 'react-router-native';
 import { NextQuizContext, ScoreContext } from "../../context";
-import { Category, Question } from "../../types";
 
 
 
-export const QuizCrono = ({ restart, category, questionA, question, setQuestion }: { restart: number, category: Category, questionA: Question, question: number, setQuestion: React.Dispatch<React.SetStateAction<number>> }) => {
+export const QuizCrono = ({ restart, question, setQuestion }: { restart: number, question: number, setQuestion: React.Dispatch<React.SetStateAction<number>> }) => {
 
     const navigate = useNavigate();
     const [ icon, setIcon ] = useState('crono');

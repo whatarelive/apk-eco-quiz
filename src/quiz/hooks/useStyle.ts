@@ -26,7 +26,13 @@ export const useStyle = ( resp: Respuesta, condicion: boolean ) => {
     const [ color, setColor ] = useState("");
     const { active } = useContext( NextQuizContext );
 
-    const icon = condicion ? "check_circle" : color === "red" ? "error_circle" : "";
+    const icon = condicion 
+      ? "check_circle" 
+      : color === "red" 
+        ? "error_circle" 
+        : color === 'green' 
+          ? "check_circle" 
+          : '';
 
     const image = useImage( icon , 'uiImage' );
 
