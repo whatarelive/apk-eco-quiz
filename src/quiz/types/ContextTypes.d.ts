@@ -8,6 +8,8 @@ export interface NexQuizContext {
   setActive: React.Dispatch<React.SetStateAction<State>>;
   status: boolean;
   setStatus: React.Dispatch<React.SetStateAction<boolean>>;
+  viewModal: boolean;
+  setViewModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export interface ScoresContext {

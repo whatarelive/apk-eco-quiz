@@ -14,8 +14,10 @@ export const NextQuizProvider = ({ children }: ContextProviderProps ) => {
 
   const [ status, setStatus ] = useState( false );
 
+  const [ viewModal, setViewModal ] = useState( false );
+
   return (
-    <NextQuizContext.Provider value={{ active, status, setActive, setStatus }}>
+    <NextQuizContext.Provider value={{ active, status, viewModal, setActive, setStatus, setViewModal }}>
         { children }
     </NextQuizContext.Provider>
   )

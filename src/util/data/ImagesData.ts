@@ -34,14 +34,6 @@ export const uiImage = [
     path: require("../../assets/flecha-atras.png"),
   },
   {
-    name: "luna",
-    path: require("../../assets/luna.png"),
-  },
-  {
-    name: "sun",
-    path: require("../../assets/icons8-sun-48.png"),
-  },
-  {
     name: "trofeo",
     path: require("../../assets/imgCoup.png"),
   },
@@ -55,7 +47,7 @@ export const uiImage = [
   },
   {
     name: "eyes",
-    path: require("../../assets/eyepen.png"),
+    path: require("../../assets/eyes.png"),
   },
   {
     name: "arrow_forward",

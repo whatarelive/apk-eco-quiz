@@ -1,12 +1,13 @@
 import { View, Text, StyleSheet } from "react-native"
 import { useParams } from 'react-router-native';
-import { useMemo, useState } from 'react';
+import { useContext, useMemo, useState } from 'react';
 import { shuffle } from "lodash";
 import Constants from 'expo-constants';
 import { Header, StatusBar, theme } from "../../util";
 import { QuizInfo, QuizListResponse, QuizActionFooter } from '../components';
 import { getCategoryById, getQuestionById } from "../helpers";
-import { Modal } from "../../util/components/Modal";
+import { RefModal } from "../components/quiz/RefModal";
+import { NextQuizContext } from "../context";
 
 
 
@@ -24,14 +25,14 @@ export const QuizScreen = (): JSX.Element => {
   // getQuestionById es una función que devuelve la pregunta correspondiente al 'question' y 'category' proporcionados.
   const questionA = getQuestionById( question, category );
 
-  const [ viewModal, setViewModal ] = useState( false )
+  const { viewModal } = useContext( NextQuizContext );
 
   const respuestas = useMemo(() => shuffle( questionA.respuestas ), [ questionA ])
 
   return (
     <>
       <StatusBar/>
-
+      
       <View style={ styles.container }>
         
         <Header title={ category.name }/>
@@ -41,17 +42,14 @@ export const QuizScreen = (): JSX.Element => {
         <Text style={ styles.question }>{ questionA.pregunta }</Text>
           
         <View style={ styles.subContainer }>
-          <QuizListResponse respuestas={ respuestas } correct={ questionA.correcta } setViewModal={ setViewModal } />
+          <QuizListResponse respuestas={ respuestas } correct={ questionA.correcta } />
           <QuizActionFooter category={ category } questionA={ questionA } question={ question } setQuestion={ setQuestion } />
         </View>
 
-          {
-            viewModal && 
-            <View style={{position: 'absolute', width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center'}}>
-                <View style={{width: '100%', height: '100%', opacity: 0.7, backgroundColor: theme.black}}></View>
-                <Modal description="fdvbaubfviuannjaks cdkja vhabdfvyuhadu baiucbuiacuiasdbcuibdasvadbvuiadfbvuibfdiu adiv uiadbvuiadbvuidf ui adi" setViewModal={ setViewModal }/>
-            </View>
-          }
+        {
+          viewModal &&
+            <RefModal description="fdvbaubfviuannjaks cdkja vhabdfvyuhadu baiucbuiacuiasdbcuibdasvadbvuiadfbvuibfdiu adiv uiadbvuiadbvuidf ui adi" />
+        }
       </View> 
     </>
   )

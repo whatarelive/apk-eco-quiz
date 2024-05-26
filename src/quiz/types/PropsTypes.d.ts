@@ -31,14 +31,12 @@ export interface QuizInfoProps {
 export interface QuizResponseProps {
   resp: Respuesta;
   correct: string;
-  setViewModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 // PropsTypes de la funcion del Componente <QuizListResponse/>
 export interface QuizResponseListProps {
   respuestas: Respuesta[];
   correct: string;
-  setViewModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 // PropsTypes de la funcion del Componente <QuizNextButton/>
