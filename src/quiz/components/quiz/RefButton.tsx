@@ -1,7 +1,9 @@
 import { TouchableNativeFeedback, View, Text, Image } from "react-native";
-import { useImage } from "../../hooks";
+import { useImage } from "../../../util";
 
-export const RefButton = ({setViewModal}: { setViewModal: React.Dispatch<React.SetStateAction<boolean>>}) => {
+
+
+export const RefButton = ({setViewModal}: { setViewModal: React.Dispatch<React.SetStateAction<boolean>>}): JSX.Element => {
 
   const image = useImage('eyes', 'uiImage');
 

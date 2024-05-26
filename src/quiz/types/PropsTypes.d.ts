@@ -16,8 +16,7 @@ export interface CategoryItemProps {
 // PropsTypes de la funcion del Componente <CategoryItem/>
 export interface CustomButtonProps {
     title: string,
-    icon1: string,
-    icon2: string,
+    icon: string,
     color: string,
     handleClick: CallableFunction,
 }
@@ -44,13 +43,22 @@ export interface QuizResponseListProps {
 
 // PropsTypes de la funcion del Componente <QuizNextButton/>
 export interface QuizNextButtonProps {
-  icon1: string;
-  icon2: string;
-  category: Category;
-  questionA: Question;
   question: number;
   setQuestion: React.Dispatch<React.SetStateAction<number>>;
 };
+
+// PropsTypes de la funcion del Componente <QuizNextButton/>
+export interface QuizCheckButtonProps {
+  category: Category;
+  questionA: Question;
+};
+
+// PropsTypes de la funcion del Componente <QuizCrono/>
+export interface QuizCronoProps {
+  restart: number;
+  question: number;
+  setQuestion: React.Dispatch<React.SetStateAction<number>>;
+}
 
 // PropsTypes de la funcion del Componente <QuizNextButton/>
 export interface QuizActionFooterProps {

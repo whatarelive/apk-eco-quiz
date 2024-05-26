@@ -1,22 +1,20 @@
 import { View, Image, StyleSheet, TouchableNativeFeedback } from "react-native";
 import { useNavigate } from "react-router-native";
 import { useContext } from 'react';
-import { useIconChange, useImage } from "../../hooks";
-import { theme } from "../../../util";
+import { theme, useImage } from "../../../util";
 import { QuizNextButtonProps } from "../../types";
 import { NextQuizContext, ScoreContext } from "../../context";
 
 
 
 
-export const QuizNextButton = ({ icon1, icon2, question, setQuestion }: QuizNextButtonProps ): JSX.Element => {
+export const QuizNextButton = ({ question, setQuestion }: QuizNextButtonProps ): JSX.Element => {
 
   const navigate = useNavigate();
   const { score, responseTime } = useContext( ScoreContext );
   const { active, setStatus, setActive } = useContext( NextQuizContext );
 
-  const { icon } = useIconChange( icon1, icon2 );
-  const image = useImage( icon, 'uiImage' );
+  const image = useImage( 'arrow_forward', 'uiImage' );
 
   const handleClick = () => {
     console.log(`Score: ${ score.current }`);

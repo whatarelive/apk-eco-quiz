@@ -1,13 +1,13 @@
 import { View, Text, Image, StyleSheet } from "react-native"
-import { useImage } from "../../hooks"
-import React, { useContext, useEffect, useRef, useState } from "react";
-import { theme } from "../../../util";
+import { useContext, useEffect, useRef, useState } from "react";
+import { theme, useImage } from "../../../util";
 import { useNavigate } from 'react-router-native';
 import { NextQuizContext, ScoreContext } from "../../context";
+import { QuizCronoProps } from "../../types";
 
 
 
-export const QuizCrono = ({ restart, question, setQuestion }: { restart: number, question: number, setQuestion: React.Dispatch<React.SetStateAction<number>> }) => {
+export const QuizCrono = ({ restart, question, setQuestion }: QuizCronoProps ): JSX.Element => {
 
     const navigate = useNavigate();
     const [ icon, setIcon ] = useState('crono');

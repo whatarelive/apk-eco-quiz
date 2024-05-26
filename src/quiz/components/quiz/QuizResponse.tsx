@@ -9,7 +9,7 @@ import { RefButton } from "./RefButton";
 
 
 // Recibe un objeto de propiedades que contiene una respuesta (resp).
-export const QuizResponse = ( { resp, correct, setViewModal }: QuizResponseProps ) => {
+export const QuizResponse = ( { resp, correct, setViewModal }: QuizResponseProps ): JSX.Element => {
 
   // Utilizamos el hook useContext para obtener el estado y la función de actualización del contexto NextQuizContext.
   const { active, status, setActive } = useContext( NextQuizContext );

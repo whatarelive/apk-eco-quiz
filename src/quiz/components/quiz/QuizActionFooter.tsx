@@ -9,7 +9,7 @@ import { NextQuizContext } from "../../context";
 
 
 
-export const QuizActionFooter = ({ category, questionA, question, setQuestion }: QuizActionFooterProps) => {
+export const QuizActionFooter = ({ category, questionA, question, setQuestion }: QuizActionFooterProps): JSX.Element => {
 
   const [ restart, setRestart ] = useState(0);
   const { status, setStatus }  = useContext( NextQuizContext );
@@ -30,8 +30,8 @@ export const QuizActionFooter = ({ category, questionA, question, setQuestion }:
 
       {
         !status 
-        ? <QuizCheckButton icon1={"check"} icon2={"check"} category={ category } questionA={ questionA } question={ question } setQuestion={ setQuestion } />
-        : <QuizNextButton icon1={"arrow_forward"} icon2={"arrow_forward"} category={ category} questionA={ questionA } question={ question } setQuestion={ setQuestion } />
+        ? <QuizCheckButton category={ category } questionA={ questionA } />
+        : <QuizNextButton question={ question } setQuestion={ setQuestion } />
       }
     </View>
   )

@@ -23,13 +23,13 @@ export const VictoryButtons = () => {
     <View style={ styles.button_Container }>
         <CustomButton title="Volver" 
           handleClick={handleClick} 
-          icon1={"exit"} icon2={"exit"} 
+          icon={"exit"} 
           color={ theme.brown_veryDark }
         />
         
         <CustomButton title="Revisar" 
           handleClick={handleClick} 
-          icon1={"eyes"} icon2={"eyes"} 
+          icon={"eyes"} 
           color={ theme.green_base } 
         />
     </View>

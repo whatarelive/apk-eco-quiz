@@ -1,6 +1,5 @@
 import { View, Text, Image, StyleSheet } from "react-native"
-import { theme } from "../../util";
-import { useImage } from "../hooks";
+import { theme, useImage } from "../../util";
 import { VictoryCard, VictoryButtons } from "../components";
 
 

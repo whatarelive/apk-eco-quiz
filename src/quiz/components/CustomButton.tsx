@@ -1,13 +1,11 @@
 import { View, Text,Image, TouchableNativeFeedback, StyleSheet } from "react-native";
-import { theme } from "../../util";
+import { theme, useImage } from "../../util";
 import { CustomButtonProps } from "../types";
-import { useIconChange, useImage } from "../hooks";
 
 
 
-export const CustomButton = ( { title, icon1, icon2, color, handleClick }: CustomButtonProps ) => {
+export const CustomButton = ( { title, icon, color, handleClick }: CustomButtonProps ): JSX.Element => {
 
-  const { icon } = useIconChange( icon1, icon2 );
   const image = useImage( icon , 'uiImage');
 
   return (

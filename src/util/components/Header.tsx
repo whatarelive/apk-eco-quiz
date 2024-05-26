@@ -16,10 +16,8 @@ export const Header = ( { title }: HeaderProps ): JSX.Element => {
     const newTitle = title + ( pathname !== '/home' ? '- Quiz' : '' );
 
     //Este es el componente NavButton que representa un botón de navegación hacia atrás segun la ubicacion. 
-    const NavIzqElement = () => pathname !== '/home' 
-    ? <NavButton type={"back-arrow"} icon1={"flecha"} icon2={"flecha"}/>
-    : <View style={{ width: 48 }}></View>
-
+    const NavIzqElement = () => pathname !== '/home' ? <NavButton /> : <></>
+    const NavDrchElement = () => pathname !== '/home' && <View style={{ width: 48 }}></View>
 
     return (
         // Este es un contenedor principal con un estilo específico.
@@ -29,8 +27,7 @@ export const Header = ( { title }: HeaderProps ): JSX.Element => {
             {/* Este es el texto que muestra el título del quiz. */}
             <Text style={styles.text}>{ newTitle }</Text>
 
-            {/* Este es otro componente NavButton que representa un botón para cambiar el tema. */}
-            <NavButton type={"theme"} icon1={"luna"} icon2={"sun"}/>
+            <NavDrchElement/>
         </View>
     )
 }
