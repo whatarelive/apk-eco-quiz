@@ -1,6 +1,7 @@
 import { View, StyleSheet } from "react-native"
 import { QuizResponseListProps } from "../../types"
 import { QuizResponse } from "./QuizResponse"
+import { RFValue } from 'react-native-responsive-fontsize';
 
 
 // Recibe un arreglo de objetos que contiene todas las respuestas.
@@ -23,7 +24,7 @@ const styles = StyleSheet.create({
   response: {
     width: '100%',
     alignSelf: 'center',
-    paddingVertical: 10,
+    paddingVertical: RFValue(10),
     flexDirection: 'column',
   }
 })

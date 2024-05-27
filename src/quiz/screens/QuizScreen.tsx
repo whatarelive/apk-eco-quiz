@@ -8,6 +8,7 @@ import { QuizInfo, QuizListResponse, QuizActionFooter } from '../components';
 import { getCategoryById, getQuestionById } from "../helpers";
 import { RefModal } from "../components/quiz/RefModal";
 import { NextQuizContext } from "../context";
+import { RFValue } from 'react-native-responsive-fontsize';
 
 
 
@@ -37,7 +38,7 @@ export const QuizScreen = (): JSX.Element => {
         
         <Header title={ category.name }/>
         
-        <QuizInfo id={ questionA.id } total={ 5 } />    
+        <QuizInfo id={ questionA.id } total={ 20 } />    
         
         <Text style={ styles.question }>{ questionA.pregunta }</Text>
           
@@ -57,15 +58,14 @@ export const QuizScreen = (): JSX.Element => {
 
 const styles = StyleSheet.create({
   container: {
-    height: '100%',
-    width: '100%',
     padding: 1,
+    height: '100%',
     justifyContent: 'center',
     flexDirection: 'column',
     backgroundColor: theme.brown_ligt
   },
   subContainer: {
-    flex: 1, 
+    flex: 4, 
     marginBottom: Constants.statusBarHeight,  
     borderRadius: 20, 
     backgroundColor: theme.brown_base, 
@@ -73,13 +73,12 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   question: {
-    marginHorizontal: 20,
-    minHeight: '10%',
-    maxHeight: '10%',
+    flex: 0.9,
+    marginHorizontal: RFValue(15),
     alignSelf: 'center',
-    marginBottom: '10%',
+    marginVertical: '5%',
     textAlign: 'left',
-    fontSize: 24,
+    fontSize: RFValue(18),
     fontFamily: 'Rubik',
     fontWeight: '300',
     color: theme.brown_veryDark

@@ -3,6 +3,7 @@ import { useLocation } from "react-router-native";
 import { NavButton } from "./NavButton";
 import { theme } from "../themes";
 import { HeaderProps } from '../interfaces/Props';
+import { RFValue } from 'react-native-responsive-fontsize';
 
 
 
@@ -17,7 +18,7 @@ export const Header = ( { title }: HeaderProps ): JSX.Element => {
 
     //Este es el componente NavButton que representa un botón de navegación hacia atrás segun la ubicacion. 
     const NavIzqElement = () => pathname !== '/home' ? <NavButton /> : <></>
-    const NavDrchElement = () => pathname !== '/home' && <View style={{ width: 48 }}></View>
+    const NavDrchElement = () => pathname !== '/home' && <View style={{ width: RFValue(48) }}></View>
 
     return (
         // Este es un contenedor principal con un estilo específico.
@@ -46,7 +47,7 @@ const styles = StyleSheet.create({
     },
     text: {
         flex: 1,
-        fontSize: 22,
+        fontSize: RFValue(20),
         fontFamily: 'Rubik',
         textAlign: 'center',
         fontWeight: '700',

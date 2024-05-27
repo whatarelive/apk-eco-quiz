@@ -3,6 +3,7 @@ import { theme } from "../../../util";
 import { useContext, useEffect } from "react";
 import { ScoreContext } from "../../context";
 import { useRef } from 'react';
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 
 
@@ -13,19 +14,21 @@ export const VictoryCard = () => {
 
   useEffect(() => {
     if ( responseTime.current > 60 ) {
-      refTime.current = `${Math.fround(responseTime.current / 60)} min`    
+      let cal = ( Math.round( responseTime.current / 60 ));
+      
+      refTime.current = `${cal} min`    
     
     } else {
       refTime.current = `${responseTime.current} s`;
     }
 
-  }, [])
+  }, [ score ])
   
 
   return (
     <View style={{ flexDirection: 'column', width: '100%', flex: 2}}>
         
-        <View style={{ width: '100%', alignItems: 'center', marginTop: '5%'}}>
+        <View style={{ width: '100%', alignItems: 'center', marginTop: RFPercentage(4)}}>
           <Text style={ styles.text_SubHeader }>
             Puntuación
           </Text>
@@ -34,7 +37,7 @@ export const VictoryCard = () => {
           </Text>
         </View>
 
-        <View style={{ flexDirection: 'row', marginTop: '10%' }}>
+        <View style={{ flexDirection: 'row', marginTop: RFPercentage(4) }}>
       
           <View style={{ flexDirection: 'column', flex: 1, alignItems: 'center'}}>
             <Text style={ styles.text_SubHeader }>Aciertos</Text>
@@ -53,9 +56,13 @@ export const VictoryCard = () => {
             <Text style={ styles.text_SubHeader }>
               Tiempo
             </Text>
-            <Text style={ styles.text_Data }>
-              {refTime.current}
-            </Text>
+
+            <View style={{ flexDirection: 'row', flex:1, justifyContent: 'center'}}>
+              <Text style={ styles.text_Data }>
+                {`${ responseTime.current }`}
+              </Text>
+              <Text style={{ ...styles.text_Data, color: theme.green_base }}>s</Text>
+            </View>
           </View>
       
         </View>
@@ -67,19 +74,19 @@ export const VictoryCard = () => {
 const styles = StyleSheet.create({
   text_Header: {
     textAlign: 'center', 
-    fontSize: 44, 
+    fontSize: RFValue(40), 
     fontFamily: 'Rubik', 
     fontWeight: '700', 
   },
   text_SubHeader: {
     textAlign: 'center', 
-    fontSize: 24, 
+    fontSize: RFValue(20), 
     fontWeight: '600', 
     color: theme.black
   },
   text_Data: {
     textAlign: 'center', 
-    fontSize: 32, 
+    fontSize: RFValue(28), 
     fontFamily: 'Rubik', 
     fontWeight: '800', 
   }

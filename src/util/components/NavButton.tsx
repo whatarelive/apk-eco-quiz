@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-native";
 import { useImage } from '../hooks';
 import { NextQuizContext } from "../../quiz/context";
 import { theme } from "../themes";
+import { RFValue } from 'react-native-responsive-fontsize';
 
 
 
@@ -39,7 +40,7 @@ export const NavButton = (): JSX.Element => {
           onPress={ onClick }>
           <Image
               source={ image }
-              style={{ width: 24, height: 24}}>
+              style={{ width: RFValue(20), height: RFValue(20)}}>
           </Image>
       </TouchableNativeFeedback>
     </View>
@@ -48,8 +49,8 @@ export const NavButton = (): JSX.Element => {
 
 const styles = StyleSheet.create({
   icon: {
-    height: 48,
-    width: 48,
+    height: RFValue(38),
+    width: RFValue(38),
     alignItems: 'center',
     justifyContent: 'center',
   }

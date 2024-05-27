@@ -28,7 +28,7 @@ export const CategoryList = (): JSX.Element => {
 
 const styles = StyleSheet.create({
   container: { 
-    flex: 2,
+    flex: 4,
   },
   list: {
     flex:1,

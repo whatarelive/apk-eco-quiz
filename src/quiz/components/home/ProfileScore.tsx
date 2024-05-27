@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet } from "react-native";
 import { ProfileScoreProps } from "../../types/PropsTypes";
 import { theme } from "../../../util";
+import {RFValue} from "react-native-responsive-fontsize";
 
 
 
@@ -29,14 +30,14 @@ export const ProfileScore = ({record, text}: ProfileScoreProps): JSX.Element => 
 // Estilos del componente 
 const styles = StyleSheet.create({
     text: {
-        fontSize: 20,
+        fontSize: RFValue(20),
         fontFamily: 'Rubik',
         fontWeight: '700',
         color: theme.brown_veryDark,
         textAlignVertical: 'bottom'
     },
     text2: {
-        fontSize: 48,
+        fontSize: RFValue(48),
         fontFamily: 'Rubik',
         fontWeight: '900',
         color: theme.white,

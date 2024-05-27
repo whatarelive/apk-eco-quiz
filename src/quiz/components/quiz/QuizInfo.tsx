@@ -2,11 +2,12 @@ import { View, Text, StyleSheet } from "react-native";
 import { useEffect, useState } from "react";
 import { theme } from "../../../util";
 import { QuizInfoProps } from "../../types";
+import { RFValue } from 'react-native-responsive-fontsize';
 
 
 
 // Recibe un objeto de propiedades que contiene un id.
-export const QuizInfo = ({ id } : QuizInfoProps ): JSX.Element => {
+export const QuizInfo = ({ id, total } : QuizInfoProps ): JSX.Element => {
   
   // Se declara un estado llamado porciento con un valor inicial de 0.
   const [ porciento, setPorciento ] = useState( 0 );
@@ -15,7 +16,7 @@ export const QuizInfo = ({ id } : QuizInfoProps ): JSX.Element => {
   // En este caso, se calcula un porcentaje basado en el id y se establece el estado de porciento.
   useEffect(() => {
     // Se calcula el porcentaje y se establece el estado de porciento.
-    setPorciento( (id * 100) / 5 )
+    setPorciento( (id * 100) / total )
   }, [ id ]) // Este efecto se ejecuta cada vez que el id cambia.
 
 
@@ -35,8 +36,8 @@ export const QuizInfo = ({ id } : QuizInfoProps ): JSX.Element => {
       <View style={ styles.text_container }>
         {/* Este es el texto que muestra el id . */}
         <Text style={{ ...styles.text, color: theme.green_base }}>{ id }</Text>
-        {/* Este es el texto que muestra el total de preguntas (5) */}
-        <Text style={{ ...styles.text, color: theme.brown_clay }}>/5</Text>
+        {/* Este es el texto que muestra el total de preguntas (20) */}
+        <Text style={{ ...styles.text, color: theme.brown_clay }}>{`/${total}`}</Text>
       </View>
     </View>
   )
@@ -51,7 +52,7 @@ const styles = StyleSheet.create({
     },
     barra: {
       width: '100%',
-      height: 12,
+      height: RFValue(10),
       borderRadius: 20,
       backgroundColor: theme.brown_base,
     },
@@ -65,7 +66,7 @@ const styles = StyleSheet.create({
       marginLeft: 10,
     },
     text: {
-      fontSize: 18,
+      fontSize: RFValue(16),
       fontWeight: '600'
     }
 });

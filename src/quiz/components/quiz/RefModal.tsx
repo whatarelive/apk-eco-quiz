@@ -2,6 +2,7 @@ import { View, Text, TouchableNativeFeedback , StyleSheet} from "react-native"
 import { useContext } from 'react';
 import { theme } from "../../../util/themes"
 import { NextQuizContext } from "../../context";
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 
 
@@ -43,24 +44,24 @@ const styles = StyleSheet.create({
         position: 'absolute', 
         width: '80%', 
         height: '40%', 
-        padding: '10%', 
+        padding: RFPercentage(3), 
         alignItems: 'center', 
         justifyContent: 'space-between',
         borderWidth: 4, 
-        borderRadius: 16, 
+        borderRadius: RFValue(16), 
         borderColor: theme.green_base,
         backgroundColor: theme.green_light,
     },
     text: {
         textAlign: 'center',
-        fontSize: 20, 
+        fontSize: RFValue(18), 
         fontFamily: 'Rubik',
     },
     button: {
         width: '60%', 
-        height: '15%',
+        height: RFPercentage(5),
         justifyContent: 'center',
-        borderRadius: 20,
+        borderRadius: RFValue(20),
         backgroundColor: theme.green_base
     }
 })

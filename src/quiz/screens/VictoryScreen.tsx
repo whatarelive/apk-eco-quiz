@@ -1,9 +1,10 @@
 import { View, Text, Image, StyleSheet } from "react-native"
-import { theme, useImage } from "../../util";
+import { theme, useDimensions, useImage } from "../../util";
 import { VictoryCard, CustomButton } from "../components";
 import { useNavigate } from "react-router-native";
 import { useContext } from "react";
 import { ScoreContext } from "../context";
+import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 
 
 
@@ -16,6 +17,8 @@ export const VictoryScreen = () => {
     // En este caso, estamos obteniendo la imagen del 'trofeo' del 'uiIcon'.
     const image = useImage('trofeo', 'uiIcon');
 
+    useDimensions
+
     const handleClick = () => {
       reset(); 
       resetTime();
@@ -26,8 +29,8 @@ export const VictoryScreen = () => {
   return (
     <View style={ styles.container }>
       {/** Componente contenedor de la imagen */}
-      <View style={ styles.img }>
-        <Image source={ image }/>
+      <View style={ styles.img_container }>
+        <Image style={ styles.img } source={ image }/>
       </View>
 
       {/** Componente contenedor del texto */}
@@ -64,19 +67,23 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: theme.brown_base
   },
-  img: {
-    marginTop: '25%',
-    width: '100%',
+  img_container: {
+    marginTop: RFPercentage(12),
+    height: '30%',
     justifyContent: 'center',
     alignItems: 'center'
   },
+  img: {
+    width: RFValue(220),
+    height: RFValue(220),
+  },
   header: {
-    fontSize: 32,
+    fontSize: RFValue(32),
     color: theme.brown_clay,
     ...basic.text
   }, 
   subHeader: {
-    fontSize: 22,
+    fontSize: RFValue(22),
     color: theme.brown_dark,
     ...basic.text
   },

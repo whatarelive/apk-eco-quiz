@@ -4,6 +4,7 @@ import { theme, useImage } from "../../../util";
 import { useNavigate } from 'react-router-native';
 import { NextQuizContext, ScoreContext } from "../../context";
 import { QuizCronoProps } from "../../types";
+import { RFValue } from 'react-native-responsive-fontsize';
 
 
 
@@ -61,7 +62,7 @@ export const QuizCrono = ({ restart, question, setQuestion }: QuizCronoProps ): 
     
     return (
       <View style={ styles.textContainer }>
-        <Image source={ image }/>
+        <Image style={ styles.img } source={ image }/>
         <Text style={{ ...styles.text, color: times < 16 ? theme.salmon_light : '#111' }}>{times}s</Text>
     </View>
   )
@@ -70,9 +71,14 @@ export const QuizCrono = ({ restart, question, setQuestion }: QuizCronoProps ): 
 const styles =StyleSheet.create({
   textContainer: {
     flexDirection: 'row',
+    marginRight: RFValue(100)
+  },
+  img:{
+    width: RFValue(30),
+    height: RFValue(30)
   },
   text: {
-    fontSize: 24,
+    fontSize: RFValue(24),
     fontFamily: 'Rubik'
   }
 })

@@ -4,6 +4,7 @@ import { NextQuizContext, ScoreContext } from "../../context";
 import { QuizCheckButtonProps } from "../../types";
 import { theme, useImage } from "../../../util";
 import { getResponseStatus } from "../../helpers/getResponseStatus";
+import { RFValue } from 'react-native-responsive-fontsize';
 
 
 
@@ -46,14 +47,14 @@ export const QuizCheckButton = ({ category, questionA }: QuizCheckButtonProps ):
 
 const styles = StyleSheet.create({
   container: {
-    width: 64,
-    height: 64,
+    width: RFValue(55),
+    height: RFValue(55),
     borderRadius: 50,
     justifyContent: 'center',
     alignItems: 'center',
   },
   icon: {
-    width: 34,
-    height: 34
+    width: RFValue(28),
+    height: RFValue(28)
   }
 })

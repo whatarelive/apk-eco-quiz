@@ -5,6 +5,7 @@ import { QuizCrono } from "./QuizCrono"
 import {  useContext, useEffect, useState } from 'react';
 import { QuizCheckButton } from "./QuizCheckButton";
 import { NextQuizContext } from "../../context";
+import { RFPercentage } from 'react-native-responsive-fontsize';
 
 
 
@@ -40,11 +41,10 @@ export const QuizActionFooter = ({ category, questionA, question, setQuestion }:
 const styles = StyleSheet.create({
   container: {
     flex:1,
-    width: '85%',
-    paddingLeft: 30,
+    width: RFPercentage(40),
     flexDirection: 'row', 
     alignItems: 'center', 
-    justifyContent: 'space-between',
-    marginBottom: '10%' 
+    marginBottom: '10%',
+    justifyContent: 'space-evenly',
   }
 });

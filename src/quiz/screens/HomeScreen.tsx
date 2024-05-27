@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet } from "react-native";
 import { CategoryList, Profile } from "../components";
 import { Header, StatusBar, theme } from "../../util";
+import {RFValue} from "react-native-responsive-fontsize";
 
 
 export const HomeScreen = () => {
@@ -9,7 +10,7 @@ export const HomeScreen = () => {
     <>
       <StatusBar/>
 
-      <View style={{height: '96%', backgroundColor: theme.brown_ligt}}>  
+      <View style={{ flex: 1, backgroundColor: theme.brown_ligt}}>  
         <Header title={"Quiz App"} />
         <Profile/>
 
@@ -27,13 +28,13 @@ export const HomeScreen = () => {
 
 const styles = StyleSheet.create({
   container_text: {
-    flex: 0.3,
-    padding: 40,
-    marginTop: '10%',
+    flex: 1,
+    padding: RFValue(40),
+    justifyContent: 'center'
   },
   text: {
     textAlign: 'center',
-    fontSize: 22,
+    fontSize: RFValue(20),
     fontWeight: '600',
     fontFamily: 'Rubik',
     fontStyle: 'italic',

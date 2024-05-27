@@ -2,6 +2,7 @@ import { View, Image, Text, TouchableNativeFeedback, StyleSheet } from "react-na
 import { useNavigate } from "react-router-native";
 import { theme, useImage } from "../../../util";
 import { CategoryItemProps } from "../../types";
+import {RFValue} from "react-native-responsive-fontsize";
 
 
 
@@ -15,17 +16,15 @@ export const CategoryItem = ( { category }: CategoryItemProps ): JSX.Element => 
   };
   
   return (
-    <View style={ styles.container }>
-      <TouchableNativeFeedback
+    <TouchableNativeFeedback
         background={TouchableNativeFeedback.Ripple(theme.brown_base, false)}
         onPress={ handleTouch }>
 
+    <View style={ styles.container }>
         <View style={ styles.sub_container }>
-          <Image 
-            source={ image } 
-            style={ styles.image }>  
-          </Image>
-        
+          
+          <Image source={ image } style={ styles.image }></Image>
+          
           <Text 
             style={ styles.text }>
             { category.name }
@@ -36,8 +35,8 @@ export const CategoryItem = ( { category }: CategoryItemProps ): JSX.Element => 
           </Text>
         </View>
         
-      </TouchableNativeFeedback>
     </View>
+      </TouchableNativeFeedback>
   )
 }
 
@@ -47,8 +46,8 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     borderWidth: 4,
     borderColor: '#ffd8b5',
-    marginHorizontal: 15,
-    marginVertical: 30,
+    marginHorizontal: RFValue(15),
+    marginVertical: RFValue(30),
   },
   sub_container: {
     flex: 1,
@@ -56,26 +55,25 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-    padding: 10
+    padding: '5%',
   },
   image: {
-    width: '58%',
-    height: '40%',
-    marginBottom: '5%',  
+    width: RFValue(120),
+    height: RFValue(120),  
   },
   text: {
-    fontSize: 24,
+    fontSize: RFValue(24) ,
     fontWeight: '700',
-    marginBottom: '25%',
     fontFamily: 'Rubik',
     textAlign: 'center',
-    color: '#8a4b39'
+    color: '#8a4b39',
+    marginBottom: RFValue(20)
   },
   text2: {
-    fontSize: 20,
+    fontSize: RFValue(20),
     fontWeight: '700',
     fontFamily: 'Rubik',
     textAlign: 'center',
-    color: '#cd8f7d'
+    color: '#cd8f7d',
   }
 })

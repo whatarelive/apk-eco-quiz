@@ -5,6 +5,7 @@ import { NextQuizContext } from "../../context";
 import { useContext, useEffect } from 'react';
 import { useStyle } from "../../hooks/useStyle";
 import { RefButton } from "./RefButton";
+import { RFValue } from 'react-native-responsive-fontsize';
 
 
 
@@ -68,8 +69,8 @@ export const QuizResponse = ( { resp, correct }: QuizResponseProps ): JSX.Elemen
             }
           </View>
 
-          <View style={{ margin: 10}}>
-            <Image source={ image }/>
+          <View style={{ margin: RFValue(7)}}>
+            <Image style={ styles.img } source={ image }/>
           </View>
         
         </View>
@@ -83,16 +84,20 @@ const styles = StyleSheet.create({
       height: '18%',
       flexDirection: 'row',
       alignItems: 'center',
-      marginHorizontal: 24,
-      marginVertical: '3%', 
-      paddingHorizontal: 10,
-      borderRadius: 16,
-      borderWidth: 4,
+      marginHorizontal: RFValue(20),
+      marginVertical: RFValue(10), 
+      paddingHorizontal: RFValue(12),
+      borderRadius: RFValue(12),
+      borderWidth: RFValue(3),
       borderColor: theme.brown_lightDark,
+    },
+    img: {
+      width: RFValue(25),
+      height: RFValue(25)
     },
     text: {
       display: 'flex',
-      fontSize: 18,
+      fontSize: RFValue(14),
       fontFamily: 'Rubik',
       fontWeight: '800',
       alignItems: 'center',

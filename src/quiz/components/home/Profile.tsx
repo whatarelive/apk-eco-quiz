@@ -2,6 +2,7 @@ import { View, Image, StyleSheet } from "react-native";
 import { useState } from 'react';
 import { ProfileScore } from "./ProfileScore";
 import { theme, useImage } from "../../../util";
+import { RFValue } from "react-native-responsive-fontsize";
 
 
 
@@ -25,8 +26,8 @@ export const Profile = (): JSX.Element => {
 
 const styles = StyleSheet.create({
     avatar: { 
-        width: '25%',
-        height: '100%',
+        width: RFValue(80),
+        height: RFValue(100),
     },
     container: {
         width: '90%',

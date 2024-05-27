@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import { theme, useImage } from "../../../util";
 import { QuizNextButtonProps } from "../../types";
 import { NextQuizContext } from "../../context";
+import { RFValue } from 'react-native-responsive-fontsize';
 
 
 
@@ -45,14 +46,14 @@ export const QuizNextButton = ({ question, setQuestion }: QuizNextButtonProps ):
 
 const styles = StyleSheet.create({
   container: {
-    width: 64,
-    height: 64,
+    width: RFValue(55),
+    height: RFValue(55),
     borderRadius: 50,
     justifyContent: 'center',
     alignItems: 'center',
   },
   icon: {
-    width: 34,
-    height: 34
+    width: RFValue(28),
+    height: RFValue(28)
   }
 })
