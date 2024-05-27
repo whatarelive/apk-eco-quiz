@@ -27,7 +27,7 @@ export const categoryImages = [
 export const uiImage = [
   {
     name: "logo",
-    path: require("../../assets/screenlogo.png"),
+    path: require("../../assets/idea.png"),
   },
   {
     name: "flecha",

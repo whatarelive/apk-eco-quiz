@@ -2,8 +2,9 @@ import { View, Image, Text, StyleSheet } from "react-native"
 import { memo, useEffect } from "react";
 import { useNavigate } from "react-router-native";
 import { ProgressBar } from "../components/ProgressBar";
-import { align, theme } from "../../util";
+import { theme } from "../../util";
 import { useImage } from "../../util";
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 
 export const SplashScreen = memo((): JSX.Element => {
@@ -24,7 +25,7 @@ export const SplashScreen = memo((): JSX.Element => {
   return (
     <View style={ style.container }>
         <Image source={ image } style={ style.image }></Image>
-        <Text style={ style.text }>Eco Quiz App</Text>
+        <Text style={ style.text }>Eco Quiz</Text>
 
         <ProgressBar />
     </View>
@@ -34,19 +35,20 @@ export const SplashScreen = memo((): JSX.Element => {
 
 const style = StyleSheet.create({
   container: {
-    ...align.relative
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    backgroundColor: theme.brown_ligt
   },
   image: {
-    marginTop: '45%',
-    margin: 10,
-    position: 'relative',
-    width: 140,
-    height: 230
+    marginTop: RFPercentage(30),
+    width: RFValue(100),
+    height: RFValue(160)
   },
   text: {
-    position: 'relative',
-    fontSize: 32,
-    fontWeight: '500',
-    color: theme.green_base
+    fontSize: RFValue(20),
+    fontWeight: '700',
+    fontFamily: 'Rubik',
+    color: theme.brown_dark
   }
 })

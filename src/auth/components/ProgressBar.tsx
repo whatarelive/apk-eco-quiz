@@ -1,6 +1,7 @@
 import { memo, useEffect, useRef } from "react"
 import { Animated, View ,StyleSheet} from "react-native"
 import { theme } from "../../util";
+import { RFValue } from 'react-native-responsive-fontsize';
 
 
 export const ProgressBar = memo((): JSX.Element => {
@@ -34,7 +35,7 @@ export const ProgressBar = memo((): JSX.Element => {
     // Estilos dinamicos de la barra de carga
     const position = progress.current.interpolate({
         inputRange: [0, 1],
-        outputRange: [0, 90]
+        outputRange: [0, RFValue(38)]
     });
 
     // Estilos estaticos del componente
@@ -43,15 +44,15 @@ export const ProgressBar = memo((): JSX.Element => {
         height: '100%',
         width: '25%',
         borderRadius: 16,
-        backgroundColor: theme.green_light,
+        backgroundColor: theme.brown_base,
         transform: [{ translateX: position }],
       },
       container: {
-        width: 120,
-        height: 5,
-        marginVertical: 25,
+        width: RFValue(50),
+        height: RFValue(3),
+        marginVertical: RFValue(15),
         borderRadius: 16,
-        backgroundColor: theme.green_base,
+        backgroundColor: theme.brown_dark,
       }
     });
 

@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-native";
 import { SplashScreen } from "../auth";
-import { HomeScreen, QuizScreen, VictoryScreen } from "../quiz";
+import { DataScreen, HomeScreen, QuizScreen, VictoryScreen } from "../quiz";
 
 
 
@@ -11,6 +11,7 @@ export const AppRouter = () => {
     <Routes>
         <Route path="/" element={ <SplashScreen/> }/>
         <Route path="/home" element={ <HomeScreen/> }/>
+        <Route path="/data" element={ <DataScreen/> }/>
         <Route path="/quiz/:categoryId/:questionId" element={ <QuizScreen/> }/>
         <Route path="/victory" element={ <VictoryScreen/> }/>
     </Routes>

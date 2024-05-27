@@ -40,7 +40,7 @@ export const NavButton = (): JSX.Element => {
           onPress={ onClick }>
           <Image
               source={ image }
-              style={{ width: RFValue(20), height: RFValue(20)}}>
+              style={{ width: RFValue(18), height: RFValue(18)}}>
           </Image>
       </TouchableNativeFeedback>
     </View>
@@ -49,8 +49,8 @@ export const NavButton = (): JSX.Element => {
 
 const styles = StyleSheet.create({
   icon: {
-    height: RFValue(38),
-    width: RFValue(38),
+    height: RFValue(34),
+    width: RFValue(34),
     alignItems: 'center',
     justifyContent: 'center',
   }

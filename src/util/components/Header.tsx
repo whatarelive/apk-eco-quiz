@@ -14,11 +14,11 @@ export const Header = ( { title }: HeaderProps ): JSX.Element => {
     const { pathname } = useLocation();
 
     // Titulo del Header segun la ubicacion.
-    const newTitle = title + ( pathname !== '/home' ? '- Quiz' : '' );
+    const newTitle = title + ( pathname.includes('quiz') ? ' - Quiz' : '' );
 
     //Este es el componente NavButton que representa un botón de navegación hacia atrás segun la ubicacion. 
     const NavIzqElement = () => pathname !== '/home' ? <NavButton /> : <></>
-    const NavDrchElement = () => pathname !== '/home' && <View style={{ width: RFValue(48) }}></View>
+    const NavDrchElement = () => pathname !== '/home' && <View style={{ width: RFValue(36) }}></View>
 
     return (
         // Este es un contenedor principal con un estilo específico.
