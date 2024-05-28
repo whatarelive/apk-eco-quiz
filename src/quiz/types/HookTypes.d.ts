@@ -1,17 +1,12 @@
-export type Return = {
-    data: Category[],
-    isLoading: boolean,
-}
-
 export interface CategoryList {
     categories: Category[]
 }
 
 export interface Category {
-    id: number,
-    name: string,
-    urlIcon: string,
-    questions: Question[]
+    readonly id: number,
+    readonly name: string,
+    readonly urlIcon: string,
+    readonly questions: Question[]
 }
 
 export interface Question {
@@ -22,6 +17,7 @@ export interface Question {
 }
 
 export interface Respuesta {
-    id: string,
-    value: string
+    readonly id: string,
+    readonly value: string
 }
+

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-native";
 import { useContext } from 'react';
 import { theme, useImage } from "../../../util";
 import { QuizNextButtonProps } from "../../types";
-import { NextQuizContext } from "../../context";
+import { NextQuizContext, ScoreContext } from "../../context";
 import { RFValue } from 'react-native-responsive-fontsize';
 
 
@@ -13,6 +13,7 @@ export const QuizNextButton = ({ question, setQuestion }: QuizNextButtonProps ):
 
   const navigate = useNavigate();
   const { active, setStatus, setActive } = useContext( NextQuizContext );
+  const { score, responseTime, aciertos } = useContext( ScoreContext );
 
   const image = useImage( 'arrow_forward', 'uiImage' );
 
@@ -23,6 +24,12 @@ export const QuizNextButton = ({ question, setQuestion }: QuizNextButtonProps ):
         blocked: false,
         refId: '',
     });
+
+    console.log(`Score: ${ score.current }`);
+    console.log(`Aciertos: ${ aciertos.current }`);
+    console.log(`Tiempo: ${ responseTime.current }`);
+    console.log('-------------');
+    
 
     setStatus( false );
   

@@ -11,7 +11,7 @@ export const HomeScreen = () => {
       <StatusBar/>
 
       <View style={{ flex: 1, backgroundColor: theme.brown_ligt}}>  
-        <Header title={"Quiz App"} />
+        <Header title={"Eco Quiz"} />
         <Profile/>
 
         <View style={ styles.container_text }>

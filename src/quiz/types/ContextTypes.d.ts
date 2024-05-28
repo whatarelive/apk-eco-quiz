@@ -10,23 +10,28 @@ export interface NexQuizContext {
   setStatus: React.Dispatch<React.SetStateAction<boolean>>;
   viewModal: boolean;
   setViewModal: React.Dispatch<React.SetStateAction<boolean>>;
+  backModal: boolean;
+  setViewBackModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export interface ScoresContext {
   score: React.MutableRefObject<number>;
   incrementScore: CallableFunction;
   decrementScore: CallableFunction;
-  reset: CallableFunction;
 
   responseTime: React.MutableRefObject<number>;
   updateResponseTime: CallableFunction;
-  resetTime: CallableFunction;
 
   aciertos: React.MutableRefObject<number>;
   updateAciertos: CallableFunction;
-  resetAciertos: CallableFunction;
+  
+  resetEvery: CallableFunction;
 };
 
+export interface UsersContext {
+  state: CateroryScore[],
+  updateData: CallableFunction
+}
 
 /** Types for Props of Context Functions */
 
@@ -41,13 +46,14 @@ interface State {
     refId: string
 };
 
-interface Response {
-  categoryID: string;
-  responseID: number;
-  respID: string;
+export interface CateroryScore {
+  name: string;
+  puntos: number;
+  tiempo: number;
 }
 
-interface Action {
+export interface Action {
   type: string;
-  paylod: State;
+  paylod: CateroryScore;
 };
+

@@ -4,27 +4,27 @@ import { Category, Question, Respuesta } from "./HookTypes"
 
 // PropsTypes de la funcion del Componente <ProfileScore/>
 export interface ProfileScoreProps {
-    record: number,
-    text: string,
+  record: number,
+  text: string,
 }
 
 // PropsTypes de la funcion del Componente <CategoryItem/>
 export interface CategoryItemProps {
-    category: Category
+  category: Category
 }
 
 // PropsTypes de la funcion del Componente <CategoryItem/>
 export interface CustomButtonProps {
-    title: string,
-    icon: string,
-    color: string,
-    handleClick: CallableFunction,
+  title: string,
+  icon: string,
+  color: string,
+  handleClick: CallableFunction,
 }
 
 // PropsTypes de la funcion del Componente <QuizInfo/>
 export interface QuizInfoProps {
-    id: number,
-    total: number
+  id: number,
+  total: number
 }
 
 // PropsTypes de la funcion del Componente <QuizResponse/>
@@ -67,7 +67,7 @@ export interface QuizActionFooterProps {
 }
 
 export interface RenderList {
-    item: {
-        category: Category
-    }
+  item: {
+    category: Category
+  }
 }

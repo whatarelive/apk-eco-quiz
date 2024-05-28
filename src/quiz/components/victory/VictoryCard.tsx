@@ -1,8 +1,7 @@
 import { View, Text, StyleSheet } from "react-native"
+import { useContext } from "react";
 import { theme } from "../../../util";
-import { useContext, useEffect } from "react";
 import { ScoreContext } from "../../context";
-import { useRef } from 'react';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 
@@ -10,20 +9,6 @@ import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 export const VictoryCard = () => {
 
   const { score, responseTime, aciertos } = useContext( ScoreContext );
-  const refTime = useRef('');
-
-  useEffect(() => {
-    if ( responseTime.current > 60 ) {
-      let cal = ( Math.round( responseTime.current / 60 ));
-      
-      refTime.current = `${cal} min`    
-    
-    } else {
-      refTime.current = `${responseTime.current} s`;
-    }
-
-  }, [ score ])
-  
 
   return (
     <View style={{ flexDirection: 'column', width: '100%', flex: 2}}>

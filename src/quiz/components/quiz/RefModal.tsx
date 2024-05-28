@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { theme } from "../../../util/themes"
 import { NextQuizContext } from "../../context";
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
+import { StyleText } from "../../../util";
 
 
 
@@ -14,12 +15,20 @@ export const RefModal = ({ description }: { description: string }) => {
     <View style={ styles.container }>
         <View style={ styles.background }></View>
         <View style={ styles.modal }>
-            <Text style={{ ...styles.text, color: theme.green_veryDark }}>{ description }</Text>
-            <View style={ styles.button }>
-                <TouchableNativeFeedback
-                    onPress={() => setViewModal( false )}>
-                    <Text style={{ ...styles.text, color: theme.white }}>Cerrar</Text>                
-                </TouchableNativeFeedback>
+            <View style={{ flex: 1 ,justifyContent: 'center',}}>
+                <StyleText size={ 18 } color={ theme.brown_dark }>Explicación</StyleText>
+            </View>
+            <View style={{ flex: 5, justifyContent: 'center', padding: RFValue(8)}}>
+                <Text style={{ ...styles.text, color: theme.green_veryDark }}>{ description }</Text>
+            </View>
+            <View style={{ flexDirection: 'row'}}>
+
+                <View style={ styles.button }>
+                    <TouchableNativeFeedback
+                        onPress={() => setViewModal( false )}>
+                        <Text style={{ ...styles.text, color: theme.white }}>Cerrar</Text>                
+                    </TouchableNativeFeedback>
+                </View>
             </View>
         </View>
     </View>
@@ -38,30 +47,28 @@ const styles = StyleSheet.create({
         width: '100%', 
         height: '100%', 
         backgroundColor: theme.black,
-        opacity: 0.8, 
+        opacity: 0.5, 
     },
     modal:{
         position: 'absolute', 
         width: '80%', 
-        height: '40%', 
-        padding: RFPercentage(3), 
-        alignItems: 'center', 
-        justifyContent: 'space-between',
-        borderWidth: 4, 
+        height: '40%',
+        alignItems: 'center',
         borderRadius: RFValue(16), 
-        borderColor: theme.green_base,
-        backgroundColor: theme.green_light,
+        backgroundColor: theme.brown_base,
     },
     text: {
+        justifyContent: 'center',
         textAlign: 'center',
-        fontSize: RFValue(18), 
+        fontSize: RFValue(15), 
         fontFamily: 'Rubik',
     },
     button: {
-        width: '60%', 
-        height: RFPercentage(5),
+        flex: 1, 
+        height: RFPercentage(6),
         justifyContent: 'center',
-        borderRadius: RFValue(20),
+        borderBottomLeftRadius: RFValue(16),
+        borderBottomRightRadius: RFValue(16),
         backgroundColor: theme.green_base
     }
 })

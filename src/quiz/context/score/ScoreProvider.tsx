@@ -19,27 +19,27 @@ export const ScoreProvider = ({ children }: ContextProviderProps ) => {
     score.current = revScore - value;
   }
 
-  const reset = () => score.current = 0;
-
   const updateResponseTime = ( time: number ) => {
     const revResponsiveTime = responseTime.current;
     responseTime.current =  time + revResponsiveTime;
   };
-
-  const resetTime = () => responseTime.current = 0;
 
   const updateAciertos = ( acierto: number ) => {
     const revAciertos = aciertos.current;
     aciertos.current = revAciertos + acierto;
   }
 
-  const resetAciertos = () => aciertos.current = 0;
+  const resetEvery = () => {
+    score.current = 0;  
+    aciertos.current = 0;
+    responseTime.current = 0;
+  }
 
   return (
     <ScoreContext.Provider value={{ 
-        score, incrementScore, decrementScore, reset, 
-        responseTime, updateResponseTime, resetTime, 
-        aciertos, updateAciertos, resetAciertos }}
+        score, incrementScore, decrementScore, 
+        responseTime, updateResponseTime, 
+        aciertos, updateAciertos, resetEvery }}
       >
       { children }
     </ScoreContext.Provider>

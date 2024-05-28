@@ -22,13 +22,13 @@ export const QuizCheckButton = ({ category, questionA }: QuizCheckButtonProps ):
         const status = getResponseStatus( category.id.toString(), questionA.id, active.refId );
       
         if ( status ) {
-            incrementScore( 60 );
-            updateAciertos( 1 );
-            
+          updateAciertos( 1 );
+          
         } else if( !status ) {
-            decrementScore( 80 );
+          decrementScore( 80 );
         }
-
+        
+        incrementScore( 60 );
         setStatus( true );
     }
 

@@ -1,4 +1,4 @@
 export * from './HomeScreen';
 export * from './QuizScreen';
-export * from './DataScreen';
+export * from './InfoScreen';
 export * from './VictoryScreen';

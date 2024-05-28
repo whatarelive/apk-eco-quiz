@@ -11,7 +11,7 @@ import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 export const VictoryScreen = () => {
   
     const navigate = useNavigate();
-    const { resetTime, reset, resetAciertos } = useContext( ScoreContext );
+    const { resetEvery } = useContext( ScoreContext );
 
     // Utilizamos un hook personalizado llamado useImage para obtener una imagen.
     // En este caso, estamos obteniendo la imagen del 'trofeo' del 'uiIcon'.
@@ -20,9 +20,7 @@ export const VictoryScreen = () => {
     useDimensions
 
     const handleClick = () => {
-      reset(); 
-      resetTime();
-      resetAciertos();
+      resetEvery();
       navigate('/home');
     }
   

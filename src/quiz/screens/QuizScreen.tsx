@@ -1,14 +1,13 @@
-import { View, Text, StyleSheet } from "react-native"
 import { useParams } from 'react-router-native';
+import { View, Text, StyleSheet } from "react-native"
 import { useContext, useMemo, useState } from 'react';
-import { shuffle } from "lodash";
-import Constants from 'expo-constants';
-import { Header, StatusBar, theme } from "../../util";
-import { QuizInfo, QuizListResponse, QuizActionFooter } from '../components';
-import { getCategoryById, getQuestionById } from "../helpers";
-import { RefModal } from "../components/quiz/RefModal";
-import { NextQuizContext } from "../context";
 import { RFValue } from 'react-native-responsive-fontsize';
+import { shuffle } from "lodash";
+import { Header, StatusBar, theme } from "../../util";
+import { QuizInfo, QuizListResponse, QuizActionFooter, RefModal, BackModal } from '../components';
+import { getCategoryById, getQuestionById } from "../helpers";
+import { NextQuizContext } from "../context";
+import Constants from 'expo-constants';
 
 
 
@@ -26,8 +25,10 @@ export const QuizScreen = (): JSX.Element => {
   // getQuestionById es una función que devuelve la pregunta correspondiente al 'question' y 'category' proporcionados.
   const questionA = getQuestionById( question, category );
 
-  const { viewModal } = useContext( NextQuizContext );
+  // Contexto para obtener los estados para mostrar los modales.
+  const { viewModal, backModal } = useContext( NextQuizContext );
 
+  // Solo se va volver a ejecutar la funcion de ordenacion cuando cambie la lista
   const respuestas = useMemo(() => shuffle( questionA.respuestas ), [ questionA ])
 
   return (
@@ -51,6 +52,7 @@ export const QuizScreen = (): JSX.Element => {
           viewModal &&
             <RefModal description="fdvbaubfviuannjaks cdkja vhabdfvyuhadu baiucbuiacuiasdbcuibdasvadbvuiadfbvuibfdiu adiv uiadbvuiadbvuidf ui adi" />
         }
+        { backModal && <BackModal/> }
       </View> 
     </>
   )

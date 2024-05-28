@@ -1,6 +1,6 @@
 import { Image, TouchableNativeFeedback, StyleSheet, View } from "react-native";
 import { useContext } from "react";
-import { useNavigate } from "react-router-native";
+import { useLocation, useNavigate } from "react-router-native";
 import { useImage } from '../hooks';
 import { NextQuizContext } from "../../quiz/context";
 import { theme } from "../themes";
@@ -13,24 +13,21 @@ export const NavButton = (): JSX.Element => {
 
   // Hook para manejar la navegacion del tipo: 'back-arrow'. 
   const navigate = useNavigate();
+  const { pathname } = useLocation();
 
   // Acceso al contexto para manejar las acciones del compponente.
-  const { active, setActive } = useContext( NextQuizContext );
+  const { setViewBackModal } = useContext( NextQuizContext );
 
   // Hook para extraer la imagen del icono.
   const image = useImage( 'flecha', 'uiIcon' );
 
   // Funcion onclick que establece la accion.
   const onClick = () => {
-
-      setActive({
-        ...active,
-        enable: false,
-        blocked: false,
-        refId: '',
-      }); 
-      
-    navigate('/home', { replace: true });
+    if ( pathname.includes('quiz') ) {
+      setViewBackModal( true );
+    } else {
+      navigate('/home', { replace: true });
+    }
   }
 
   return (
