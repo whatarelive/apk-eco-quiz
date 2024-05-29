@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Eco Quiz",
-    "slug": "Eco Quiz",
+    "slug": "eco-quiz",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/idea.png",
@@ -26,6 +26,12 @@
     },
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a7dee04a-b98b-4ed7-844c-f98bda0ffb43"
+      }
+    },
+    "owner": "whatare"
   }
 }
