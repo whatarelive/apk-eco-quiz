@@ -18,7 +18,7 @@ export const RefButton = (): JSX.Element => {
       >
         <View style={{ flexDirection: 'row'}}>
           <Image style={ styles.image } source={ image }/>
-          <Text style={ styles.text }>Ver Explicacion</Text>
+          <Text style={ styles.text }>Ver Explicación</Text>
         </View>
       </TouchableNativeFeedback>
     </View>

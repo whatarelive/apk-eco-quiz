@@ -39,7 +39,7 @@ export const Profile = (): JSX.Element => {
                 style={ styles.avatar }>
             </Image>
         
-            <ProfileScore record={ bestScore.current } text={"Mejor Puntuacion"}/>
+            <ProfileScore record={ bestScore.current } text={"Mejor Puntuación"}/>
         </View>
     </TouchableNativeFeedback>
   )
