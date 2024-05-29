@@ -1,17 +1,20 @@
 import { View, Text, Image, StyleSheet } from "react-native"
 import { theme, useDimensions, useImage } from "../../util";
 import { VictoryCard, CustomButton } from "../components";
-import { useNavigate } from "react-router-native";
+import { useNavigate, useParams } from "react-router-native";
 import { useContext } from "react";
-import { ScoreContext } from "../context";
+import { ScoreContext, UserContext } from "../context";
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
+import { CateroryScore } from "../types";
 
 
 
 export const VictoryScreen = () => {
   
     const navigate = useNavigate();
-    const { resetEvery } = useContext( ScoreContext );
+    const { category } = useParams();
+    const { score, responseTime, resetEvery } = useContext( ScoreContext );
+    const { updateData } = useContext( UserContext );
 
     // Utilizamos un hook personalizado llamado useImage para obtener una imagen.
     // En este caso, estamos obteniendo la imagen del 'trofeo' del 'uiIcon'.
@@ -20,6 +23,14 @@ export const VictoryScreen = () => {
     useDimensions
 
     const handleClick = () => {
+      const data: CateroryScore = {
+        name: category as string,
+        puntos: score.current,
+        tiempo: responseTime.current,
+      }
+
+      updateData( data );
+
       resetEvery();
       navigate('/home');
     }

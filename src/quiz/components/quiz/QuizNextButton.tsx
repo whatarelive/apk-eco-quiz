@@ -3,18 +3,16 @@ import { useNavigate } from "react-router-native";
 import { useContext } from 'react';
 import { theme, useImage } from "../../../util";
 import { QuizNextButtonProps } from "../../types";
-import { NextQuizContext, ScoreContext } from "../../context";
+import { NextQuizContext } from "../../context";
 import { RFValue } from 'react-native-responsive-fontsize';
 
 
 
 
-export const QuizNextButton = ({ question, setQuestion }: QuizNextButtonProps ): JSX.Element => {
+export const QuizNextButton = ({ category, question, setQuestion }: QuizNextButtonProps ): JSX.Element => {
 
   const navigate = useNavigate();
   const { active, setStatus, setActive } = useContext( NextQuizContext );
-  const { score, responseTime, aciertos } = useContext( ScoreContext );
-
   const image = useImage( 'arrow_forward', 'uiImage' );
 
   const handleClick = () => {
@@ -25,15 +23,9 @@ export const QuizNextButton = ({ question, setQuestion }: QuizNextButtonProps ):
         refId: '',
     });
 
-    console.log(`Score: ${ score.current }`);
-    console.log(`Aciertos: ${ aciertos.current }`);
-    console.log(`Tiempo: ${ responseTime.current }`);
-    console.log('-------------');
-    
-
     setStatus( false );
   
-    if ( question === 5 ) navigate(`/victory`); 
+    if ( question === 16 ) navigate(`/victory/${ category.name }`); 
 
     setQuestion( question + 1 );
   }

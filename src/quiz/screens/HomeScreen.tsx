@@ -5,7 +5,7 @@ import {RFValue} from "react-native-responsive-fontsize";
 
 
 export const HomeScreen = () => {
-  
+
   return (
     <>
       <StatusBar/>

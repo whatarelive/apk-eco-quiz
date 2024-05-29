@@ -25,14 +25,15 @@ export const QuizActionFooter = ({ category, questionA, question, setQuestion }:
     <View style={ styles.container }>
       <QuizCrono 
         restart={ restart }
-        question={ question } 
+        category={ category }
+        question={ question }
         setQuestion={ setQuestion }
       />
 
       {
         !status 
         ? <QuizCheckButton category={ category } questionA={ questionA } />
-        : <QuizNextButton question={ question } setQuestion={ setQuestion } />
+        : <QuizNextButton category={ category } question={ question } setQuestion={ setQuestion } />
       }
     </View>
   )

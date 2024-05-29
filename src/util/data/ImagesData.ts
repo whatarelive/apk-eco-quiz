@@ -1,26 +1,26 @@
 // Arreglo de Imagenes de las Categorias de Juego.
-export const categoryImages = [ 
-    {
-        name: "cambio",
-        path:  require('../../assets/cambio.png')
-    },
-    {
-        name: "biodiversidad",
-        path:  require('../../assets/biodiversidad.png'),
-    },
-    {
-        name: "energia",
-        path:  require('../../assets/energia.png'),
-    },
-    {
-        name: "reciclaje",
-        path:  require('../../assets/reciclaje.png'),
-    },
-    {   
-        name: "agua",
-        path:  require('../../assets/agua.png'),
-    }
-]
+export const categoryImages = [
+  {
+    name: "Cambio Climático",
+    path: require("../../assets/cambio.png"),
+  },
+  {
+    name: "Biodiversidad",
+    path: require("../../assets/biodiversidad.png"),
+  },
+  {
+    name: "Energía Renovable",
+    path: require("../../assets/energia.png"),
+  },
+  {
+    name: "Reciclaje",
+    path: require("../../assets/reciclaje.png"),
+  },
+  {
+    name: "Recursos Hídricos",
+    path: require("../../assets/agua.png"),
+  },
+];
 
 
 // Arreglo de Imagenes de necesarias en la UI.

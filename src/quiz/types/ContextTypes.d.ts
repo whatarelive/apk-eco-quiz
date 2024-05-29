@@ -30,6 +30,7 @@ export interface ScoresContext {
 
 export interface UsersContext {
   state: CateroryScore[],
+  bestScore: React.MutableRefObject<number>,
   updateData: CallableFunction
 }
 

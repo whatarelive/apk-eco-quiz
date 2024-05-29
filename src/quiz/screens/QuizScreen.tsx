@@ -39,7 +39,7 @@ export const QuizScreen = (): JSX.Element => {
         
         <Header title={ category.name }/>
         
-        <QuizInfo id={ questionA.id } total={ 20 } />    
+        <QuizInfo id={ questionA.id } total={ 16 } />    
         
         <Text style={ styles.question }>{ questionA.pregunta }</Text>
           
@@ -48,10 +48,7 @@ export const QuizScreen = (): JSX.Element => {
           <QuizActionFooter category={ category } questionA={ questionA } question={ question } setQuestion={ setQuestion } />
         </View>
 
-        {
-          viewModal &&
-            <RefModal description="fdvbaubfviuannjaks cdkja vhabdfvyuhadu baiucbuiacuiasdbcuibdasvadbvuiadfbvuibfdiu adiv uiadbvuiadbvuidf ui adi" />
-        }
+        { viewModal && <RefModal description={ questionA.explicacion } /> }
         { backModal && <BackModal/> }
       </View> 
     </>
@@ -75,12 +72,13 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   question: {
-    flex: 0.9,
+    display: 'flex',
+    flex: 1,
     marginHorizontal: RFValue(15),
     alignSelf: 'center',
     marginVertical: '5%',
     textAlign: 'left',
-    fontSize: RFValue(18),
+    fontSize: RFValue(17),
     fontFamily: 'Rubik',
     fontWeight: '300',
     color: theme.brown_veryDark

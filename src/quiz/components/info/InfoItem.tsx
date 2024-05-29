@@ -1,13 +1,14 @@
 import { View, Image, StyleSheet } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
 import { StyleText, theme, useImage } from "../../../util";
+import { CateroryScore } from "../../types";
 
 
 
 
-export const InfoItem = ({ categoria }: { categoria: string }) => {
+export const InfoItem = ({ categoria }: { categoria: CateroryScore }) => {
 
-    const image = useImage( categoria, 'categoryImage');
+    const image = useImage( categoria.name, 'categoryImage');
 
     return (
         <View style={ styles.container }>
@@ -17,17 +18,17 @@ export const InfoItem = ({ categoria }: { categoria: string }) => {
 
             <View>
                 <View >
-                    <StyleText size={ 16 } color={ theme.brown_dark }>{categoria}</StyleText>
+                    <StyleText size={ 16 } color={ theme.brown_dark }>{categoria.name}</StyleText>
                 </View>
                 <View style={ styles.info_container }>
                     <View style={{ flex: 1 }}>
                         <StyleText size={ 13 } color={ theme.brown_clay }>Puntuación</StyleText>
-                        <StyleText size={ 11 } color={ theme.brown_lightDark } >32163</StyleText>
+                        <StyleText size={ 11 } color={ theme.brown_lightDark }>{ categoria.puntos.toString() }</StyleText>
                     </View>
                     <View style={{ flex: 1 }}>
                         <StyleText size={ 13 } color={ theme.brown_clay }>Tiempo</StyleText>
                         <View style={{ flexDirection: 'row', alignSelf: 'center'}}>
-                            <StyleText size={ 11 } color={ theme.brown_lightDark } >1200</StyleText>
+                            <StyleText size={ 11 } color={ theme.brown_lightDark } >{ categoria.tiempo.toString() }</StyleText>
                             <StyleText size={ 11 } color={ theme.green_base } >s</StyleText>
                         </View>
                     </View>

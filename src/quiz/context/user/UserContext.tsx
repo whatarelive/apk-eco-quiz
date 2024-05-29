@@ -1,5 +1,14 @@
 import { createContext } from "react";
 import { UsersContext } from "../../types";
+import { categoryScore } from "./reducerTypes";
 
 
-export const UserContext = createContext<UsersContext | undefined>( undefined ) as React.Context<UsersContext>;
+const initialContext = {
+    state: categoryScore,
+    bestScore: {
+        current: 0
+    },
+    updateData: () => {}
+}
+
+export const UserContext = createContext<UsersContext>( initialContext );

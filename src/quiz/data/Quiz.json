@@ -2,622 +2,1962 @@
     "categories" : [
         {   
             "category" : {
-                "id": 1,
-                "name": "Cambio Climático",
-                "urlIcon": "cambio",
-                "questions": [
-                   {
-                    "id":1,
-                    "pregunta": "¿Qué es el cambio climático?",
-                    "correcta": "Alteración del clima atribuida a la actividad humana",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Alteración del clima atribuida a la actividad humana"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Cambio estacional normal"
-                        }, 
-                        {
-                            "id": "C",
-                            "value": "Variación diaria de temperatura"
-                        }, 
-                        {
-                            "id": "D",
-                            "value":"Fenómeno meteorológico aislado"
-                        }
-                    ]
-                   },
-                   {
-                    "id":2,
-                    "pregunta": "¿Cuál es el principal gas de efecto invernadero producido por la actividad humana?",
-                    "correcta": "Dióxido de carbono (CO2)",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Dióxido de carbono (CO2)"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Ozono (O3)"
-                        }, 
-                        {
-                            "id": "C",
-                            "value":"Nitrógeno (N2)"
-                        }, 
-                        {
-                            "id": "D",
-                            "value":"Vapor de agua (H2O)"
-                        }
-                    ]
-                   },
-                   {
-                    "id":3,
-                    "pregunta": "¿Qué consecuencias tiene el cambio climático en los ecosistemas?",
-                    "correcta": "Pérdida de biodiversidad",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Pérdida de biodiversidad"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Aumento de la diversidad de especies" 
-                        },
-                        {
-                            "id": "C",
-                            "value":"Estabilidad climática mejorada"
-                        }, 
-                        {
-                            "id": "D",
-                            "value":"Crecimiento acelerado de la flora"
-                        }
-                    ]
-                   },
-                   {
-                    "id":4,
-                    "pregunta": "¿Qué es la huella de carbono? ",
-                    "correcta": "Medida del impacto de las actividades humanas",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Medida del impacto de las actividades humanas"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Huella ecológica general" 
-                        },
-                        {
-                            "id": "C",
-                            "value":"Cantidad de carbono en la dieta" 
-                        },        
-                        {
-                            "id": "D",
-                            "value":"Medida de la eficiencia energética"
-                        }       
-                    ]
-                   },
-                   {
-                    "id":5,
-                    "pregunta": "¿Cómo pueden los individuos reducir su impacto en el cambio climático?",
-                    "correcta": "Reduciendo su consumo de energía y el uso fuentes renovables",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Reduciendo su consumo de energía y el uso fuentes renovables"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Plantando árboles exclusivamente"
-                        }, 
-                        {
-                            "id": "C",
-                            "value":"Usando únicamente vehículos eléctricos"
-                        }, 
-                        {
-                            "id": "D",
-                            "value":"Eliminando el uso de plásticos"
-                        }
-                    ]
-                   }
-                ]
+              "id": 1,
+              "name": "Cambio Climático",
+              "questions": [
+                {
+                  "id": 1,
+                  "pregunta": "¿Qué gas es el principal responsable del efecto invernadero?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Oxígeno"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Dióxido de carbono"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Nitrógeno"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Hidrógeno"
+                    }
+                  ],
+                  "correcta": "Dióxido de carbono",
+                  "explicacion": "El dióxido de carbono (CO2) es el principal gas de efecto invernadero debido a la quema de combustibles fósiles y la deforestación, lo que contribuye al calentamiento global."
+                },
+                {
+                  "id": 2,
+                  "pregunta": "¿Qué fenómeno climático se intensifica debido al calentamiento global?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "La lluvia ácida"
+                    },
+                    {
+                      "id": " B",
+                      "value": "El Niño"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Las tormentas de nieve"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Los huracanes"
+                    }
+                  ],
+                  "correcta": "Los huracanes",
+                  "explicacion": "Los huracanes se intensifican debido al aumento de la temperatura del agua del mar, que proporciona más energía para su formación y fortalecimiento."
+                },
+                {
+                  "id": 3,
+                  "pregunta": "¿Cuál es una de las principales consecuencias del derretimiento de los glaciares?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Aumento de la pesca"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Disminución de las temperaturas globales"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Aumento del nivel del mar"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Mayor producción agrícola"
+                    }
+                  ],
+                  "correcta": "Aumento del nivel del mar",
+                  "explicacion": "El derretimiento de los glaciares contribuye al aumento del nivel del mar, lo que puede provocar inundaciones en áreas costeras."
+                },
+                {
+                  "id": 4,
+                  "pregunta": "¿Qué acuerdo internacional busca reducir las emisiones de gases de efecto invernadero?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Tratado de Versalles"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Acuerdo de París"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Pacto de Varsovia"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Tratado de Tordesillas"
+                    }
+                  ],
+                  "correcta": "Acuerdo de París",
+                  "explicacion": "El Acuerdo de París es un pacto global que tiene como objetivo limitar el aumento de la temperatura global y reducir las emisiones de gases de efecto invernadero."
+                },
+                {
+                  "id": 5,
+                  "pregunta": "¿Qué actividad humana contribuye significativamente al cambio climático?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Reciclaje"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Deforestación"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Fotografía"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Natación"
+                    }
+                  ],
+                  "correcta": "Deforestación",
+                  "explicacion": "La deforestación libera grandes cantidades de CO2 a la atmósfera y reduce la capacidad de los bosques para absorber este gas."
+                },
+                {
+                  "id": 6,
+                  "pregunta": "¿Qué proceso natural es vital para capturar CO2 de la atmósfera?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "La fotosíntesis"
+                    },
+                    {
+                      "id": " B",
+                      "value": "La respiración"
+                    },
+                    {
+                      "id": " C",
+                      "value": "La fermentación"
+                    },
+                    {
+                      "id": " D",
+                      "value": "La combustión"
+                    }
+                  ],
+                  "correcta": "La fotosíntesis",
+                  "explicacion": "La fotosíntesis es el proceso por el cual las plantas capturan CO2 y lo convierten en oxígeno, ayudando a reducir los gases de efecto invernadero."
+                },
+                {
+                  "id": 7,
+                  "pregunta": "¿Qué sector industrial emite la mayor cantidad de gases de efecto invernadero?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Tecnología"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Educación"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Transporte"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Turismo"
+                    }
+                  ],
+                  "correcta": "Transporte",
+                  "explicacion": "El sector del transporte es uno de los mayores emisores de gases de efecto invernadero, principalmente debido al uso de combustibles fósiles."
+                },
+                {
+                  "id": 8,
+                  "pregunta": "¿Qué fenómeno puede causar la extinción de especies y la pérdida de biodiversidad?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Cambio climático"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Polinización"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Fotosíntesis"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Ciclo del agua"
+                    }
+                  ],
+                  "correcta": "Cambio climático",
+                  "explicacion": "El cambio climático altera los hábitats naturales, lo que puede llevar a la extinción de especies y a la pérdida de biodiversidad."
+                },
+                {
+                  "id": 9,
+                  "pregunta": "¿Cómo se llama el proceso por el cual los océanos absorben más CO2 y se vuelven más ácidos?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Desalinización"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Eutrofización"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Acidificación oceánica"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Osmosis"
+                    }
+                  ],
+                  "correcta": "Acidificación oceánica",
+                  "explicacion": "La acidificación oceánica ocurre cuando los océanos absorben CO2 de la atmósfera, lo que reduce el pH del agua y afecta a la vida marina."
+                },
+                {
+                  "id": 10,
+                  "pregunta": "¿Qué término describe el aumento de la temperatura global observado desde la Revolución Industrial?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Era de Hielo"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Calentamiento global"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Pequeña Edad de Hielo"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Cambio estacional"
+                    }
+                  ],
+                  "correcta": "Calentamiento global",
+                  "explicacion": "El calentamiento global se refiere al aumento de la temperatura global que ha sido particularmente notable desde la Revolución Industrial debido a las actividades humanas."
+                },
+                {
+                  "id": 11,
+                  "pregunta": "¿Qué iniciativa global busca plantar mil millones de árboles para combatir el cambio climático?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Greenpeace"
+                    },
+                    {
+                      "id": " B",
+                      "value": "La Campaña del Milenio de las Naciones Unidas"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Trillion Tree Campaign"
+                    },
+                    {
+                      "id": " D",
+                      "value": "WWF"
+                    }
+                  ],
+                  "correcta": "Trillion Tree Campaign",
+                  "explicacion": "La Trillion Tree Campaign es una iniciativa que promueve la reforestación como una forma de capturar CO2 y combatir el cambio climático."
+                },
+                {
+                  "id": 12,
+                  "pregunta": "¿Qué evento meteorológico extremo se espera que aumente en frecuencia debido al cambio climático?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Olas de calor"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Arcoíris"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Rocío matutino"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Brisa marina"
+                    }
+                  ],
+                  "correcta": "Olas de calor",
+                  "explicacion": "Se espera que las olas de calor sean más frecuentes e intensas como resultado del cambio climático y el aumento de las temperaturas globales."
+                },
+                {
+                  "id": 13,
+                  "pregunta": "¿Qué término se utiliza para la cantidad total de gases de efecto invernadero que una persona, organización o país produce?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Huella de carbono"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Huella digital"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Huella ecológica"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Huella hídrica"
+                    }
+                  ],
+                  "correcta": "Huella de carbono",
+                  "explicacion": "La huella de carbono se refiere a la cantidad total de gases de efecto invernadero emitidos directa o indirectamente."
+                },
+                {
+                  "id": 14,
+                  "pregunta": "¿Qué fenómeno natural ayuda a regular el clima de la Tierra absorbiendo CO2?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Los volcanes"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Los bosques"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Los desiertos"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Los ríos"
+                    }
+                  ],
+                  "correcta": "Los bosques",
+                  "explicacion": "Los bosques actúan como sumideros de carbono, absorbiendo CO2 durante el proceso de fotosíntesis."
+                },
+                {
+                  "id": 15,
+                  "pregunta": "¿Qué acuerdo internacional anterior al Acuerdo de París también buscaba reducir las emisiones de gases de efecto invernadero?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Protocolo de Kioto"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Tratado de Maastricht"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Convención de Ramsar"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Convenio de Berna"
+                    }
+                  ],
+                  "correcta": "Protocolo de Kioto",
+                  "explicacion": "El Protocolo de Kioto fue un acuerdo internacional que estableció objetivos obligatorios para la reducción de emisiones de gases de efecto invernadero."
+                },
+                {
+                  "id": 16,
+                  "pregunta": "¿Qué práctica agrícola puede ayudar a combatir el cambio climático al secuestrar carbono en el suelo?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Uso de fertilizantes químicos"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Agricultura intensiva"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Agricultura de conservación"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Monocultivo"
+                    }
+                  ],
+                  "correcta": "Agricultura de conservación",
+                  "explicacion": "La agricultura de conservación incluye prácticas como la labranza mínima y la rotación de cultivos, que pueden aumentar la cantidad de carbono almacenado en el suelo."
+                }
+              ]
             }
         },
         {   
             "category" : {
-                "id": 2,
-                "name": "Biodiversidad",
-                "urlIcon": "biodiversidad",
-                "questions": [
-                   {
-                    "id":1,
-                    "pregunta": "¿Qué es la biodiversidad?",
-                    "correcta": "Variedad de vida en todas sus formas y niveles de organización",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value": "Variedad de vida en todas sus formas y niveles de organización"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Número de animales en un ecosistema"
-                        }, 
-                        {
-                            "id": "C",
-                            "value":"Diversidad de paisajes naturales"
-                        }, 
-                        {
-                            "id": "D",
-                            "value":"Variedad de recursos minerales"
-                        }
-                    ]
-                   },
-                   {
-                    "id":2,
-                    "pregunta": "¿Por qué es importante conservar la biodiversidad?",
-                    "correcta": "Mantiene la resiliencia de los ecosistemas y provee recursos para la supervivencia humana",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Mantiene la resiliencia de los ecosistemas y provee recursos para la supervivencia humana"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Solo por razones estéticas"
-                        }, 
-                        {
-                            "id": "C",
-                            "value":"Para incrementar la producción agrícola"
-                        }, 
-                        {
-                            "id": "D",
-                            "value":"Para mantener el turismo ecológico"
-                        }
-                    ]
-                   },
-                   {
-                    "id":3,
-                    "pregunta": "¿Cuál es la diferencia entre una especie en peligro de extinción y una especie vulnerable?",
-                    "correcta": "Riesgo de extinción es inminente para las especies en peligro, mientras que las vulnerables están en riesgo alto",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Riesgo de extinción es inminente para las especies en peligro, mientras que las vulnerables están en riesgo alto"
-                        }, 
-                        {
-                            "id": "B",
-                            "value":"No hay diferencia"
-                        }, 
-                        {
-                            "id": "C",
-                            "value":"Las especies vulnerables están ya extintas"
-                        }, 
-                        {
-                            "id": "D",
-                            "value":"Las especies en peligro son más numerosas" 
-                        }
-                    ]
-                   },
-                   {
-                    "id":4,
-                    "pregunta": "¿Qué acciones humanas amenazan la biodiversidad?",
-                    "correcta": "Deforestación, contaminación, y sobreexplotación de especies",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Deforestación, contaminación, y sobreexplotación de especies"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Conservación de áreas naturales"
-                        }, 
-                        {
-                            "id": "C",
-                            "value":"Investigación científica de ecosistemas"
-                        }, 
-                        {
-                            "id": "D",
-                            "value":"Educación ambiental"
-                        }
-                    ]
-                   },
-                   {
-                    "id":5,
-                    "pregunta": "¿Qué es un corredor biológico?",
-                    "correcta": "Área que permite el desplazamiento y la interacción de especies entre ecosistemas",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Área que permite el desplazamiento y la interacción de especies entre ecosistemas"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Un tipo de zoológico"
-                        },
-                        {
-                            "id": "C",
-                            "value":"Un parque urbano"
-                        }, 
-                        {
-                            "id": "D",
-                            "value":"Una reserva natural aislada" 
-                        }
-                    ]
-                   }
-                ]
+              "id": 2,
+              "name": "Biodiversidad",
+              "questions": [
+                {
+                  "id": 1,
+                  "pregunta": "¿Qué concepto se refiere a la variedad de vida en la Tierra en todos sus niveles?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Ecología"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Sostenibilidad"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Biodiversidad"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Biología"
+                    }
+                  ],
+                  "correcta": "Biodiversidad",
+                  "explicacion": "La biodiversidad incluye la diversidad de especies, ecosistemas y las diferencias genéticas dentro de las especies."
+                },
+                {
+                  "id": 2,
+                  "pregunta": "¿Cuál es el principal peligro para la biodiversidad marina?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Turismo"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Pesca excesiva"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Fotografía submarina"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Natación"
+                    }
+                  ],
+                  "correcta": "Pesca excesiva",
+                  "explicacion": "La pesca excesiva amenaza la biodiversidad marina al reducir significativamente las poblaciones de peces y alterar las cadenas alimentarias."
+                },
+                {
+                  "id": 3,
+                  "pregunta": "¿Qué área protegida es esencial para conservar la biodiversidad?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Parques urbanos"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Reservas naturales"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Campos de golf"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Zonas industriales"
+                    }
+                  ],
+                  "correcta": "Reservas naturales",
+                  "explicacion": "Las reservas naturales protegen los hábitats y las especies de la intervención humana y la destrucción del hábitat."
+                },
+                {
+                  "id": 4,
+                  "pregunta": "¿Qué término describe la introducción de especies en áreas donde no son nativas?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Migración"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Especies invasoras"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Adaptación"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Evolución"
+                    }
+                  ],
+                  "correcta": "Especies invasoras",
+                  "explicacion": "Las especies invasoras pueden desplazar a las especies nativas, alterar ecosistemas y causar daños económicos y ambientales."
+                },
+                {
+                  "id": 5,
+                  "pregunta": "¿Qué práctica agrícola puede aumentar la biodiversidad local?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Monocultivo"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Uso de pesticidas"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Agricultura orgánica"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Deforestación"
+                    }
+                  ],
+                  "correcta": "Urbanización",
+                  "explicacion": "La urbanización implica la transformación de áreas naturales en zonas urbanas, lo que puede resultar en la pérdida de hábitats y biodiversidad."
+                },
+                {
+                  "id": 6,
+                  "pregunta": "¿Qué fenómeno puede causar la pérdida de hábitats naturales y la disminución de la biodiversidad?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Urbanización"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Jardinería"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Fotografía de paisajes"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Observación de aves"
+                    }
+                  ],
+                  "correcta":"Urbanización",
+                  "explicacion": "La urbanización implica la transformación de áreas naturales en zonas urbanas, lo que puede resultar en la pérdida de hábitats y biodiversidad."
+                },
+                {
+                  "id": 7,
+                  "pregunta": "¿Qué tipo de área protegida se establece principalmente para la preservación de la vida silvestre?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Parques nacionales"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Zonas residenciales"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Áreas comerciales"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Campos de cultivo"
+                    }
+                  ],
+                  "correcta": "Parques nacionales",
+                  "explicacion": "Los parques nacionales son áreas protegidas destinadas a la conservación de la vida silvestre y los ecosistemas naturales."
+                },
+                {
+                  "id": 8,
+                  "pregunta": "¿Qué término se utiliza para la desaparición completa de una especie de la faz de la Tierra?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Extinción"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Migración"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Adaptación"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Hibernación"
+                    }
+                  ],
+                  "correcta": "Extinción",
+                  "explicacion": "La extinción ocurre cuando una especie ya no existe en ningún lugar del mundo, a menudo como resultado de la actividad humana."
+                },
+                {
+                  "id": 9,
+                  "pregunta": "¿Qué práctica puede ayudar a mantener la biodiversidad en los ríos y lagos?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Construcción de presas"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Vertido de residuos"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Pesca sostenible"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Navegación intensiva"
+                    }
+                  ],
+                  "correcta": "Pesca sostenible",
+                  "explicacion": "La pesca sostenible asegura que las poblaciones de peces se mantengan saludables y que los ecosistemas acuáticos permanezcan en equilibrio."
+                },
+                {
+                  "id": 10,
+                  "pregunta": "¿Qué organismo internacional trabaja para la conservación de la naturaleza y los recursos naturales?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "ONU"
+                    },
+                    {
+                      "id": " B",
+                      "value": "UNESCO"
+                    },
+                    {
+                      "id": " C",
+                      "value": "UNEP"
+                    },
+                    {
+                      "id": " D",
+                      "value": "IUCN"
+                    }
+                  ],
+                  "correcta": "IUCN",
+                  "explicacion": "La Unión Internacional para la Conservación de la Naturaleza (IUCN) es una organización que se dedica a la conservación de los recursos naturales."
+                },
+                {
+                  "id": 11,
+                  "pregunta": "¿Qué iniciativa buscaba proteger el 17% de las áreas terrestres y el 10% de las áreas marinas para 2020?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Objetivos de Desarrollo del Milenio"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Metas de Aichi para la Biodiversidad"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Agenda 21"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Protocolo de Montreal"
+                    }
+                  ],
+                  "correcta": "Metas de Aichi para la Biodiversidad",
+                  "explicacion": "Las Metas de Aichi para la Biodiversidad son una serie de objetivos establecidos por la Convención sobre la Diversidad Biológica."
+                },
+                {
+                  "id": 12,
+                  "pregunta": "¿Qué práctica puede ayudar a proteger las poblaciones de abejas, que son polinizadores cruciales?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Uso de insecticidas"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Apicultura sostenible"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Deforestación"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Urbanización"
+                    }
+                  ],
+                  "correcta": "Apicultura sostenible",
+                  "explicacion": "La apicultura sostenible implica prácticas que protegen y promueven la salud de las abejas, lo que es vital para la polinización y la biodiversidad."
+                },
+                {
+                  "id": 13,
+                  "pregunta": "¿Qué término se utiliza para describir la conexión entre todas las formas de vida en la Tierra y los lugares donde viven?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Red alimentaria"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Bioma"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Ecosistema"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Biosfera"
+                    }
+                  ],
+                  "correcta": "Ecosistema",
+                  "explicacion": "El ecosistema describe la interconexión entre los seres vivos, incluyendo plantas, animales y microorganismos, y su entorno físico."
+                },
+                {
+                  "id": 14,
+                  "pregunta": "¿Como se llaman las especie se consideran esenciales para la conservación porque su protección ayuda a mantener la estructura de un ecosistema?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Especies clave"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Especies exóticas"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Especies en peligro"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Especies cosmopolitas"
+                    }
+                  ],
+                  "correcta": "Especies clave",
+                  "explicacion": "Las especies clave tienen un rol crítico en el mantenimiento de la estructura de un ecosistema, y su protección beneficia a muchas otras especies."
+                },
+                {
+                  "id": 15,
+                  "pregunta": "¿Qué fenómeno global está causando la pérdida de biodiversidad a un ritmo sin precedentes?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Globalización"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Cambio climático"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Turismo mundial"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Comercio internacional"
+                    }
+                  ],
+                  "correcta": "Cambio climático",
+                  "explicacion": "El cambio climático está alterando los hábitats y las condiciones climáticas a un ritmo que muchas especies no pueden adaptarse, causando una pérdida masiva de biodiversidad."
+                },
+                {
+                  "id": 16,
+                  "pregunta": "¿Qué acuerdo internacional se centra en la conservación y el uso sostenible de la diversidad biológica?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Acuerdo de París"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Protocolo de Kioto"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Convención sobre la Diversidad Biológica"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Tratado de Libre Comercio de América del Norte"
+                    }
+                  ],
+                  "correcta": "Convención sobre la Diversidad Biológica",
+                  "explicacion": "La Convención sobre la Diversidad Biológica es un tratado internacional con tres objetivos principales"
+                }
+              ]
             }
         },
         {   
             "category" : {
-                "id": 3,
-                "name": "Energía Renovable",
-                "urlIcon": "energia",
-                "questions": [
-                   {
-                    "id":1,
-                    "pregunta": "¿Qué son las energías renovables?",
-                    "correcta": "Fuentes de energía que se regeneran naturalmente y son inagotables",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Fuentes de energía que se regeneran naturalmente y son inagotables"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Combustibles fósiles"
-                        },
-                        {
-                            "id": "C",
-                            "value": "Energía nuclear"
-                        },
-                        {
-                            "id": "D",
-                            "value": "Recursos minerales" 
-                        }
-                    ]
-                   },
-                   {
-                    "id":2,
-                    "pregunta": "¿Cuáles son los tipos principales de energías renovables?",
-                    "correcta": "Solar, eólica, hidroeléctrica, geotérmica y biomasa",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Solar, eólica, hidroeléctrica, geotérmica y biomasa"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Petróleo, carbón, gas natural"
-                        },
-                        {
-                            "id": "C",
-                            "value":"Energía cinética, potencial y mecánica"
-                        },
-                        {
-                            "id": "D",
-                            "value":"Electricidad, magnetismo y gravedad" 
-                        }
-                    ]
-                   },
-                   {
-                    "id":3,
-                    "pregunta": "¿Qué beneficios tienen las energías renovables sobre los combustibles fósiles?",
-                    "correcta": "Son sostenibles y menos contaminantes",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Son sostenibles y menos contaminantes"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Son más baratas"
-                        },
-                        {
-                            "id": "C",
-                            "value":"Están más ampliamente disponibles"
-                        },
-                        {
-                            "id": "D",
-                            "value":"Requieren menos tecnología"
-                        }
-                    ]
-                   },
-                   {
-                    "id":4,
-                    "pregunta": "¿Qué es la energía solar fotovoltaica?",
-                    "correcta": "Tecnología que convierte la luz solar directamente en electricidad",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Tecnología que convierte la luz solar directamente en electricidad"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Método de calentamiento de agua"
-                        },
-                        {
-                            "id": "C",
-                            "value":"Tipo de energía solar pasiva"
-                        },
-                        {
-                            "id": "D",
-                            "value":"Sistema de iluminación natural"
-                        }
-                    ]
-                   },
-                   {
-                    "id":5,
-                    "pregunta": "¿Cómo funciona una turbina eólica?",
-                    "correcta": "Convierte la energía cinética del viento en electricidad",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Convierte la energía cinética del viento en electricidad"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Utiliza vapor de agua para generar energía"
-                        },
-                        {
-                            "id": "C",
-                            "value":"Funciona con combustibles fósiles"
-                        },
-                        {
-                            "id": "D",
-                            "value":"Genera energía a través de la luz solar"
-                        }
-                    ]
-                   }
-                ]
+              "id": 3,
+              "name": "Energía Renovable",
+              "questions": [
+                {
+                  "id": 1,
+                  "pregunta": "¿Cuál de las siguientes es una fuente de energía renovable?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Petróleo"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Carbón"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Energía solar"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Gas natural"
+                    }
+                  ],
+                  "correcta": "Energía solar",
+                  "explicacion": "La energía solar es renovable porque proviene del sol, una fuente inagotable que no se agota con el uso humano."
+                },
+                {
+                  "id": 2,
+                  "pregunta": "¿Qué dispositivo se utiliza para convertir la energía solar en electricidad?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Generador de vapor"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Panel solar fotovoltaico"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Turbina eólica"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Reactor nuclear"
+                    }
+                  ],
+                  "correcta": "Panel solar fotovoltaico",
+                  "explicacion": "Los paneles solares fotovoltaicos convierten la luz solar directamente en electricidad mediante el efecto fotovoltaico."
+                },
+                {
+                  "id": 3,
+                  "pregunta": "¿Cuál es el principal beneficio de la energía eólica?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Produce dióxido de carbono"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Requiere combustibles fósiles"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Es inagotable y no contamina"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Genera residuos nucleares"
+                    }
+                  ],
+                  "correcta": "Es inagotable y no contamina",
+                  "explicacion": "La energía eólica utiliza el viento, una fuente inagotable, y no produce emisiones contaminantes durante su generación."
+                },
+                {
+                  "id": 4,
+                  "pregunta": "¿Qué recurso natural utiliza la energía hidroeléctrica para generar electricidad?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Carbón"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Gas natural"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Agua en movimiento"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Uranio"
+                    }
+                  ],
+                  "correcta": "Agua en movimiento",
+                  "explicacion": "La energía hidroeléctrica aprovecha la energía cinética del agua en movimiento, como ríos o corrientes, para generar electricidad mediante turbinas."
+                },
+                {
+                  "id": 5,
+                  "pregunta": "¿Cuál es una ventaja del uso de la energía geotérmica?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Alta emisión de gases de efecto invernadero"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Dependencia de condiciones climáticas"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Suministro constante y estable"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Alta volatilidad de precios"
+                    }
+                  ],
+                  "correcta": "Suministro constante y estable",
+                  "explicacion": "La energía geotérmica proporciona un suministro constante y estable de energía al aprovechar el calor interno de la Tierra, sin depender de las condiciones climáticas."
+                },
+                {
+                  "id": 6,
+                  "pregunta": "¿Cuál de los siguientes es un ejemplo de biocombustible?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Gasolina"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Diesel"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Biodiesel"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Carbón"
+                    }
+                  ],
+                  "correcta": "Biodiesel",
+                  "explicacion": "El biodiesel es un biocombustible producido a partir de aceites vegetales o grasas animales, y es renovable porque se puede obtener de fuentes biológicas."
+                },
+                {
+                  "id": 7,
+                  "pregunta": "¿Qué país es líder mundial en la producción de energía eólica?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Arabia Saudita"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Estados Unidos"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Rusia"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Japón"
+                    }
+                  ],
+                  "correcta": "Estados Unidos",
+                  "explicacion": "Estados Unidos es uno de los líderes mundiales en la producción de energía eólica debido a sus grandes parques eólicos y capacidad instalada."
+                },
+                {
+                  "id": 8,
+                  "pregunta": "¿Cuál es el impacto ambiental de las energías renovables comparado con las energías no renovables?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Mayor emisión de CO2"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Mayor contaminación del aire"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Menor emisión de CO2"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Mayor producción de residuos tóxicos"
+                    }
+                  ],
+                  "correcta": "Menor emisión de CO2",
+                  "explicacion": "Las energías renovables emiten significativamente menos CO2 y otros contaminantes en comparación con las energías no renovables, ayudando a combatir el cambio climático."
+                },
+                {
+                  "id": 9,
+                  "pregunta": "¿Qué tipo de energía se obtiene a partir de la biomasa?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Energía térmica"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Energía nuclear"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Energía química"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Energía cinética"
+                    }
+                  ],
+                  "correcta": "Energía térmica",
+                  "explicacion": "La biomasa puede ser quemada o transformada para producir energía térmica, que luego puede ser utilizada para generar electricidad o calor."
+                },
+                {
+                  "id": 10,
+                  "pregunta": "¿Cuál es un beneficio del uso de paneles solares en hogares?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Alta contaminación sonora"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Dependencia del carbón"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Reducción de facturas de electricidad"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Producción de residuos radiactivos"
+                    }
+                  ],
+                  "correcta": "Reducción de facturas de electricidad",
+                  "explicacion": "Los paneles solares permiten a los hogares generar su propia electricidad, reduciendo la dependencia de la red eléctrica y disminuyendo las facturas de electricidad."
+                },
+                {
+                  "id": 11,
+                  "pregunta": "¿Qué es la energía mareomotriz?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Energía generada por el viento"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Energía generada por el movimiento del agua en mares y océanos"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Energía producida por el sol"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Energía obtenida de la biomasa"
+                    }
+                  ],
+                  "correcta": "Energía generada por el movimiento del agua en mares y océanos",
+                  "explicacion": "La energía mareomotriz se obtiene del movimiento de las mareas y corrientes oceánicas, utilizando la energía cinética del agua en movimiento."
+                },
+                {
+                  "id": 12,
+                  "pregunta": "¿Qué tecnología se usa para convertir la energía solar en calor utilizable?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Turbinas de viento"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Paneles solares térmicos"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Refractores de luz"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Condensadores"
+                    }
+                  ],
+                  "correcta": "Paneles solares térmicos",
+                  "explicacion": "Los paneles solares térmicos capturan la luz solar y la convierten en calor utilizable, que puede ser utilizado para calentar agua o espacios."
+                },
+                {
+                  "id": 13,
+                  "pregunta": "¿Cuál es una desventaja de la energía eólica?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Alta emisión de CO2"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Dependencia del clima y variabilidad del viento"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Contaminación del agua"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Producción de residuos nucleares"
+                    }
+                  ],
+                  "correcta": "Dependencia del clima y variabilidad del viento",
+                  "explicacion": "La producción de energía eólica puede ser intermitente debido a la variabilidad del viento, lo que puede requerir sistemas de almacenamiento o respaldo energético."
+                },
+                {
+                  "id": 14,
+                  "pregunta": "¿Qué tipo de energía se puede obtener a partir de los desechos orgánicos?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Energía hidráulica"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Energía solar"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Energía biomasa"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Energía nuclear"
+                    }
+                  ],
+                  "correcta": "Energía biomasa",
+                  "explicacion": "La energía biomasa se obtiene de la descomposición o combustión de desechos orgánicos, generando energía térmica que puede ser transformada en electricidad."
+                },
+                {
+                  "id": 15,
+                  "pregunta": "¿Qué impacto tiene la energía solar en la reducción del efecto invernadero?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Aumenta la emisión de gases de efecto invernadero"
+                    },
+                    {
+                      "id": " B",
+                      "value": "No tiene impacto"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Reduce la emisión de gases de efecto invernadero"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Contamina el suelo"
+                    }
+                  ],
+                  "correcta": "Reduce la emisión de gases de efecto invernadero",
+                  "explicacion": "La energía solar reduce la dependencia de combustibles fósiles, disminuyendo así las emisiones de gases de efecto invernadero responsables del cambio climático."
+                },
+                {
+                  "id": 16,
+                  "pregunta": "¿Cuál es una característica de la energía renovable?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Finita y limitada"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Genera residuos peligrosos"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Inagotable y sostenible"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Alta emisión de contaminantes"
+                    }
+                  ],
+                  "correcta": "Inagotable y sostenible",
+                  "explicacion": "Las energías renovables provienen de fuentes naturales que se regeneran constantemente, como el sol, el viento y el agua, y son sostenibles a largo plazo."
+                }
+              ]
             }
         },
         {   
             "category" : {
-                "id": 4,
-                "name": "Reciclaje",
-                "urlIcon": "reciclaje",
-                "questions": [
-                   {
-                    "id":1,
-                    "pregunta": "¿Qué es la contaminación del aire?",
-                    "correcta": "Presencia de sustancias nocivas en la atmósfera que afectan la salud y el medio ambiente",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Presencia de sustancias nocivas en la atmósfera que afectan la salud y el medio ambiente" 
-                        },
-                        {
-                            "id": "B",
-                            "value":"Humo visible en el cielo"
-                        },
-                        {
-                            "id": "C",
-                            "value":"Olor desagradable en zonas urbanas" 
-                        },
-                        {
-                            "id": "D",
-                            "value":"Ruido de vehículos"
-                        }
-                    ]
-                   },
-                   {
-                    "id":2,
-                    "pregunta": "¿Cuáles son los efectos de la contaminación del agua en la salud humana?",
-                    "correcta": "Enfermedades y trastornos respiratorios, gastrointestinales y de la piel ",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Enfermedades y trastornos gastrointestinales y de la piel"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Solo afecta la vida acuática"
-                        },
-                        {
-                            "id": "C",
-                            "value":"Causa problemas exclusivamente respiratorios"
-                        },
-                        {
-                            "id": "D",
-                            "value":"Incrementa la resistencia a antibióticos"
-                        }
-                    ]
-                   },
-                   {
-                    "id":3,
-                    "pregunta": "¿Qué es la gestión de residuos?",
-                    "correcta": "Conjunto de actividades para manejar los residuos hasta su disposición final",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Conjunto de actividades para manejar los residuos hasta su disposición final"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Limpieza de calles"
-                        },
-                        {
-                            "id": "C",
-                            "value":"Recolección de hojas en otoño" 
-                        },
-                        {
-                            "id": "D",
-                            "value":"Mantenimiento de parques y jardines"
-                        }
-                    ]
-                   },
-                   {
-                    "id":4,
-                    "pregunta": "¿Cómo se puede reducir la cantidad de residuos generados?",
-                    "correcta": "Aplicando las 3R: Reducir, Reutilizar, Reciclar",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Aplicando las 3R: Reducir, Reutilizar, Reciclar" 
-                        },
-                        {
-                            "id": "B",
-                            "value":"Comprando más productos" 
-                        },
-                        {
-                            "id": "C",
-                            "value":"Usando más envases de un solo uso" 
-                        },
-                        {
-                            "id": "D",
-                            "value":"Ignorando el problema"
-                        }
-                    ]
-                   },
-                   {
-                    "id":5,
-                    "pregunta": "¿Qué es el reciclaje y por qué es importante?",
-                    "correcta": "Proceso de convertir desechos en nuevos productos para prevenir el desperdicio de materiales útiles",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Proceso de convertir desechos en nuevos productos para prevenir el desperdicio de materiales útiles" 
-                        },
-                        {
-                            "id": "B",
-                            "value":"Una moda pasajera"
-                        },
-                        {
-                            "id": "C",
-                            "value":"Solo una forma de limpieza" 
-                        },
-                        {
-                            "id": "D",
-                            "value":"Un concepto sin impacto real"
-                        }
-                    ]
-                   }
-                ]
+              "id": 4,
+              "name": "Reciclaje",
+              "questions": [
+                {
+                  "id": 1,
+                  "pregunta": "¿Cuál es el principal beneficio del reciclaje de papel?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Reducir la contaminación del agua"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Disminuir la deforestación"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Mejorar la calidad del aire"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Incrementar la producción de papel"
+                    }
+                  ],
+                  "correcta": "Disminuir la deforestación",
+                  "explicacion": "El reciclaje de papel reduce la necesidad de talar árboles para producir papel nuevo, ayudando a preservar los bosques."
+                },
+                {
+                  "id": 2,
+                  "pregunta": "¿Qué material es el más comúnmente reciclado en el mundo?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Vidrio"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Plástico"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Aluminio"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Papel"
+                    }
+                  ],
+                  "correcta": "Papel",
+                  "explicacion": "El papel es el material más reciclado debido a su uso generalizado y la facilidad con la que puede ser reciclado."
+                },
+                {
+                  "id": 3,
+                  "pregunta": "¿Qué símbolo se usa internacionalmente para indicar que un material es reciclable?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Un triángulo verde"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Un círculo rojo"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Un triángulo de flechas"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Un cuadrado azul"
+                    }
+                  ],
+                  "correcta": "Un triángulo de flechas",
+                  "explicacion": "El símbolo de reciclaje universal es un triángulo de flechas que representan el ciclo continuo de uso de materiales reciclables."
+                },
+                {
+                  "id": 4,
+                  "pregunta": "¿Cuánto tiempo puede tardar en descomponerse una botella de plástico en el medio ambiente?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "5 años"
+                    },
+                    {
+                      "id": " B",
+                      "value": "20 años"
+                    },
+                    {
+                      "id": " C",
+                      "value": "50 años"
+                    },
+                    {
+                      "id": " D",
+                      "value": "450 años"
+                    }
+                  ],
+                  "correcta": "450 años",
+                  "explicacion": "Las botellas de plástico pueden tardar hasta 450 años en descomponerse, causando un gran impacto en el medio ambiente."
+                },
+                {
+                  "id": 5,
+                  "pregunta": "¿Qué tipo de residuos no se debe colocar en los contenedores de reciclaje de papel?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Papel de oficina"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Cartón"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Papel encerado"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Periódicos"
+                    }
+                  ],
+                  "correcta": "Papel encerado",
+                  "explicacion": "El papel encerado no se puede reciclar junto con otros tipos de papel debido a su revestimiento que impide el proceso de reciclaje."
+                },
+                {
+                  "id": 6,
+                  "pregunta": "¿Qué material reciclado se utiliza a menudo en la fabricación de ropa?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Vidrio reciclado"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Aluminio reciclado"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Plástico reciclado"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Papel reciclado"
+                    }
+                  ],
+                  "correcta": "Plástico reciclado",
+                  "explicacion": "El plástico reciclado, como las botellas de PET, se utiliza para fabricar fibras de poliéster, que luego se usan en la ropa."
+                },
+                {
+                  "id": 7,
+                  "pregunta": "¿Cuál es el impacto de reciclar una tonelada de papel en términos de ahorro de agua?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "1000 litros"
+                    },
+                    {
+                      "id": " B",
+                      "value": "5000 litros"
+                    },
+                    {
+                      "id": " C",
+                      "value": "7000 litros"
+                    },
+                    {
+                      "id": " D",
+                      "value": "10000 litros"
+                    }
+                  ],
+                  "correcta": "10000 litros",
+                  "explicacion": "Reciclar una tonelada de papel puede ahorrar hasta 10,000 litros de agua que se utilizarían en la producción de papel nuevo."
+                },
+                {
+                  "id": 8,
+                  "pregunta": "¿Cuál es la principal razón para reciclar el aluminio?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Es biodegradable"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Ahorra energía"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Mejora la calidad del aire"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Aumenta la producción de aluminio"
+                    }
+                  ],
+                  "correcta": "Ahorra energía",
+                  "explicacion": "Reciclar aluminio ahorra hasta un 95% de la energía necesaria para producir aluminio nuevo a partir del mineral."
+                },
+                {
+                  "id": 9,
+                  "pregunta": "¿Qué producto se puede fabricar a partir del reciclaje de vidrio?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Teléfonos móviles"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Nuevas botellas de vidrio"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Ropa"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Muebles de madera"
+                    }
+                  ],
+                  "correcta": "Nuevas botellas de vidrio",
+                  "explicacion": "El vidrio reciclado se puede utilizar para fabricar nuevas botellas y frascos de vidrio, cerrando el ciclo de reciclaje."
+                },
+                {
+                  "id": 10,
+                  "pregunta": "¿Cuál de los siguientes no es un beneficio del reciclaje?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Reducir la cantidad de residuos en los vertederos"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Conservar recursos naturales"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Incrementar la contaminación del aire"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Ahorrar energía"
+                    }
+                  ],
+                  "correcta": "Incrementar la contaminación del aire",
+                  "explicacion": "El reciclaje ayuda a reducir la contaminación del aire al disminuir la necesidad de producir materiales nuevos."
+                },
+                {
+                  "id": 11,
+                  "pregunta": "¿Qué tipo de plástico es más difícil de reciclar?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "PET"
+                    },
+                    {
+                      "id": " B",
+                      "value": "HDPE"
+                    },
+                    {
+                      "id": " C",
+                      "value": "PVC"
+                    },
+                    {
+                      "id": " D",
+                      "value": "LDPE"
+                    }
+                  ],
+                  "correcta": "PVC",
+                  "explicacion": "El PVC es más difícil de reciclar debido a los aditivos que contiene, los cuales complican el proceso de reciclaje."
+                },
+                {
+                  "id": 12,
+                  "pregunta": "¿Qué se logra al reciclar una tonelada de papel en términos de ahorro de árboles?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Salvar 1 árbol"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Salvar 7 árboles"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Salvar 17 árboles"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Salvar 27 árboles"
+                    }
+                  ],
+                  "correcta": "Salvar 17 árboles",
+                  "explicacion": "Reciclar una tonelada de papel puede salvar hasta 17 árboles, lo que ayuda a preservar los bosques."
+                },
+                {
+                  "id": 13,
+                  "pregunta": "¿Qué tipo de basura electrónica es más comúnmente reciclada?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Teléfonos móviles"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Televisores"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Computadoras"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Impresoras"
+                    }
+                  ],
+                  "correcta": "Teléfonos móviles",
+                  "explicacion": "Los teléfonos móviles son comúnmente reciclados debido a la cantidad de metales preciosos y otros materiales valiosos que contienen."
+                },
+                {
+                  "id": 14,
+                  "pregunta": "¿Cuál es el principal beneficio de reciclar el plástico?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Mejora la calidad del agua"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Reduce la cantidad de residuos en los océanos"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Incrementa la producción de plástico"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Aumenta la deforestación"
+                    }
+                  ],
+                  "correcta": "Reduce la cantidad de residuos en los océanos",
+                  "explicacion": "Reciclar el plástico ayuda a reducir la cantidad de residuos plásticos que terminan en los océanos, protegiendo la vida marina."
+                },
+                {
+                  "id": 15,
+                  "pregunta": "¿Qué sucede con la mayoría de los residuos electrónicos no reciclados?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Se convierten en abono"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Se incineran"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Se envían a vertederos"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Se exportan a otros países"
+                    }
+                  ],
+                  "correcta": "Se envían a vertederos",
+                  "explicacion": "La mayoría de los residuos electrónicos no reciclados terminan en vertederos, donde pueden liberar sustancias tóxicas al medio ambiente."
+                },
+                {
+                  "id": 16,
+                  "pregunta": "¿Qué porcentaje de una lata de aluminio puede ser reciclada?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "50%"
+                    },
+                    {
+                      "id": " B",
+                      "value": "75%"
+                    },
+                    {
+                      "id": " C",
+                      "value": "90%"
+                    },
+                    {
+                      "id": " D",
+                      "value": "100%"
+                    }
+                  ],
+                  "correcta": "100%",
+                  "explicacion": "Las latas de aluminio son 100% reciclables, y el proceso puede repetirse indefinidamente sin pérdida de calidad."
+                }
+              ]
             }
         },
         {   
             "category" : {
-                "id": 5,
-                "name": "Recursos Hídricos",
-                "urlIcon": "agua",
-                "questions": [
-                   {
-                    "id":1,
-                    "pregunta": "¿Por qué es importante conservar el agua?",
-                    "correcta": "Es un recurso limitado esencial para la vida y los ecosistemas",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Es un recurso limitado esencial para la vida y los ecosistemas"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Porque es infinita"
-                        },
-                        {
-                            "id": "C",
-                            "value":"Para tener más agua para actividades recreativas" 
-                        },
-                        {
-                            "id": "D",
-                            "value":"Solo para ahorrar dinero"
-                        }
-                    ]
-                   },
-                   {
-                    "id":2,
-                    "pregunta": "¿Qué es la escasez de agua?",
-                    "correcta": "Situación donde la demanda de agua supera la oferta disponible",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Situación donde la demanda de agua supera la oferta disponible" 
-                        },
-                        {
-                            "id": "B",
-                            "value":"Exceso de lluvia"
-                        },
-                        {
-                            "id": "C",
-                            "value":"Abundancia de agua en los océanos" 
-                        },
-                        {
-                            "id": "D",
-                            "value":"Presencia de agua en la atmósfera"
-                        }
-                    ]
-                   },
-                   {
-                    "id":3,
-                    "pregunta": "¿Cómo afecta la agricultura a los recursos hídricos?",
-                    "correcta": "Puede causar sobreexplotación y contaminación de fuentes de agua",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Puede causar sobreexplotación y contaminación de fuentes de agua"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Mejora la calidad del agua"
-                        },
-                        {
-                            "id": "C",
-                            "value":"No tiene ningún efecto"
-                        },
-                        {
-                            "id": "D",
-                            "value":"Aumenta la cantidad de agua dulce"
-                        }
-                    ]
-                   },
-                   {
-                    "id":4,
-                    "pregunta": "¿Qué es la huella hídrica?",
-                    "correcta": "Indicador del uso total de agua dulce de un individuo, comunidad o actividad",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Indicador del uso total de agua dulce de un individuo, comunidad o actividad"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Cantidad de agua en una piscina"
-                        },
-                        {
-                            "id": "C",
-                            "value":"Volumen de agua en una botella"
-                        },
-                        {
-                            "id": "D",
-                            "value":"Medida de lluvia anual"
-                        }
-                    ]
-                   },
-                   {
-                    "id":5,
-                    "pregunta": "¿Qué medidas se pueden tomar para proteger las fuentes de agua dulce?",
-                    "correcta": "Tratamiento de aguas residuales, y políticas de conservación",
-                    "respuestas": [
-                        {
-                            "id": "A",
-                            "value":"Tratamiento de aguas residuales, y políticas de conservación"
-                        },
-                        {
-                            "id": "B",
-                            "value":"Construcción de más presas"
-                        },
-                        {
-                            "id": "C",
-                            "value":"Uso intensivo de fertilizantes"  
-                        },
-                        {
-                            "id": "D",
-                            "value":"Desviación de ríos"
-                        }
-                    ]
-                   }
-                ]
+              "id": 5,
+              "name": "Recursos Hídricos",
+              "questions": [
+                {
+                  "id": 1,
+                  "pregunta": "¿Cuál es el uso principal del agua dulce a nivel mundial?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Uso doméstico"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Recreación"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Industria"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Agricultura"
+                    }
+                  ],
+                  "correcta": "Agricultura",
+                  "explicacion": "La agricultura utiliza aproximadamente el 70% del agua dulce disponible a nivel mundial debido a la necesidad de riego para cultivos."
+                },
+                {
+                  "id": 2,
+                  "pregunta": "¿Qué tipo de energía se genera mediante el uso del agua?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Energía solar"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Energía eólica"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Energía hidroeléctrica"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Energía geotérmica"
+                    }
+                  ],
+                  "correcta": "Energía hidroeléctrica",
+                  "explicacion": "La energía hidroeléctrica se genera utilizando el agua que fluye a través de turbinas en represas, convirtiendo la energía cinética del agua en electricidad."
+                },
+                {
+                  "id": 3,
+                  "pregunta": "¿Cuál es el principal beneficio de utilizar sistemas de riego por goteo en la agricultura?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Aumenta la cantidad de agua utilizada"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Reduce el costo del agua"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Minimiza el desperdicio de agua"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Incrementa la salinidad del suelo"
+                    }
+                  ],
+                  "correcta": "Minimiza el desperdicio de agua",
+                  "explicacion": "Los sistemas de riego por goteo suministran agua directamente a las raíces de las plantas, reduciendo la evaporación y el desperdicio."
+                },
+                {
+                  "id": 4,
+                  "pregunta": "¿Qué recurso hídrico se utiliza comúnmente para el suministro de agua potable en áreas urbanas?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Lagos"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Ríos"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Mares"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Glaciares"
+                    }
+                  ],
+                  "correcta": "Ríos",
+                  "explicacion": "En muchas áreas urbanas, los ríos son la principal fuente de agua potable debido a su accesibilidad y la posibilidad de tratamiento para hacer el agua segura para el consumo."
+                },
+                {
+                  "id": 5,
+                  "pregunta": "¿Qué tecnología se utiliza para purificar el agua en plantas de tratamiento?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Desalación"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Destilación"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Filtración y cloración"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Osmosis inversa"
+                    }
+                  ],
+                  "correcta": "Filtración y cloración",
+                  "explicacion": "La filtración elimina partículas y contaminantes, y la cloración desinfecta el agua eliminando bacterias y otros patógenos."
+                },
+                {
+                  "id": 6,
+                  "pregunta": "¿Cuál es la función de las zonas húmedas en el ciclo del agua?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Aumentar la erosión del suelo"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Reducir la biodiversidad"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Actuar como filtros naturales"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Generar energía"
+                    }
+                  ],
+                  "correcta": "Actuar como filtros naturales",
+                  "explicacion": "Las zonas húmedas actúan como filtros naturales, atrapando sedimentos y contaminantes y mejorando la calidad del agua que fluye a través de ellas."
+                },
+                {
+                  "id": 7,
+                  "pregunta": "¿Qué método de conservación de agua se puede utilizar en el hogar?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Regar las plantas al mediodía"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Lavar el coche con una manguera"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Usar dispositivos de bajo flujo en grifos y duchas"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Llenar la bañera completamente"
+                    }
+                  ],
+                  "correcta": "Usar dispositivos de bajo flujo en grifos y duchas",
+                  "explicacion": "Los dispositivos de bajo flujo reducen la cantidad de agua utilizada sin afectar significativamente el rendimiento, ayudando a conservar agua en el hogar."
+                },
+                {
+                  "id": 8,
+                  "pregunta": "¿Cuál es el mayor reservorio de agua dulce en el planeta?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Los ríos"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Las capas de hielo y los glaciares"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Los acuíferos"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Los lagos"
+                    }
+                  ],
+                  "correcta": "Las capas de hielo y los glaciares",
+                  "explicacion": "La mayor parte del agua dulce del planeta se encuentra almacenada en las capas de hielo y glaciares, aunque no es fácilmente accesible para el consumo humano."
+                },
+                {
+                  "id": 9,
+                  "pregunta": "¿Qué tipo de sistema de tratamiento se usa para purificar el agua en áreas rurales donde no hay acceso a plantas de tratamiento?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Cloración"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Sistema de filtración de arena lenta"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Evaporación"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Magnetización del agua"
+                    }
+                  ],
+                  "correcta": "Descenso de los niveles freáticos",
+                  "explicacion": "La extracción excesiva de agua subterránea puede causar un descenso significativo en los niveles freáticos, lo que puede llevar a la subsidencia del suelo y la reducción de la disponibilidad de agua."
+                },
+                {
+                  "id": 10,
+                  "pregunta": "¿Cuál es el principal problema asociado con el uso de agua subterránea no regulado?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Aumento del nivel del mar"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Contaminación del aire"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Descenso de los niveles freáticos"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Aumento de la biodiversidad"
+                    }
+                  ],
+                  "correcta": "Descenso de los niveles freáticos",
+                  "explicacion": "La extracción excesiva de agua subterránea puede causar un descenso significativo en los niveles freáticos, lo que puede llevar a la subsidencia del suelo y la reducción de la disponibilidad de agua."
+                },
+                {
+                  "id": 11,
+                  "pregunta": "¿Qué impacto tiene la infraestructura de saneamiento deficiente en los recursos hídricos?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Mejora la calidad del agua"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Aumenta la contaminación del agua"
+                    },
+                    {
+                      "id": " C",
+                      "value": "No tiene impacto"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Reduce el consumo de agua"
+                    }
+                  ],
+                  "correcta": "Aumenta la contaminación del agua",
+                  "explicacion": "La infraestructura de saneamiento deficiente puede provocar la liberación de aguas residuales no tratadas en fuentes de agua, contaminándolas y poniendo en riesgo la salud pública."
+                },
+                {
+                  "id": 12,
+                  "pregunta": "¿Qué método de captación de agua es común en regiones con escasez de agua?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Desalinización"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Captación de agua de lluvia"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Excavación de pozos profundos"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Almacenamiento de agua en tanques elevados"
+                    }
+                  ],
+                  "correcta": "Captación de agua de lluvia",
+                  "explicacion": "La captación de agua de lluvia es una técnica eficaz para recolectar y almacenar agua durante las temporadas de lluvia para su uso en períodos de escasez."
+                },
+                {
+                  "id": 13,
+                  "pregunta": "¿Qué efecto tiene el uso excesivo de fertilizantes en los recursos hídricos?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Mejora la calidad del agua"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Aumenta la salinidad del agua"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Reduce la cantidad de algas en el agua"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Provoca la eutrofización"
+                    }
+                  ],
+                  "correcta": "Provoca la eutrofización",
+                  "explicacion": "El uso excesivo de fertilizantes puede causar la eutrofización, un proceso en el cual los nutrientes en exceso, como el nitrógeno y el fósforo, provocan un crecimiento excesivo de algas que agotan el oxígeno en el agua."
+                },
+                {
+                  "id": 14,
+                  "pregunta": "¿Qué tecnología puede ayudar a detectar fugas de agua en los sistemas de suministro?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Sensores de humedad"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Cámaras de seguridad"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Sistemas de radar"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Drones"
+                    }
+                  ],
+                  "correcta": "Sensores de humedad",
+                  "explicacion": "Los sensores de humedad pueden detectar fugas de agua al identificar áreas con niveles anormalmente altos de humedad, permitiendo reparaciones rápidas y reduciendo el desperdicio de agua."
+                },
+                {
+                  "id": 15,
+                  "pregunta": "¿Cuál es la principal causa de pérdida de agua en los sistemas de distribución de agua potable?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Evaporación"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Fugas en tuberías"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Uso doméstico"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Filtración natural"
+                    }
+                  ],
+                  "correcta": "Fugas en tuberías",
+                  "explicacion": "Las fugas en tuberías son una de las principales causas de pérdida de agua en los sistemas de distribución de agua potable, lo que resulta en desperdicio de agua y altos costos de mantenimiento."
+                },
+                {
+                  "id": 16,
+                  "pregunta": "¿Qué organismo en la naturaleza es un indicador de la calidad del agua?",
+                  "respuestas": [
+                    {
+                      "id": " A",
+                      "value": "Ranas"
+                    },
+                    {
+                      "id": " B",
+                      "value": "Algas"
+                    },
+                    {
+                      "id": " C",
+                      "value": "Peces"
+                    },
+                    {
+                      "id": " D",
+                      "value": "Plancton"
+                    }
+                  ],
+                  "correcta": "Ranas",
+                  "explicacion": "Las ranas son indicadores biológicos de la calidad del agua porque son sensibles a la contaminación y a los cambios en el medio ambiente acuático."
+                }
+              ]
             }
         }
     ]

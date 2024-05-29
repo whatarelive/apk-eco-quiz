@@ -9,13 +9,15 @@ import { NextQuizContext, ScoreContext } from "../../context"
 
 export const BackModal = () => {
 
-  const { active, setActive, setViewBackModal } = useContext( NextQuizContext );
+  const { status, active, setActive, setViewBackModal, setStatus } = useContext( NextQuizContext );
   const { resetEvery } = useContext( ScoreContext );
 
   const navigate = useNavigate();
 
   const onAcept = () => {
     resetEvery();
+
+    if ( status ) setStatus( false );
 
     setActive({
       ...active,
@@ -78,8 +80,7 @@ const styles = StyleSheet.create({
     modal:{
       position: 'absolute', 
       width: '80%', 
-      height: '20%', 
-      padding: 0.1,
+      height: '20%',
       alignItems: 'center',
       borderRadius: RFValue(16), 
       backgroundColor: theme.brown_base,

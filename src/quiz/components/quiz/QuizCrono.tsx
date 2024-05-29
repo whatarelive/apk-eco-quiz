@@ -8,7 +8,7 @@ import { RFValue } from 'react-native-responsive-fontsize';
 
 
 
-export const QuizCrono = ({ restart, question, setQuestion }: QuizCronoProps ): JSX.Element => {
+export const QuizCrono = ({ restart, category, question, setQuestion }: QuizCronoProps ): JSX.Element => {
 
     const navigate = useNavigate();
     const [ icon, setIcon ] = useState('crono');
@@ -53,7 +53,7 @@ export const QuizCrono = ({ restart, question, setQuestion }: QuizCronoProps ): 
           updateResponseTime( 60 );
           decrementScore( 20 )
                 
-          if( question >= 5) navigate(`/victory`)    
+          if( question >= 16 ) navigate(`/victory/${category.name}`)    
           setQuestion( question + 1 )
         }
               

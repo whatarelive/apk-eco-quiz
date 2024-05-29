@@ -18,7 +18,7 @@ export const RefModal = ({ description }: { description: string }) => {
             <View style={{ flex: 1 ,justifyContent: 'center',}}>
                 <StyleText size={ 18 } color={ theme.brown_dark }>Explicación</StyleText>
             </View>
-            <View style={{ flex: 5, justifyContent: 'center', padding: RFValue(8)}}>
+            <View style={{ flex: 5, justifyContent: 'center', padding: RFValue(8), margin: RFValue(15)}}>
                 <Text style={{ ...styles.text, color: theme.green_veryDark }}>{ description }</Text>
             </View>
             <View style={{ flexDirection: 'row'}}>
@@ -52,7 +52,6 @@ const styles = StyleSheet.create({
     modal:{
         position: 'absolute', 
         width: '80%', 
-        height: '40%',
         alignItems: 'center',
         borderRadius: RFValue(16), 
         backgroundColor: theme.brown_base,

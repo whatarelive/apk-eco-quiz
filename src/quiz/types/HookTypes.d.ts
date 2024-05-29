@@ -5,7 +5,6 @@ export interface CategoryList {
 export interface Category {
     readonly id: number,
     readonly name: string,
-    readonly urlIcon: string,
     readonly questions: Question[]
 }
 
@@ -13,6 +12,7 @@ export interface Question {
     readonly id: number,
     readonly pregunta: string,
     readonly correcta: string,
+    readonly explicacion: string,
     readonly respuestas: Respuesta[]
 }
 

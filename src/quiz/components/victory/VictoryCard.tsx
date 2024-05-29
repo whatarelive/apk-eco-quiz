@@ -32,7 +32,7 @@ export const VictoryCard = () => {
                 { aciertos.current }
               </Text>           
               <Text style={ styles.text_Data }>
-                /20
+                /16
               </Text>
             </View>
           </View>

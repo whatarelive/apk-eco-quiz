@@ -42,6 +42,7 @@ export interface QuizResponseListProps {
 // PropsTypes de la funcion del Componente <QuizNextButton/>
 export interface QuizNextButtonProps {
   question: number;
+  category: Category,
   setQuestion: React.Dispatch<React.SetStateAction<number>>;
 };
 
@@ -54,6 +55,7 @@ export interface QuizCheckButtonProps {
 // PropsTypes de la funcion del Componente <QuizCrono/>
 export interface QuizCronoProps {
   restart: number;
+  category: Category;
   question: number;
   setQuestion: React.Dispatch<React.SetStateAction<number>>;
 }

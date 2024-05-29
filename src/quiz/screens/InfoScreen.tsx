@@ -1,12 +1,14 @@
 import { View, ScrollView } from "react-native";
 import { Header, StatusBar, theme } from "../../util";
 import { InfoItem } from "../components";
+import { useContext } from "react";
+import { UserContext } from "../context";
 
 
 
 export const InfoScreen = () => {
 
-    const categories = ['cambio', "biodiversidad", 'energia', 'reciclaje', 'agua']
+  const { state } = useContext( UserContext );
 
   return (
     <View style={{ flex: 1, backgroundColor: theme.brown_base }}>
@@ -17,7 +19,7 @@ export const InfoScreen = () => {
             bounces={ false }
             overScrollMode='never'>
             {
-                categories.map(( catg, index )=> <InfoItem  key={ index } categoria={ catg }/>)
+              state.map(( catg, index )=> <InfoItem  key={ index } categoria={ catg }/>)
             }
         </ScrollView>
     </View>

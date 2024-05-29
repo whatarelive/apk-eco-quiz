@@ -9,7 +9,7 @@ import {RFValue} from "react-native-responsive-fontsize";
 export const CategoryItem = ( { category }: CategoryItemProps ): JSX.Element => {
 
   const navigate = useNavigate();
-  const image = useImage( category.urlIcon, 'categoryImage' );
+  const image = useImage( category.name, 'categoryImage' );
 
   const handleTouch = () => {
     navigate(`/quiz/${ category.id }/${1}`);
@@ -31,7 +31,7 @@ export const CategoryItem = ( { category }: CategoryItemProps ): JSX.Element => 
           </Text>
 
           <Text style={ styles.text2 }>
-            20 Preguntas
+            16 Preguntas
           </Text>
         </View>
         
