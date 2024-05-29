@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/idea.png",
         "backgroundColor": "#FFF1E4"
-      }
+      },
+      "package": "com.whatare.ecoquiz"
     },
     "web": {
       "favicon": "./src/assets/idea.png"
